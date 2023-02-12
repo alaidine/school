@@ -1,0 +1,456 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+%\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+%Relecture : François Hache
+\usepackage{pst-plot,pst-tree,pst-all,pst-bezier,pst-node,pst-text,pst-eucl,pstricks-add}
+\usepackage{pst-infixplot} 
+\usepackage{twoopt}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=2.5cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Polynésie 30 août 2022 sujet 1},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Polynésie}}
+\rfoot{\small{30 août 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Polynésie 30 août 2022~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ sujet \no 1}}
+
+\bigskip
+
+Durée de l'épreuve : \textbf{4 heures}
+
+\medskip
+
+L'usage de la calculatrice avec mode examen actif est autorisé
+
+\medskip
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 et \textbf{ne doit traiter que ces 3 exercices}
+\end{center}
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \quad 7 points\hfill probabilités}
+
+\medskip
+
+Parmi les angines, un quart nécessite la prise d'antibiotiques, les autres non.
+
+Afin d'éviter de prescrire inutilement des antibiotiques, les médecins disposent d'un test de diagnostic ayant les caractéristiques suivantes :
+
+\begin{itemize}
+\item[$\bullet~~$]lorsque l'angine nécessite la prise d'antibiotiques, le test est positif dans 90\,\% des cas;
+\item[$\bullet~~$]lorsque l'angine ne nécessite pas la prise d'antibiotiques, le test est négatif dans 95\,\% des cas.
+\end{itemize}
+
+\medskip
+
+Les probabilités demandées dans la suite de l'exercice seront arrondies à $10^{-4}$ près si nécessaire.
+
+\bigskip
+
+\textbf{Partie 1}
+
+\medskip
+
+Un patient atteint d'angine et ayant subi le test est choisi au hasard. 
+
+On considère les évènements suivants :
+
+\begin{itemize}
+\item[$\bullet~~$]$A$ : « le patient est atteint d'une angine nécessitant la prise d'antibiotiques »{} ; 
+\item[$\bullet~~$]$T$ : « le test est positif »{} ;
+\item[$\bullet~~$]$\overline{A}$ et $\overline{T}$ sont respectivement les évènements contraires de $A$ et $T$.
+\end{itemize}
+
+\medskip
+
+\begin{enumerate}
+\item Calculer $P(A \cap T)$. On pourra s'appuyer sur un arbre pondéré.
+\item Démontrer que $P(T) = \np{0,2625}$.
+\item On choisit un patient ayant un test positif. Calculer la probabilité qu'il soit atteint d'une angine nécessitant la prise d'antibiotiques.
+\item
+	\begin{enumerate}
+		\item Parmi les évènements suivants, déterminer ceux qui correspondent à un résultat erroné du test :  $A \cap T,\: \overline{A} \cap T,\:A \cap \overline{T},\: \overline{A} \cap \overline{T}$.
+		\item On définit l'évènement $E$ : « le test fournit un résultat erroné ». 
+		
+Démontrer que $p(E) = \np{0,0625}$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie 2}
+
+\medskip
+
+On sélectionne au hasard un échantillon de $n$ patients qui ont été testés.
+
+On admet que l'on peut assimiler ce choix d'échantillon à un tirage avec remise.
+
+On note $X$ la variable aléatoire qui donne le nombre de patients de cet échantillon ayant un test erroné.
+
+\medskip
+
+\begin{enumerate}
+\item On suppose que $n = 50$.
+	\begin{enumerate}
+		\item Justifier que la variable aléatoire $X$ suit une loi binomiale $\mathcal{B}(n,\: p)$ de paramètres
+$n = 50$ et $p = \np{0,0625}.$
+		\item Calculer $P(X = 7)$.
+		\item Calculer la probabilité qu'il y ait au moins un patient dans l'échantillon dont le test est erroné.
+	\end{enumerate}	
+\item Quelle valeur minimale de la taille de l'échantillon faut-il choisir pour que $P(X \geqslant 10)$ soit supérieure à $0,95$ ?
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \quad 7 points\hfill suites, fonctions}
+
+\medskip
+
+Soit $k$ un nombre réel.
+
+On considère la suite $\left(u_n\right)$ définie par son premier terme $u_0$ et pour tout entier naturel $n$,
+
+\[u_{n+1} = ku_n\left(1- u_n\right).\]
+
+Les deux parties de cet exercice sont indépendantes. 
+
+On y étudie deux cas de figure selon les valeurs de $k$.
+
+\bigskip
+
+\textbf{Partie 1}
+
+\medskip
+
+Dans cette partie, $k = 1,9$ et $u_0 = 0,1$.
+
+On a donc,  pour tout entier naturel $n$,\: $u_{n+1} = 1,9u_n\left(1 - u_n\right)$.
+
+\medskip
+
+\begin{enumerate}
+\item On considère la fonction $f$ définie sur [0~;~1] par $f(x) = 1,9x(1 - x)$.
+	\begin{enumerate}
+		\item Étudier les variations de $f$ sur l'intervalle [0~;~1].
+		\item En déduire que si $x \in [0~;~1]$ alors $f(x) \in [0~;~1]$.
+	\end{enumerate}	
+\item Ci-dessous sont représentés les premiers termes de la suite $\left(u_n\right)$ construits à partir de la courbe $\mathcal{C}_f$ de la fonction $f$ et de la droite $D$ d'équation $y = x$.
+
+Conjecturer le sens de variation de la suite $\left(u_n\right)$ et sa limite éventuelle.
+
+\medskip
+
+%%début
+\psset{unit=10cm,arrowsize=2pt 3,comma=true}
+\def\xmin{-0.3} \def\xmax{1.05}
+\def\ymin{-0.2} \def\ymax{0.65} 
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+
+%%% grille 1cm x 1cm
+\psgrid[unit=1cm,gridlabels=0,subgriddiv=1,gridcolor=gray](0,0)(1,1)
+%%% axes
+\psaxes[linewidth=1.5pt,Dx=0.1,Dy=0.1,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(\xmax,\ymax)
+%%% origine
+\uput[dl](0,0){O}
+%%% définition de la fonction
+\def\f{1.9 x mul  1 x sub mul}
+%%% tracé de la représentation graphique de la fonction
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{0}{1}{\f}
+%%%% nom de la courbe
+\uput[10](0.8,0.3){\blue $\mathscr{C}_f$}
+%%% droite d'équation y = x
+\psplot[plotpoints=1000,linecolor=rb!80]{0}{1}{x}
+\uput[d]{45}(0.65,0.65){\rb $D : y=x$}
+%%% \pstfixpoint[options]{abscisse début}{fonction}{nb itérations}
+\psFixpoint[linecolor=red,ArrowInside=-<]{0.1}{\f}{3}
+\psline[linestyle=dashed](0.1,0.171)(0,0.171)\uput[l](0,0.171){\small $u_1 = f\left(u_0\right)$}
+\uput[d](0.1,-0.075){\small $u_0$}
+\psline[linestyle=dashed](0.171,0.171)(0.171,0)\uput[d](0.171,-0.075){\small $u_1$}
+\psline[linestyle=dashed](0.269,0.269)(0.269,0)\uput[d](0.269,-0.075){\small $u_2$}
+\psline[linestyle=dashed](0.374,0.374)(0.374,0)\uput[d](0.374,-0.075){\small $u_3$}
+\psline[linecolor=red](0.374,0.374)(0.374,0.445)
+\end{pspicture*}
+%%fin
+\item 
+	\begin{enumerate}
+		\item En utilisant les résultats de la question 1, démontrer par récurrence que pour tout entier naturel $n$ :
+		
+\[0 \leqslant u_n \leqslant u_{n+1} \leqslant \dfrac12.\]
+
+		\item En déduire que la suite $\left(u_n\right)$ converge.
+		\item Déterminer sa limite.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie 2}
+
+\medskip
+
+ Dans cette partie, $k= \dfrac12$  et $u_0 = \dfrac14$.
+
+On a donc, pour tout entier naturel $n$,\: $u_{n+1} = \dfrac12 u_n \left(1 - u_n\right)$ et $u_0 = \dfrac14$.
+
+On admet que pour tout entier naturel $n$ :\: 0 \leqslant u_n \leqslant \left(\dfrac12\right)^n$.
+
+\medskip
+
+\begin{enumerate}
+\item Démontrer que la suite $\left(u_n\right)$ converge et déterminer sa limite.
+\item On considère la fonction Python \texttt{algo (p)} où \texttt{p} désigne un entier naturel non nul:
+
+\begin{center}
+\begin{tabular}{|l|}\hline
+\texttt{def algo(p) :}\\
+\quad  \texttt{u =1/4}\\
+\quad \texttt{n = 0}\\
+\quad \texttt{while u > 10**(-p):}\\
+\quad \quad \texttt{u = 1/2*u*(1 - u)}\\
+\quad \quad \texttt{n = n+1}\\
+\quad \texttt{ return(n)}\\ \hline
+\end{tabular}
+\end{center}
+Expliquer pourquoi, pour tout entier naturel non nul \texttt{p}, la boucle while ne tourne pas indéfiniment, ce qui permet à la commande \texttt{algo (p)} de renvoyer une valeur.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \quad 7 points\hfill fonctions}
+
+\bigskip
+
+\textbf{Partie 1}
+
+\medskip
+
+Soit $g$ la fonction définie pour tout nombre réel $x$ de l'intervalle ]0~;~+ \infty[$ par:
+
+\[g(x) = \dfrac{2 \ln x}{ x}.\]
+
+\smallskip
+
+\begin{enumerate}
+\item On note $g'$ la dérivée de $g$. Démontrer que pour tout réel $x$ strictement positif : 
+
+\[g'(x) = \dfrac{2 - 2\ln x}{x^2}.\]
+
+\item On dispose de ce tableau de variations de la fonction $g$ sur l'intervalle $]0~;~+ \infty[$ : 
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(9,3)
+%\psgrid
+\psframe(9,3)\psline(0,2.5)(9,2.5)
+\psline(2.5,0)(2.5,3)
+\uput[u](1.25,2.4){$x$}\uput[u](3,2.4){$0$}\uput[u](5.5,2.4){1}\uput[u](7,2.4){e}\uput[u](8.5,2.4){$+ \infty$}
+\psline(2.95,0)(2.95,2.5)\psline(3.05,0)(3.05,2.5)
+\uput[u](3.5,0){$- \infty$}\rput(5.5,1.25){0}\uput[d](7,2.5){$\frac{2}{\text{e}}$}\uput[u](8.8,0){0}
+\rput(1.25,1.5){Variations }
+\rput(1.25,1.){de $g$}
+\psline(4,0.32)(5.3,1.1)\psline{->}(5.6,1.3)(6.8,2.)\psline{->}(7.2,2)(8.6,0.4)
+\end{pspicture}
+\end{center}
+
+\smallskip
+
+Justifier les informations suivantes lues dans ce tableau:
+
+	\begin{enumerate}
+		\item la valeur $\dfrac{2}{\text{e}}$ ;
+		\item les variations de la fonction $g$ sur son ensemble de définition ;
+		\item les limites de la fonction $g$ aux bornes de son ensemble de définition.
+	\end{enumerate}
+\item En déduire le tableau de signes de la fonction $g$ sur l'intervalle $]0~;~+ \infty[$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie 2}
+
+\medskip
+
+Soit $f$ la fonction définie sur l'intervalle ]0~;~ + \infty[$ par 
+
+\[f(x) = [\ln (x)]^2.\]
+
+ Dans cette partie, chaque étude est effectuée sur l'intervalle $]0~;~+ \infty[$.
+
+\medskip
+
+\begin{enumerate}
+\item Démontrer que sur l'intervalle $]0~;~+ \infty[$, la fonction $f$ est une primitive de la fonction $g$.
+\item À l'aide de la partie 1, étudier :
+	\begin{enumerate}
+		\item la convexité de la fonction $f$ ;
+		\item les variations de la fonction $f$.
+\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Donner une équation de la tangente à la courbe représentative de la fonction $f$ au point d'abscisse e.
+		\item En déduire que, pour tout réel $x$ dans $]0~;~\text{e}]$ :
+		
+\[[\ln (x)]^2 \geqslant \dfrac{2}{\text{e}}x - 1.\]
+
+	\end{enumerate}
+\end{enumerate}
+\bigskip
+
+\textbf{\textsc{Exercice 4} \quad 7 points\hfill géométrie dans le plan et dans l'espace}
+
+\medskip
+
+On considère le cube ABCDEFGH.
+
+On note I le milieu du segment[EH] et on considère le triangle CFI.
+
+L'espace est muni du repère orthonormé $\left(\text{A}~;~ \vect{\text{AB}},\: \vect{\text{AD}},\: \vect{\text{AE}}\right)$ et on admet que le point I a
+pour coordonnées $\left(0~;~\dfrac12;~1\right)$ dans ce repère.
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(7.4,8)
+\pspolygon(0.2,0.8)(4.6,0.2)(4.6,4.6)(0.2,5.2)%BCGF
+\psline(4.6,0.2)(7.2,2.6)(7.2,7)(4.6,4.6)%CDHG
+\psline(7.2,7)(2.8,7.6)(0.2,5.2)%HEF
+\psline[linestyle=dashed](0.2,0.8)(2.8,3.2)(7.2,2.6)%BAD
+\psline[linestyle=dashed](2.8,3.2)(2.8,7.6)%AE
+\psline(5,7.3)(0.2,5.2)(4.6,0.2)%IFC
+\psline[linestyle=dashed](5,7.3)(4.6,0.2)%IC
+\psdots(2.8,3.2)(0.2,0.8)(4.6,0.2)(7.2,2.6)(2.8,7.6)(0.2,5.2)(4.6,4.6)(7.2,7)(5,7.3)(2.4,4.9)
+\uput[l](2.8,3.2){A} \uput[l](0.2,0.8){B} \uput[dr](4.6,0.2){C} \uput[r](7.2,2.6){D}
+\uput[u](2.8,7.6){E} \uput[l](0.2,5.2){F} \uput[dl](4.6,4.6){G} \uput[ur](7.2,7){H}
+\uput[u](5,7.3){I} \uput[u](2.4,4.9){J}
+\end{pspicture}
+
+\smallskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Donner sans justifier les coordonnées des points C, F et G.
+		\item Démontrer que le vecteur $\vect{n}\begin{pmatrix}1\\2\\2\end{pmatrix}$ est normal au plan (CFI).
+		\item Vérifier qu'une équation cartésienne du plan (CFI) est : $x + 2y + 2z - 3 = 0$.
+	\end{enumerate}	
+\item  On note $d$ la droite passant par G et orthogonale au plan (CFI).
+	\begin{enumerate}
+		\item Déterminer une représentation paramétrique de la droite $d$.
+		\item Démontrer que le point K$\left(\dfrac79~;~\dfrac59~;~\dfrac59\right)$ est le projeté orthogonal du point G sur le plan (CFI).
+		\item Déduire des questions précédentes que la distance du point G au plan (CFI) est
+égale à $\dfrac23$.
+	\end{enumerate}
+\item On considère la pyramide GCFI.
+
+\emph{On rappelle que le volume $V$ d'une pyramide est donné par la formule} 
+
+\[V = \frac13 \times b \times h,\]
+
+\emph{où $b$ est l'aire d'une base et $h$ la hauteur associée à cette base}.
+	\begin{enumerate}
+		\item Démontrer que le volume de la pyramide GCFI est égal à $\dfrac16$, exprimé en unité de volume.
+		\item En déduire l'aire du triangle CFI, en unité d'aire.
+	\end{enumerate}
+\end{enumerate}
+\end{document}
+
+%#1 lettre désignant la suite, par défaut u 
+%#2 indice initial, par défaut 0 
+%#3 valeur du terme initial 
+%#4 expression de f 
+%#5 nombre de termes 
+\newcounter{INDICE} 
+\newcommandtwoopt{\SuiteRec}[5][u][0]{% 
+\getcoor % récupère les coordonnées de la fenêtres, merci JCC 
+\infixtoRPN{#4} 
+\psplot{\xmin}{\xmax}{\RPN} 
+\SpecialCoor 
+%\psaxes{->}(0,0)(\xmin,\ymin)(\xmax,\ymax) 
+%\psplot[linewidth=1pt,algebraic,VarStep,VarStepEpsilon=0.0001]{\xmin}{\xmax}{#4} 
+\psline[linestyle=dashed](\xmin,\xmin)(\xmax,\xmax)  
+\pstVerb{ /x #3 def } 
+\psline[ArrowInside=->,ArrowInsideNo=1](! x 0 )(! x \RPN ) 
+\psline[ArrowInside=->,ArrowInsideNo=1](! x \RPN )(! \RPN\space dup) 
+\psline{-}(! x 0.03 )(! x 0.03 neg) 
+\rput(!x 0.08 neg ){$#1_{#2}$} 
+\pstVerb{ /x \RPN\space def} 
+\setcounter{INDICE}{#2} 
+\addtocounter{INDICE}{1} 
+\multido{\I=\theINDICE+1}{#5}{% 
+\psline{-}(! x 0.03 )(! x 0.03 neg) 
+\rput(!x 0.08 neg ){$#1_{\I}$} 
+\psline[linestyle=dotted](! x 0 )(! x x) 
+\psline[ArrowInside=->,ArrowInsideNo=1](! x x )(! x \RPN ) 
+\psline[ArrowInside=->,ArrowInsideNo=1](! x \RPN )(! \RPN\space dup) 
+\pstVerb{ /x \RPN\space def} 
+}
+}
+\newcommandtwoopt{\SuiteRecbis}[5][u][0]{% 
+\getcoor % récupère les coordonnées de la fenêtres, merci JCC 
+\infixtoRPN{1.9 x mul 1 x sub mul} 
+\SpecialCoor 
+\psline[linestyle=dashed](\xmin,\xmin)(\xmax,\xmax)  
+\pstVerb{ /x #3 def } 
+\psline[ArrowInside=->,ArrowInsideNo=1](! x 0 )(! x \RPN ) 
+\psline[ArrowInside=->,ArrowInsideNo=1](! x \RPN )(! \RPN\space dup) 
+\psline{-}(! x 0.03 )(! x 0.03 neg) 
+\rput(!x 0.08 neg ){$#1_{#2}$} 
+\pstVerb{ /x \RPN\space def} 
+\setcounter{INDICE}{#2} 
+\addtocounter{INDICE}{1} 
+\multido{\I=\theINDICE+1}{4}{% 
+\psline{-}(! x 0.03 )(! x 0.03 neg) 
+\rput(!x 0.08 neg ){$#1_{\I}$} 
+\psline[linestyle=dotted](! x 0 )(! x x) 
+\psline[ArrowInside=->,ArrowInsideNo=1](! x x )(! x \RPN ) 
+\psline[ArrowInside=->,ArrowInsideNo=1](! x \RPN )(! \RPN\space dup) 
+\pstVerb{ /x \RPN\space def} 
+}
+}

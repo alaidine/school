@@ -1,0 +1,414 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+%Relecture : 
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl}
+\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\newcommand{\e}{\text{e}}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Asie 17 mai 2022},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Asie}}
+\rfoot{\small{17 mai 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Asie 17 mai 2022 Jour 1~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}}
+
+
+\vspace{0,25cm}
+
+Le sujet propose 4 exercices.
+
+Le candidat choisit 3 exercices parmi les 4 exercices et \textbf{ne doit traiter que ces 3 exercices.}
+
+\medskip
+
+Chaque exercice est noté sur 7 points (le total sera ramené sur 20 points). 
+
+\medskip
+
+Les traces de recherche, même incomplètes ou infructueuses, seront prises en compte.
+
+\hrule
+\end{center}
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \hfill 7 points}
+
+\medskip
+
+\emph{Principaux domaines abordés}: Probabilités conditionnelles et indépendance. Variables aléatoires.
+
+\medskip
+
+Lors d'une kermesse, un organisateur de jeux dispose, d'une part, d'une roue comportant quatre cases blanches et huit cases rouges et, d'autre part, d'un sac contenant cinq jetons portant les numéros 1, 2, 3, 4 et 5.
+
+Le jeu consiste à faire tourner la roue, chaque case ayant la même probabilité d'être obtenue, puis à extraire un ou deux jetons du sac selon la règle suivante :
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] si la case obtenue par la roue est blanche, alors le joueur extrait un jeton du sac ;
+\item[$\bullet~~$] si la case obtenue par la roue est rouge, alors le joueur extrait successivement et sans remise deux jetons du sac.
+\end{itemize}
+\setlength\parindent{0cm}
+
+Le joueur gagne si le ou les jetons tirés portent tous un numéro impair.
+
+\medskip
+
+\begin{enumerate}
+\item Un joueur fait une partie et on note $B$ l'évènement \og la case obtenue est blanche \fg,
+$R$ l'évènement \og la case obtenue est rouge\fg{} et $G$ l'évènement \og le joueur gagne la partie \fg. 
+	\begin{enumerate}
+		\item Donner la valeur de la probabilité conditionnelle $P_B(G)$.
+		\item On admettra que la probabilité de tirer successivement et sans remise deux jetons impairs est égale à $0,3$. 
+		
+Recopier et compléter l'arbre de probabilité suivant:
+
+\begin{center}
+\pstree[treemode=R,nodesepB=3pt,levelsep=3cm]{\TR{}}
+{\pstree{\TR{$B$~~} }
+	{\TR{$G$}
+	\TR{$\overline{G}$}
+	}
+\pstree{\TR{$R$~~} }
+	{\TR{$G$}
+	\TR{$\overline{G}$}
+	}	
+}
+\end{center}
+
+	\end{enumerate}
+
+\item
+	\begin{enumerate}
+		\item Montrer que $P(G) = 0,4$.
+		\item Un joueur gagne la partie.
+		
+Quelle est la probabilité qu'il ait obtenu une case blanche en lançant la roue?
+	\end{enumerate}
+\item Les évènements $B$ et $G$ sont-ils indépendants ? Justifier.
+\item Un même joueur fait dix parties. Les jetons tirés sont remis dans le sac après chaque partie.
+
+On note $X$ la variable aléatoire égale au nombre de parties gagnées.
+	\begin{enumerate}
+		\item Expliquer pourquoi $X$ suit une loi binomiale et préciser ses paramètres.
+		\item Calculer la probabilité, arrondie à $10^{-3}$ près, que le joueur gagne exactement trois parties sur les dix parties jouées.
+		\item Calculer $P (X \geqslant 4)$ arrondie à $10^{-3}$ près.
+		
+Donner une interprétation du résultat obtenu.
+	\end{enumerate}
+\item Un joueur fait $n$ parties et on note $p_n$ la probabilité de l'évènement \og le joueur gagne au moins une partie \fg.
+	\begin{enumerate}
+		\item Montrer que $p_n = 1 - 0,6^n$.
+		\item Déterminer la plus petite valeur de l'entier $n$ pour laquelle la probabilité de gagner au moins une partie est supérieure ou égale à $0,99$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \hfill 7 points}
+
+\medskip
+
+\emph{Principaux domaines abordés} : Suites numériques. Algorithmique et programmation.
+
+\medskip
+
+Un médicament est administré à un patient par voie intraveineuse. 
+
+\bigskip
+
+\textbf{Partie A : modèle discret de la quantité médicamenteuse}
+
+\medskip
+
+Après une première injection de 1 mg de médicament, le patient est placé sous perfusion.
+
+On estime que, toutes les $30$~minutes, l'organisme du patient élimine 10\,\% de la quantité de médicament présente dans le sang et qu'il reçoit une dose supplémentaire de $0,25$ mg de la substance médicamenteuse.
+
+On étudie l'évolution de la quantité de médicament dans le sang avec le modèle suivant :
+
+pour tout entier naturel $n$, on note $u_n$ la quantité, en mg, de médicament dans le sang du patient au bout de $n$ périodes de trente minutes. On a donc $u_0 = 1$.
+
+\medskip
+
+\begin{enumerate}
+\item Calculer la quantité de médicament dans le sang au bout d'une demi-heure.
+\item Justifier que, pour tout entier naturel $n,\: u_{n+1} = 0,9u_n + 0,25$.
+\item 
+	\begin{enumerate}
+		\item Montrer par récurrence sur $n$ que, pour tout entier naturel $n,\: u_n \leqslant  u_{n+1} < 5$.
+		\item En déduire que la suite $\left(u_n\right)$ est convergente.
+	\end{enumerate}
+\item On estime que le médicament est réellement efficace lorsque sa quantité dans le sang
+du patient est supérieure ou égale à $1,8$ mg.
+	\begin{enumerate}
+		\item Recopier et compléter le script écrit en langage Python suivant de manière à déterminer au bout de combien de périodes de trente minutes le médicament commence à être réellement efficace.
+\begin{center}
+\begin{tabular}{|l|}\hline
+\texttt{\textbf{def} efficace():}\\
+\quad \texttt{u=1}\\
+\quad \texttt{n=0}\\
+\quad \texttt{\textbf{while} \ldots\ldots :}\\
+\quad\qquad \texttt{u=\ldots\ldots}\\
+\quad\qquad \texttt{n = n+1}\\
+\quad \texttt{\textbf{ return }n}\\ \hline
+\end{tabular}
+\end{center}
+
+		\item Quelle est la valeur renvoyée par ce script ? Interpréter ce résultat dans le contexte de l'exercice.
+	\end{enumerate}		
+\item Soit $\left(v_n\right)$ la suite définie, pour tout entier naturel $n$, par $v_n = 2,5 - u_n$.
+	\begin{enumerate}
+		\item Montrer que $\left(v_n\right)$ est une suite géométrique dont on précisera la raison et le premier terme $\left(v_0\right)$.
+		\item Montrer que, pour tout entier naturel $n,\: u_n = 2,5 - 1,5 \times 0,9^n$.
+		\item Le médicament devient toxique lorsque sa quantité présente dans le sang du patient dépasse $3$ mg. 
+		
+D'après le modèle choisi, le traitement présente-t-il un risque pour le patient? Justifier.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B : modèle continu de la quantité médicamenteuse}
+
+\medskip
+
+Après une injection initiale de $1$~mg de médicament, le patient est placé sous perfusion.
+
+Le débit de la substance médicamenteuse administrée au patient est de $0,5$ mg par heure.
+
+La quantité de médicament dans le sang du patient, en fonction du temps, est modélisée
+par la fonction $f$, définie sur $[0~;~ +\infty[$, par 
+
+\[f(t) = 2,5 - 1,5\text{e}^{-0,2t},\]
+
+où $t$ désigne la durée de la perfusion exprimée en heure.
+
+On rappelle que ce médicament est réellement efficace lorsque sa quantité dans le sang du patient est supérieure ou égale à $1,8$~mg.
+
+\medskip
+
+\begin{enumerate}
+\item Le médicament est-il réellement efficace au bout de 3~h 45~min ?
+\item Selon ce modèle, déterminer au bout de combien de temps le médicament devient réellement efficace.
+\item Comparer le résultat obtenu avec celui obtenu à la question 4. b. du modèle discret de la Partie A.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \hfill 7 points}
+
+\medskip
+
+\emph{Principaux domaines abordés}: Manipulation des vecteurs, des droites et des plans de l'espace. Orthogonalité et distances dans l'espace. Représentations paramétriques et équations cartésiennes.
+
+\bigskip
+
+Le solide ABCDEFGH est un cube. On se place dans le repère orthonormé $\left(\text{A}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$ de l'espace dans lequel les coordonnées des points B, D et E sont : 
+
+\[\text{B}(3~;~0 ~;~0) , \text{D} (0~;~3~;~0)\: \text{et E}(0~;~0~;~3).\]
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(6.5,5.8)
+\pspolygon(0.5,1)(2.9,0.5)(2.9,3.7)(0.5,4.2)%ABFE
+\psline(2.9,0.5)(5.6,1)(5.6,4.2)(2.9,3.7)%BCGF
+\psline(5.6,4.2)(3.2,4.7)(0.5,4.2)%GHE
+\psline[linestyle=dashed](0.5,1)(3.2,1.5)(5.6,1)%ADC
+\psline[linestyle=dashed](3.2,1.5)(3.2,4.7)%DH
+\psline[linewidth=1.3pt]{->}(0.5,1)(1.3,0.84)
+\psline[linewidth=1.3pt]{->}(0.5,1)(1.4,1.16)
+\psline[linewidth=1.3pt]{->}(0.5,1)(0.5,2.06)
+\uput[dl](0.5,1){A} \uput[d](2.9,0.5){B} \uput[r](5.6,1){C} \uput[d](3.2,1.5){D}
+\uput[l](0.5,4.2){E} \uput[u](2.9,3.7){F} \uput[r](5.6,4.2){G} \uput[u](3.2,4.7){H}
+\uput[d](0.7,0.9){$\vect{\imath}$} \uput[u](0.95,1.08){$\vect{\jmath}$} \uput[l](0.5,1.53){$\vect{k}$}
+\end{pspicture}
+\end{center}
+
+On considère les points P(0~;~0~;~1), Q(0~;~2~;~3) et R(1~;~0~;~3).
+
+\medskip
+
+\begin{enumerate}
+\item Placer les points P{}, Q et R sur la figure en ANNEXE qui sera à rendre avec la copie.
+\item Montrer que le triangle PQR est isocèle en R.
+\item Justifier que les points P{}, Q et R définissent un plan.
+\item On s'intéresse à présent à la distance entre le point E et le plan (PQR).
+	\begin{enumerate}
+		\item Montrer que le vecteur $\vect{u}(2~;~1~;~- 1)$ est normal au plan (PQR).
+		\item En déduire une équation cartésienne du plan (PQR).
+		\item Déterminer une représentation paramétrique de la droite $(d)$ passant par le point E et orthogonale au plan (PQR).
+		\item Montrer que le point L$\left(\dfrac23~;~\dfrac13~;~\dfrac83\right)$ est le projeté orthogonal du point E sur le plan (PQR).
+		\item Déterminer la distance entre le point E et le plan (PQR).
+	\end{enumerate}
+\item En choisissant le triangle EQR comme base, montrer que le volume du tétraèdre EPQR est $\dfrac23$.
+
+On rappelle que le volume $V$ d'un tétraèdre est donné par la formule : 
+
+\[V = \dfrac13 \times \text{aire d'une base} \times \text{hauteur correspondante}.\]
+
+\item Trouver, à l'aide des deux questions précédentes, l'aire du triangle PQR.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4} \hfill 7 points}
+
+\medskip
+
+\emph{Principaux domaines abordés}: Étude de fonctions. Fonction logarithme.
+
+\bigskip
+
+Soit $f$ une fonction définie et dérivable sur $\R$. On considère les points A(1~;~3) et B(3~;~5).
+
+On donne ci-dessous $\mathcal{C}_f$ la courbe représentative de $f$ dans un repère orthogonal du plan, ainsi que la tangente (AB) à la courbe $\mathcal{C}_f$ au point A.
+
+\medskip
+
+\begin{center}
+\psset{unit=0.8cm,arrowsize=2pt 3}
+\begin{pspicture*}(-7,-2.25)(8,6.25)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.15pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-7,-2.25)(8,6.25)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-7}{8}{x dup mul 1 add ln 3 add 2 ln sub}
+\psplot[linestyle=dashed]{-7}{8}{x 2 add}
+\uput[dr](1,3){A}\uput[ul](3,5){B}
+\psdots[dotstyle=+,dotangle=45,dotscale=1.5](1,3)(3,5)
+\uput[d](-5.5,5.75){\red $\mathcal{C}_f$}
+\end{pspicture*}
+\end{center}
+
+\emph{Les trois parties de l'exercice peuvent être traitées de manière indépendante.}
+
+\bigskip
+
+\textbf{Partie A}
+
+\medskip
+
+\begin{enumerate}
+\item Déterminer graphiquement les valeurs de $f(1)$ et $f'(1)$.
+\item La fonction $f$ est définie par l'expression $f(x) = \ln \left(ax^2 + 1\right) + b$, où $a$ et $b$ sont des nombres réels positifs.
+	\begin{enumerate}
+		\item Déterminer l'expression de $f'(x)$.
+		\item Déterminer les valeurs de $a$ et $b$ à l'aide des résultats précédents.
+
+	\end{enumerate}
+\end{enumerate} 
+
+\bigskip
+
+\textbf{Partie B}
+
+\medskip
+
+On admet que la fonction $f$ est définie sur $\R$ par 
+
+\[f(x) = \ln \left(x^2 + 1\right) + 3 - \ln (2).\]
+
+\medskip
+
+\begin{enumerate}
+\item Montrer que $f$ est une fonction paire.
+\item Déterminer les limites de $f$ en $+\infty$ et en $-\infty$.
+\item Déterminer l'expression de $f'(x)$.
+
+Étudier le sens de variation de la fonction $f$ sur $\R$.
+
+Dresser le tableau des variations de $f$ en y faisant figurer la valeur exacte du minimum ainsi que les limites de $f$ en $-\infty$ et $+\infty$.
+\item À l'aide du tableau des variations de $f$, donner les valeurs du réel $k$ pour lesquelles l'équation $f(x) = k$ admet deux solutions.
+\item Résoudre l'équation $f(x) = 3 + \ln 2$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie C}
+
+\medskip
+
+On rappelle que la fonction $f$ est définie sur $R$ par $f(x) = \ln \left(x^2 + 1\right) + 3 - \ln (2)$.
+
+\medskip
+
+\begin{enumerate}
+\item Conjecturer, par lecture graphique, les abscisses des éventuels points d'inflexion
+de la courbe $\mathcal{C}_f$.
+\item Montrer que, pour tout nombre réel $x$, on a : $f''(x) = \dfrac{2\left(1 - x^2\right)}{\left(x^2 + 1\right)^2}$.
+\item En déduire le plus grand intervalle sur lequel la fonction $f$ est convexe.
+\end{enumerate}
+
+\newpage
+
+\begin{center}
+
+\textbf{\Large ANNEXE à rendre avec la copie}
+
+\vspace{5cm}
+
+\psset{unit=1.5cm}
+\begin{pspicture}(6.5,5.8)
+\pspolygon(0.5,1)(2.9,0.5)(2.9,3.7)(0.5,4.2)%ABFE
+\psline(2.9,0.5)(5.6,1)(5.6,4.2)(2.9,3.7)%BCGF
+\psline(5.6,4.2)(3.2,4.7)(0.5,4.2)%GHE
+\psline[linestyle=dashed](0.5,1)(3.2,1.5)(5.6,1)%ADC
+\psline[linestyle=dashed](3.2,1.5)(3.2,4.7)%DH
+\psline[linewidth=1.3pt]{->}(0.5,1)(1.3,0.84)
+\psline[linewidth=1.3pt]{->}(0.5,1)(1.4,1.16)
+\psline[linewidth=1.3pt]{->}(0.5,1)(0.5,2.06)
+\uput[dl](0.5,1){A} \uput[d](2.9,0.5){B} \uput[r](5.6,1){C} \uput[d](3.2,1.5){D}
+\uput[l](0.5,4.2){E} \uput[u](2.9,3.7){F} \uput[r](5.6,4.2){G} \uput[u](3.2,4.7){H}
+\uput[d](0.7,0.9){$\vect{\imath}$} \uput[u](0.95,1.08){$\vect{\jmath}$} \uput[l](0.5,1.53){$\vect{k}$}
+
+
+\end{pspicture}
+\end{center}
+\end{document}

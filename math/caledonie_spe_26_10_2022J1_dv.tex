@@ -1,0 +1,412 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+%\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\newcommand{\euro}{\eurologo{}}
+%Merci pour le sujet à Florence Vigne et Sébastien Dibos
+%Tapuscrit : Denis Vergès
+\usepackage{pst-plot,pst-tree,pst-all,pst-node,pst-text,pst-eucl,pstricks-add}%,pst-bezier
+\usepackage{pst-infixplot} 
+\usepackage{twoopt}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=2.5cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\newcommand{\vectt}[1]{\overrightarrow{\,\mathstrut\text{#1}\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Nouvelle-Calédonie 26 octobre 2022 sujet 1},
+allbordercolors = white,
+pdfstartview=FitH}
+\usepackage[french]{babel}
+\DecimalMathComma
+\usepackage[np]{numprint}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\e}{\text{\,e\,}}
+\setlength\parindent{0mm}
+\setlength\parskip{3pt}
+
+\begin{document}
+
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Nouvelle-Calédonie Jour 1}}
+\rfoot{\small{26 octobre 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Nouvelle-Calédonie 26 octobre 2022 Jour 1~\decofourright\\[7pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ }}
+
+\bigskip
+
+Durée de l'épreuve : \textbf{4 heures}
+
+\medskip
+
+L'usage de la calculatrice avec mode examen actif est autorisé
+
+\medskip
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 et \textbf{ne doit traiter que ces 3 exercices}
+\end{center}
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \quad 7 points\hfill}
+
+\medskip
+
+\textbf{Principaux domaines abordés :} fonctions, fonction logarithme; convexité.
+
+\medskip
+
+On considère la fonction $f$ définie sur l'intervalle $]0~;~+\infty[$ par
+
+\[f(x) = x^2 - 6x + 4\ln (x).\]
+
+On admet que la fonction $f$ est deux fois dérivable sur l'intervalle $]0~;~+ \infty[$.
+
+On note $f$' sa dérivée et $f''$ sa dérivée seconde.
+
+On note $\mathcal{C}_f$ la courbe représentative de la fonction $f$ dans un repère orthogonal.
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Déterminer $\displaystyle\lim_{x \to 0} f(x)$.
+	
+Interpréter graphiquement ce résultat.
+		\item Déterminer $\displaystyle\lim_{x \to + \infty} f(x)$.
+	\end{enumerate}	
+\item
+	\begin{enumerate}
+		\item Déterminer $f'(x)$ pour tout réel $x$ appartenant à $]0~;~+ \infty[$.
+
+		\item Étudier le signe de $f'(x)$ sur l'intervalle $]0~;~+ \infty[$.
+		
+En déduire le tableau de variations de $f$.
+	\end{enumerate}
+\item Montrer que l'équation $f(x) = 0$ admet une unique solution dans l'intervalle [4~;~5].
+\item On admet que, pour tout $x$ de $]0~;~+ \infty[$, on a :
+
+\[f''(x) = \dfrac{2x^2 - 4}{x^2}.\]
+
+	\begin{enumerate}
+		\item Étudier la convexité de la fonction $f$ sur $]0~;~+ \infty[$.
+		
+On précisera les valeurs exactes des coordonnées des éventuels points d'inflexion de $\mathcal{C}_f$.
+		\item On note A le point de coordonnées $\left(\sqrt 2~;~f\left(\sqrt 2~\right)\right)$.
+		
+Soit $t$ un réel strictement positif tel que $t \ne \sqrt 2$. Soit $M$ le point de coordonnées $(t~;~ f(t))$.
+
+En utilisant la question 4. a, indiquer, selon la valeur de $t$, les positions relatives du segment [A$M$] et de la courbe $\mathcal{C}_f$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \quad 7 points\hfill}
+
+\medskip
+
+\textbf{Principaux domaines abordés :}
+suites ;
+fonctions, fonction exponentielle.
+
+\medskip
+
+On considère la fonction $f$ définie sur $\R$ par
+
+\[f(x) = x^3\e^x.\]
+
+On admet que la fonction $f$ est dérivable sur $\R$ et on note $f'$ sa fonction dérivée.
+
+\medskip
+
+\begin{enumerate}
+\item On définit la suite $\left(u_n\right)$ par $u_0 = - 1$ et, pour tout entier naturel $n,\: u_{n+1} = f\left(u_n\right)$.
+	\begin{enumerate}
+		\item Calculer $u_1$ puis $u_2$.
+		
+On donnera les valeurs exactes, puis les valeurs approchées à $10^{-3}$.
+		\item On considère la fonction \texttt{fonc}, écrite en langage Python ci-dessous.
+
+\smallskip
+
+\begin{minipage}{0.524\linewidth}
+On rappelle qu'en langage Python, 
+
+\og \texttt{i in range (n)}\fg{} signifie que 
+
+\texttt{i} varie de 0 à \texttt{n -1}.
+\end{minipage}\hfill
+\begin{minipage}{0.40\linewidth}
+\begin{tabular}{|l l|}\hline
+\texttt{def}& \texttt{fonc (n)} :\\
+&\texttt{u =- 1}\\
+&\texttt{for i in range(n) :}\\
+&\quad \texttt{u=u**3*exp(u)}\\
+&\texttt{return u}\\\hline
+\end{tabular}
+\end{minipage}
+
+Déterminer, sans justifier, la valeur renvoyée par \texttt{fonc (2)} arrondie à $10^{-3}$.
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Démontrer que, pour tout $x$ réel, on a $f'(x) = x^2\e^x(x + 3)$.
+		\item Justifier que le tableau de variations de $f$ sur $\R$ est celui représenté
+ci-dessous :
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(7,2.5)
+\psframe(7,2.5)
+\psline(0,2)(7,2)\psline(1,0)(1,2.5)
+\uput[u](0.5,1.9){$x$} \uput[u](1.2,1.9){$- \infty$} \uput[u](4,1.9){$-3$} \uput[u](6.5,1.9){$+ \infty$} 
+\rput(0.5,1){$f$}\uput[d](1.2,2){0}\uput[u](4,0){$- 27\e^{-3}$}\uput[d](6.5,2){$+ \infty$}
+\psline{->}(1.5,1.5)(3.5,0.5)\psline{->}(4.5,0.52)(6.5,1.5)
+\end{pspicture}
+\end{center}
+
+		\item Démontrer, par récurrence, que pour tout entier naturel $n$, on a :
+		
+\[- 1 \leqslant u_n \leqslant u_{n+1} \leqslant 0.\]
+		
+		\item En déduire que la suite $\left(u_n\right)$ est convergente.
+		\item On note $\ell$ la limite de la suite $\left(u_n\right)$.
+
+On rappelle que $\ell$ est solution de l'équation $f(x) = x$.
+
+Déterminer $\ell$. (Pour cela, on admettra que l'équation $x^2\e^x - 1 = 0$ possède une seule solution dans $\R$ et que celle-ci est strictement supérieure à $\dfrac12$).
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \quad 7 points\hfill }
+
+\medskip
+
+\textbf{Principaux domaines abordés :} géométrie dans l'espace.
+
+\medskip
+
+Une maison est constituée d'un parallélépipède rectangle ABCDEFGH surmonté d'un prisme EFIHGJ dont une base est le triangle EIF isocèle en I.
+
+Cette maison est représentée ci-dessous.
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(12.2,6)
+\pspolygon(0.4,3.4)(0.4,1.5)(1.9,0.4)(1.9,2.3)%HDAE
+\psline(1.9,0.4)(7.9,0.8)(7.9,2.7)(1.9,2.3)%ABFE
+\psline[linestyle=dashed](0.4,1.5)(6.4,1.9)(6.4,3.8)(0.4,3.4)%DCGH
+\psline[linestyle=dashed](7.9,0.8)(6.4,1.9)%BC
+\pspolygon(7.9,2.7)(6.4,3.8)(3.4,5.5)(4.9,4.4)%FGJI
+\psline(4.9,4.4)(1.9,2.3)%IE
+\psline(3.4,5.5)(0.4,3.4)%JH
+\psline[linewidth=1.5pt]{->}(1.9,0.4)(3.9,0.533)
+\psline[linewidth=1.5pt]{->}(1.9,0.4)(1.15,0.95)
+\psline[linewidth=1.5pt]{->}(1.9,0.4)(1.9,2.3)
+\psline(11.6,0.3)(7.9,1.2)
+\psline[linestyle=dashed](7.9,1.2)(7.15,1.35)
+\uput[d](1.9,0.4){A} \uput[dr](7.9,0.8){B} \uput[r](6.4,1.9){C} \uput[l](0.4,1.5){D}
+\uput[u](1.9,2.3){E} \uput[r](7.9,2.7){F} \uput[ur](6.4,3.8){G} \uput[ul](0.4,3.4){H}
+\uput[l](4.9,4.4){I} \uput[u](3.4,5.5){J} \uput[r](11.6,0.3){R} \uput[dl](1.7,0.6){$\vect{\jmath}$}
+\uput[dr](2.9,0.45){$\vect{\imath}$} \uput[r](1.9,1.35){$\vect{k}$}
+\psdots(11.6,0.3)
+\end{pspicture}
+\end{center}
+
+On a AB $= 3$,\quad AD $= 2$,\quad AE $= 1$.
+
+On définit les vecteurs $\vect{\imath}= \dfrac13\vect{\text{AB}},\:\vect{\jmath}= \dfrac12\vect{\text{AD}}, \:\vect{k} = \vect{\text{AE}}$.
+
+On munit ainsi l'espace du repère orthonormé $\left(\text{A}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$.
+
+\medskip
+
+\begin{enumerate}
+\item Donner les coordonnées du point G.
+\item Le vecteur $\vect{n}$ de coordonnées $(2~;~0~;~-3)$ est vecteur normal au plan (EHI).
+
+Déterminer une équation cartésienne du plan (EHI).
+\item Déterminer les coordonnées du point I.
+\item Déterminer une mesure au degré près de l'angle $\widehat{\text{EIF}}$.
+\item Afin de raccorder la maison au réseau électrique, on souhaite creuser une tranchée rectiligne depuis un relais électrique situé en contrebas de la maison.
+
+Le relais est représenté par le point R de coordonnées $(6~;~- 3~;~- 1)$.
+
+La tranchée est assimilée à un segment d'une droite $\Delta$ passant par R et dirigée par le vecteur $\vect{u}$ de coordonnées $(-3~;~4~;~1)$. On souhaite vérifier que la tranchée atteindra la maison au niveau de l'arête [BC].
+	\begin{enumerate}
+		\item Donner une représentation paramétrique de la droite $\Delta$.
+		\item On admet qu'une équation du plan (BFG) est $x = 3$.
+		
+Soit K le point d'intersection de la droite $\Delta$ avec le plan (BFG).
+
+Déterminer les coordonnées du point K.
+		\item Le point K appartient-il bien à l'arête [BC] ?
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4} \quad 7 points\hfill}
+
+\medskip
+
+\textbf{Principaux domaines abordés :} 
+probabilités.
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples.\\
+Pour chacune des questions suivantes, une seule des quatre réponses proposées est exacte.\\
+Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point.\\
+Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie. Aucune justification n'est demandée.}
+
+\medskip
+
+On considère un système de communication binaire transmettant des $0$
+et des $1$.
+
+Chaque $0$ ou $1$ est appelé bit.
+
+En raison d'interférences, il peut y avoir des erreurs de transmission:
+
+un $0$ peut être reçu comme un $1$ et, de même, un $1$ peut être reçu comme un $0$.
+
+Pour un bit choisi au hasard dans le message, on note les évènements :
+
+\begin{minipage}{0.48\linewidth}
+
+\begin{itemize}
+\item[$\bullet~~$] $E_0$ : \og le bit envoyé est un $0$ \fg{} ;
+\item[$\bullet~~$] $E_1$ : \og le bit envoyé est un 1 \fg{} ;
+\item[$\bullet~~$] $R_0$ : \og le bit reçu est un $0$\fg{} 
+\item[$\bullet~~$] $R_1$ : \og le bit reçu est un $1$ \fg.
+\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+\begin{center}
+\pstree[treemode=R,nodesepA=0pt,nodesepB=2.5pt,treesep = 1cm,levelsep=2.5cm]{\TR{}}
+{\pstree{\TR{$E_0$~}\taput{0,4}}
+{\TR{$R_0$}\taput{\ldots}
+\TR{$R_1$}\tbput{0,01}
+}
+\pstree{\TR{$E_1$~}\tbput{\ldots}}
+{\TR{$R_0$}\taput{0,02}
+\TR{$R_1$}\tbput{\ldots}
+}}
+\end{center}
+\end{minipage}
+
+On sait que:
+
+$p\left(E_0\right) = 0,4 \:;\quad p_{E_0}\left(R_1\right) = 0,01 \:;\quad p_{E_1}\left(R_0\right) = 0,02$.
+
+On rappelle que la probabilité conditionnelle de $A$ sachant $B$ est notée $p_B(A)$.
+
+On peut ainsi représenter la situation par l'arbre de probabilités ci-dessus.
+
+\medskip
+
+\begin{enumerate}
+\item La probabilité que le bit envoyé soit un $0$ et que le bit reçu soit un $0$ est égale à :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}0,99 &\textbf{b.~~}0,396 &\textbf{c.~~}0,01 &\textbf{d.~~} 0,4
+\end{tabularx}
+\end{center}
+
+\item La probabilité  $p\left(R_0\right)$ est égale à :
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}0,99 &\textbf{b.~~}0,02 &\textbf{c.~~}0,408 &\textbf{d.~~}0,931
+\end{tabularx}
+\end{center}
+\item Une valeur, approchée au millième, de la probabilité $p_{R_1}\left(E_0\right)$ est égale 
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}0,004 &\textbf{b.~~}0,001 &\textbf{c.~~}0,007 &\textbf{d.~~}0,010
+\end{tabularx}
+\end{center}
+\item La probabilité de l'évènement \og  il y a une erreur de transmission \fg{} est égale à :
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}0,03 &\textbf{b.~~}0,016 &\textbf{c.~~}0,16 &\textbf{d.~~}0,015
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+Un message de longueur huit bits est appelé un octet.
+
+On admet que la probabilité qu'un octet soit transmis sans erreur est égale à 0,88.
+
+\begin{enumerate}[resume]
+\item On transmet successivement 10 octets de façon indépendante.
+
+La probabilité, à $10^{-3}$ près, qu'exactement 7 octets soient transmis sans erreur est égale à :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}0,915 &\textbf{b.~~}0,109 &\textbf{c.~~}0,976 &\textbf{d.~~}0,085
+\end{tabularx}
+\end{center}
+\item On transmet successivement 10 octets de façon indépendante.
+
+La probabilité qu'au moins 1 octet soit transmis sans erreur est égale à :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~} $1 - 0,12^{10}$ &\textbf{b.~~}$0,12^{10}$ &\textbf{c.~~}$0,88^{10}$ &\textbf{d.~~} $1- 0,88^{10}$
+\end{tabularx}
+\end{center}
+\item Soit $N$ un entier naturel. On transmet successivement $N$ octets de façon indépendante. 
+
+Soit $N_0$ la plus grande valeur de $N$ pour laquelle la probabilité que les $N$ octets soient tous transmis sans erreur est supérieure ou égale à $0,1$.
+
+On peut affirmer que:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}$N_0 = 17$ &\textbf{b.~~}$N_0 = 18$ &\textbf{c.~~}$N_0 = 19$ &\textbf{d.~~}$N_0 = 20$
+\end{tabularx}
+\end{center}
+\end{enumerate}
+\end{document}

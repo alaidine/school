@@ -1,0 +1,396 @@
+\documentclass[11pt,a4paper,french]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl,pst-3dplot,pstricks-add}
+\usepackage{esvect}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=2.5cm, right=2.5cm, top=2cm, bottom=3cm]{geometry}
+\headheight15 mm
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\newcommand{\e}{\text{e}}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat Spécialité},
+pdftitle = {Centres étrangers groupe 1 Sujet 1 17  mai 2022},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage{babel}
+\usepackage[np]{numprint}
+\renewcommand\arraystretch{1.3}
+\frenchsetup{StandardLists=true}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité sujet 1}
+\lfoot{\small{Centres étrangers}}
+\rfoot{\small{19 mai 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Centres étrangers Groupe 1 D\footnote{Afrique du Sud, Bulgarie, Comores, Djibouti, Kenya, Liban, Lituanie, Madagascar, Mozambique et Ukraine} 19 mai 2022~\decofourright\\[7pt]  Sujet 2\\[7pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}}
+\end{center}
+
+\vspace{0,25cm}
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 exercices et \textbf{ne doit traiter que ces 3 exercices}
+
+Chaque exercice est noté sur 7 points (le total sera ramené sur 20 points).\footnote{Madagascar : chaque exercice est noté sur 6  points. La clarté et la précision de l'argumentation ainsi que la qualité de la rédaction sont notées sur 2 points.}
+
+Les traces de recherche, même incomplètes ou infructueuses, seront prises en compte.
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \quad 6 points\hfill Thème: Probabilités}
+
+\medskip
+
+\emph{Les résultats seront arrondis si besoin à $10^{- 4}$ près}
+
+\medskip
+
+Une étude statistique réalisée dans une entreprise fournit les informations suivantes : 
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] 48\,\% des salariés sont des femmes. Parmi elles, 16,5\,\% exercent une
+profession de cadre ;
+\item[$\bullet~~$] 52\,\% des salariés sont des hommes. Parmi eux, 21,5\,\% exercent une
+profession de cadre.
+\end{itemize}
+\setlength\parindent{0cm}
+
+\medskip
+
+On choisit une personne au hasard parmi les salariés. On considère les évènements suivants:
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] $F$: \og la personne choisie est une femme \fg{} ;
+\item[$\bullet~~$] $C$: \og la personne choisie exerce une profession de cadre \fg.
+\end{itemize}
+\setlength\parindent{0cm}
+
+\medskip
+
+\begin{enumerate}
+\item Représenter la situation par un arbre pondéré.
+\item Calculer la probabilité que la personne choisie soit une femme qui exerce une profession de cadre.
+\item 
+	\begin{enumerate}
+		\item Démontrer que la probabilité que la personne choisie exerce une profession de cadre est égale à $0,191$.
+		\item Les évènements $F$ et $C$ sont-ils indépendants ? Justifier.
+	\end{enumerate}	
+\item Calculer la probabilité de $F$ sachant $C$, notée $P_C(F)$. Interpréter le résultat dans le
+contexte de l'exercice.
+\item On choisit au hasard un échantillon de $15$ salariés. Le grand nombre de salariés
+dans l'entreprise permet d'assimiler ce choix à un tirage avec remise. 
+
+On note $X$ la variable aléatoire donnant le nombre de cadres au sein de
+l'échantillon de 15 salariés.
+
+On rappelle que la probabilité qu'un salarié choisi au hasard soit un cadre est
+égale à $0,191$.
+	\begin{enumerate}
+		\item Justifier que $X$ suit une loi binomiale dont on précisera les paramètres. 
+		\item Calculer la probabilité que l'échantillon contienne au plus 1 cadre.
+		\item Déterminer l'espérance de la variable aléatoire $X$.
+	\end{enumerate}	
+\item Soit $n$ un entier naturel.
+
+On considère dans cette question un échantillon de $n$ salariés.
+
+Quelle doit être la valeur minimale de $n$ pour que la probabilité qu'il y ait au moins un cadre au sein de l'échantillon soit supérieure ou égale à $0,99$ ?
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \quad 6 points\hfill Thème: Géométrie dans l'espace}
+
+\medskip
+
+On considère le cube ABCDEFGH de côté 1 représenté ci-dessous.
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(7.2,6.9)
+\psframe(0.2,0.2)(5.2,5.2)%ABFE
+\psline(5.2,0.2)(6.8,1.5)(6.8,6.5)(5.2,5.2)%BCGF
+\psline(6.8,6.5)(1.8,6.5)(0.2,5.2)%GHE
+\psline[linestyle=dashed](0.2,0.2)(1.8,1.5)(6.8,1.5)%ADC
+\psline[linestyle=dashed](1.8,1.5)(1.8,6.5)%DH
+\uput[dl](0.2,0.2){A} \uput[dr](5.2,0.2){B} \uput[r](6.8,1.5){C} \uput[l](1.8,1.5){D}
+\uput[l](0.2,5.2){E} \uput[r](5.2,5.2){F} \uput[ur](6.8,6.5){G} \uput[ul](1.8,6.5){H}
+\end{pspicture}
+\end{center}
+
+On munit l'espace du repère orthonormé $\left(\text{A}~;~\vect{\text{AB}},\, \vect{\text{AD}},\, \vect{\text{AE}}\right)$.
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Justifier que les droites (AH) et (ED) sont perpendiculaires.
+		\item Justifier que la droite (GH) est orthogonale au plan (EDH).
+		\item En déduire que la droite (ED) est orthogonale au plan (AGH).
+	\end{enumerate}	
+\item Donner les coordonnées du vecteur $\vect{\text{ED}}$.
+
+Déduire de la question 1. c. qu'une équation cartésienne du plan (AGH) est:
+
+\[y - z = 0.\]
+
+\item On désigne par L le point de coordonnées $\left(\dfrac23~;~1~;~0\right)$.
+	\begin{enumerate}
+		\item Déterminer une représentation paramétrique de la droite (EL).
+		\item Déterminer l'intersection de la droite (EL) et du plan (AGH).
+		\item Démontrer que le projeté orthogonal du point L sur le plan (AGH) est le
+point K de coordonnées $\left(\dfrac23~;~\dfrac12~;~\dfrac12\right)$.
+		\item Montrer que la distance du point L au plan (AGH) est égale à $\dfrac{\sqrt{2}}{2}$.
+		\item Déterminer le volume du tétraèdre LAGH.
+		
+On rappelle que le volume $V$ d'un tétraèdre est donné par la formule :
+
+\[V = \dfrac13 \times (\text{aire de la base}) \times \text{hauteur}.\]
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \quad 6 points\hfill Thème: Fonctions; Suites}
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples.\\
+Pour chacune des questions suivantes, une seule des quatre réponses proposées est exacte.\\
+Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point.\\
+Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie.\\Aucune justification n'est demandée.}
+
+\medskip
+
+\begin{enumerate}
+\item Soit $g$ la fonction définie sur $\R$ par $g(x) = x^{\np{1000}} + x$. 
+
+On peut affirmer que :
+	\begin{enumerate}
+		\item la fonction $g$ est concave sur $\R$.
+		\item la fonction $g$ est convexe sur $\R$.
+		\item la fonction $g$ possède exactement un point d'inflexion.
+		\item la fonction $g$ possède exactement deux points d'inflexion.
+	\end{enumerate}
+\item On considère une fonction $f$ définie et dérivable sur $\R$. 
+
+\begin{minipage}{0.48\linewidth}
+On note $f'$ sa fonction dérivée.
+
+On note $\mathcal{C}$ la courbe représentative de $f$.
+
+On note $\Gamma$ la courbe représentative de $f'$.
+
+On a tracé ci-contre la courbe $\Gamma$.
+\end{minipage}\hfill
+\begin{minipage}{0.4\linewidth}
+\psset{unit=1.2cm}
+\begin{pspicture*}(-1.8,-1.6)(3.2,1.4)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.15pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-1.8,-1.6)(3.2,1.4)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-1.8}{3.2}{x 1 add 2.71828 x exp div}
+\uput[ur](2,0.45){\red $\Gamma$}
+\end{pspicture*}
+\end{minipage}
+
+On note $T$ la tangente à la courbe $\mathcal{C}$ au point d'abscisse 0 .
+
+On peut affirmer que la tangente $T$ est parallèle à la droite d'équation : 
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}$y =x$ &\textbf{b.~~}$y = 0$\\
+\textbf{c.~~}$y = 1$&\textbf{d.~~}$x = 0$
+\end{tabularx}
+\end{center}
+\item On considère la suite $\left(u_n\right)$ définie pour tout entier naturel $n$ par $u_n = \dfrac{(-1)^n}{n+1}$.
+
+On peut affirmer que la suite $\left(u_n\right)$ est : 
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}majorée et non minorée.&\textbf{b.~~}minorée et non majorée.\\
+\textbf{c.~~}bornée.				&\textbf{d.~~}non majorée et non minorée.
+\end{tabularx}
+\end{center}
+
+\item Soit $k$ un nombre réel non nul.
+
+Soit $\left(v_n\right)$  une suite définie pour tout entier naturel $n$.
+
+On suppose que $v_0 = k$ et que pour tout $n$, on a $v_n \times v_{n+1} < 0$.
+
+On peut affirmer que $v_{10}$ est :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}positif. &\textbf{a.~~} négatif.\\
+\textbf{c.~~}du signe de $k$.&\textbf{d.~~}du signe de $- k$.
+\end{tabularx}
+\end{center}
+\item On considère la suite $\left(w_n\right)$ définie pour tout entier naturel $n$ par : 
+
+\[w_{n+1} = 2w_n - 4\quad \text{et}\quad  w_2 = 8.\]
+
+On peut affirmer que:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}$w_0 = 0$&\textbf{b.~~} $w_0 = 5$.\\
+\textbf{c.~~}$w_0 = 10$.&\textbf{d.~~}Il n'est pas possible de calculer $w_0$.
+\end{tabularx}
+\end{center}
+
+\item \footnote{Cette question ne fait pas partie du sujet donné à Madagascar} On considère la suite $\left(a_n\right)$ définie pour tout entier naturel $n$ par :
+
+\[a_{n+1} = \dfrac{\text{e}^n}{\text{e}^n + 1}a_n\quad \text{et} \quad a_0 = 1.\]
+
+On peut affirmer que :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} la suite $\left(a_n\right)$ est strictement croissante.&\textbf{b.~~}la suite $\left(a_n\right)$ est strictement décroissante.\\
+\textbf{c.~~} la suite $\left(a_n\right)$ n'est pas monotone.&\textbf{d.~~} la suite $\left(a_n\right)$ est constante.
+\end{tabularx}
+\end{center}
+\item Une cellule se reproduit en se divisant en deux cellules identiques, qui se divisent à leur tour, et ainsi de suite. 
+
+On appelle temps de génération le temps nécessaire pour qu'une cellule donnée se divise en deux cellules.
+
+On a mis en culture 1 cellule. Au bout de 4 heures, il y a environ \np{4000} cellules.
+
+On peut affirmer que le temps de génération est environ égal à :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}moins d'une minute.&\textbf{b.~~}12 minutes.\\
+\textbf{c.~~}20 minutes.		&\textbf{d.~~}1 heure.
+\end{tabularx}
+\end{center}
+
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4} \quad 6 points\hfill Thème: Fonctions, Fonction exponentielle, Fonction logarithme; Suites}
+
+\medskip
+
+\textbf{Partie A}
+
+\medskip
+
+On considère la fonction $f$ définie pour tout réel $x$ de ]0~;~1] par:
+
+\[f(x) = \text{e}^{-x} + \ln (x).\]
+
+\smallskip
+
+\begin{enumerate}
+\item Calculer la limite de $f$ en $0$.
+\item On admet que $f$ est dérivable sur ]0~;~1]. On note $f'$ sa fonction dérivée.
+
+Démontrer que, pour tout réel $x$ appartenant à ]0~;~1], on a :
+
+\[f'(x) = \dfrac{1 - x\text{e}^{-x}}{x}\]
+
+\item Justifier que, pour tout réel $x$ appartenant à ]0~;~1], on a $x\text{e}^{-x} < 1$.
+
+En déduire le tableau de variation de $f$ sur ]0~;~1].
+\item Démontrer qu'il existe un unique réel $\ell$ appartenant à ]0~;~1] tel que $f(\ell) = 0$.
+\end{enumerate}
+
+\medskip
+
+\textbf{Partie B}
+
+\medskip
+
+\begin{enumerate}
+\item On définit deux suites $\left(a_n\right)$ et $\left(b_n\right)$ par:
+
+\[\left\{\begin{array}{l c l}
+a_0& =& \dfrac{1}{10}\\
+b_0& =& 1
+\end{array}\right.\: \text{et, pour tout entier naturel }\: n,\left\{\begin{array}{l c l}
+a_{n+1}&=&\text{e}^{-b_n}\\
+b_{n+1}&=&\text{e}^{-a_n}
+\end{array}\right.\]
+
+	\begin{enumerate}
+		\item Calculer $a_1$ et $b_1$. On donnera des valeurs approchées à $10^{-2}$ près.
+		\item On considère ci-dessous la fonction \texttt{termes}, écrite en langage Python.
+		
+\begin{center}
+
+\begin{tabular}{|l|}\hline
+\texttt{def termes (n) :}\\
+\quad \texttt{a=1/10}\\
+\quad \texttt{b=1}\\
+\quad \texttt{for k in range(0,n) :}\\
+\qquad \texttt{c= \ldots}\\
+\qquad \texttt{b  = \ldots}\\
+\qquad \texttt{a = c}\\
+\quad \texttt{return(a,b)}\\ \hline
+\end{tabular}
+\end{center}
+
+Recopier et compléter sans justifier le cadre ci-dessus de telle sorte que la fonction termes calcule les termes des suites $\left(a_n\right)$ et $\left(b_n\right)$.
+	\end{enumerate}
+\item On rappelle que la fonction $x \longmapsto \text{e}^{-x}$ est décroissante sur $\R$.
+	\begin{enumerate}
+		\item Démontrer par récurrence que, pour tout entier naturel $n$, on a :
+		
+		\[0 < a_n \leqslant a_{n+1} \leqslant b_{n+1} \leqslant b_n \leqslant 1\]
+		
+		\item En déduire que les suites $\left(a_n\right)$ et $\left(b_n\right)$ sont convergentes.
+	\end{enumerate}	
+\item On note $A$ la limite de $\left(a_n\right)$ et $B$ la limite de $\left(b_n\right)$.
+
+On admet que $A$ et $B$ appartiennent à l'intervalle ]0~;~1], et que $A = \text{e}^{-B}$ et $B = \text{e}^{-A}$.
+	\begin{enumerate}
+		\item Démontrer que $f(A) = 0$.
+		\item Déterminer $A - B$.
+	\end{enumerate}
+\end{enumerate}
+\end{document}

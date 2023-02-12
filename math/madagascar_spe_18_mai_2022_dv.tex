@@ -1,0 +1,429 @@
+\documentclass[11pt,a4paper,french]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl,pst-3dplot,pstricks-add}
+\usepackage{esvect}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=2.5cm, right=2.5cm, top=2cm, bottom=3cm]{geometry}
+\headheight15 mm
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\newcommand{\e}{\text{e}}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat Spécialité},
+pdftitle = {Centres étrangers groupe 1 Sujet 1 18  mai 2022},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage{babel}
+\usepackage[np]{numprint}
+\renewcommand\arraystretch{1.3}
+\frenchsetup{StandardLists=true}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité sujet 1}
+\lfoot{\small{Centres étrangers}}
+\rfoot{\small{18 mai 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Centres étrangers Groupe 1  (D)\footnote{Afrique du Sud, Bulgarie, Comores, Djibouti, Kenya, Liban, Lituanie, Madagascar, Mozambique et Ukraine} 18 mai 2022~\decofourright\\[7pt]  Sujet 1\\[7pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}}
+\end{center}
+
+\vspace{0,25cm}
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 exercices et \textbf{ne doit traiter que ces 3 exercices}
+
+Chaque exercice est noté sur 6 points (le total sera ramené sur 20 points)\footnote{Chaque exercice est noté sur 7 points au Liban.}
+
+La clarté et la précision de l'argumentation ainsi que la qualité de la rédaction sont notées sur 2 points.
+
+Les traces de recherche, même incomplètes ou infructueuses, seront prises en compte.
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \quad 6 points\hfill }
+
+\medskip
+
+\begin{tabularx}{\linewidth}{|X|}\hline
+\textbf{Principaux domaines abordés :} Probabilités\\ \hline
+\end{tabularx}
+
+\medskip
+
+Dans une station de ski, il existe deux types de forfait selon l'âge du skieur :
+
+\begin{itemize}
+\item un forfait JUNIOR pour les personnes de moins de 25 ans ;
+\item un forfait SENIOR pour les autres.
+\end{itemize}
+
+ Par ailleurs, un usager peut choisir, en plus du forfait correspondant à son âge l'\emph{option  coupe-file} qui permet d'écourter le temps d'attente aux remontées mécaniques.
+
+On admet que:
+\begin{itemize}
+\item[$\bullet~~$] 20\,\% des skieurs ont un forfait JUNIOR ;
+\item[$\bullet~~$] 80\,\% des skieurs ont un forfait SENIOR ;
+\item[$\bullet~~$] parmi les skieurs ayant un forfait JUNIOR, 6\,\% choisissent l'option coupe-file ;
+\item[$\bullet~~$] parmi les skieurs ayant un forfait SENIOR, 12,5\,\% choisissent l'option coupe-file.
+\end{itemize}
+
+On interroge un skieur au hasard et on considère les évènements :
+
+\begin{itemize}
+\item[$\bullet~~$] $J$ : \og le skieur a un forfait JUNIOR \fg ;
+\item[$\bullet~~$] $C$ : \og le skieur choisit l'option coupe-file \fg.
+\end{itemize}
+
+\medskip
+
+\emph{Les deux parties peuvent être traitées de manière indépendante}
+
+\bigskip
+
+\textbf{Partie A}
+
+\medskip
+
+\begin{enumerate}
+\item Traduire la situation par un arbre pondéré.
+\item Calculer la probabilité $P(J \cap C)$.
+\item Démontrer que la probabilité que le skieur choisisse l'option coupe-file est égale à $0,112$.
+\item Le skieur a choisi l'option coupe-file. Quelle est la probabilité qu'il s'agisse d'un
+skieur ayant un forfait SENIOR ? Arrondir le résultat à $10^{-3}$.
+\item Est-il vrai que les personnes de moins de vingt-cinq ans représentent moins de 15\,\% des skieurs ayant choisi l'option coupe-file ? Expliquer.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B}
+
+\medskip
+
+On rappelle que la probabilité qu'un skieur choisisse l'option coupe-file est égale à 0,112.
+
+On considère un échantillon de $30$ skieurs choisis au hasard.
+
+Soit $X$ la variable aléatoire qui compte le nombre des skieurs de l'échantillon ayant
+choisi t'option coupe-file.
+
+\medskip
+
+\begin{enumerate}
+\item On admet que la variable aléatoire $X$ suit une loi binomiale. 
+
+Donner les paramètres de cette loi.
+\item Calculer la probabilité qu'au moins un des $30$ skieurs ait choisi l'option coupe-file. Arrondir le résultat à $10^{-3}$.
+\item Calculer la probabilité qu'au plus un des $30$ skieurs ait choisi l'option coupe-file. Arrondir le résultat à $10^{-3}$.
+\item Calculer l'espérance mathématique de la variable aléatoire $X$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \quad 6 points\hfill Thème: Fonction exponentielle }
+
+\medskip
+
+\begin{tabularx}{\linewidth}{|X|}\hline
+\textbf{Principaux domaines abordés:} Suites ; Fonctions, Fonction logarithme.\\ \hline
+\end{tabularx}
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples.\\
+Pour chacune des questions suivantes, une seule des quatre réponses proposées
+est exacte.\\
+Une réponse exacte rapporte un point. Une réponse fausse, une réponse multiple ou
+l'absence de réponse à une question ne rapporte ni n'enlève de point.\\
+Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie. Aucune justification n'est demandée.}
+
+\bigskip
+\begin{enumerate}
+\item Un récipient contenant initialement 1 litre d'eau est laissé au soleil.
+
+Toutes les heures, le volume d'eau diminue de 15\,\%.
+
+Au bout de quel nombre entier d'heures le volume d'eau devient-il inférieur à un quart de litre ? 
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~} 2 heures &\textbf{b.~~}  8 heures .&\textbf{c.~~}  9 heures
+&\textbf{d.~~}  13 heures 
+\end{tabularx}
+\end{center}
+
+\item  On considère la fonction $f$ définie sur l'intervalle $]0~;~+\infty[$ par $f(x) = 4\ln (3x)$.
+
+Pour tout réel $x$ de l'intervalle $]0~;~+\infty[$ , on a :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} $f(2x) = f(x) + \ln (24) - \ln \left(\frac32\right)$&\textbf{b.~~}  $f(2x) = f(x) + \ln (16)$\\
+\textbf{c.~~} $f(2x) = \ln (2) + f(x)$& \textbf{d.~~} $f(2x) = 2f(x)$
+\end{tabularx}
+\end{center}
+\item  On considère la fonction $g$ définie sur l'intervalle $]1~;~+\infty[$ par : 
+
+\[g(x) = \dfrac{\ln (x)}{x - 1}.\]
+
+
+On note $\mathcal{C}_g$ la courbe représentative de la fonction $g$ dans un repère orthogonal. La courbe $\mathcal{C}_g$ admet :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} une asymptote verticale
+et une asymptote horizontale.&\textbf{b.~~} une asymptote verticale
+et aucune asymptote horizontale.\\
+\textbf{c.~~} aucune asymptote verticale et une asymptote horizontale.&\textbf{d.~~} 
+aucune asymptote verticale .et aucune asymptote horizontale.
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+Dans la suite de l'exercice, on considère la fonction $h$ définie sur l'intervalle ]0~;~2] par:
+
+\[h(x) = x^2(1 + 2\ln (x)).\]
+
+On note $\mathcal{C}_h$ la courbe représentative de $h$ dans un repère du plan. 
+
+On admet que $h$ est deux fois dérivable sur l'intervalle ]0~;~2].
+
+On note $h'$ sa dérivée et $h''$ sa dérivée seconde.
+
+On admet que, pour tout réel $x$ de l'intervalle ]0~;~2], on a : 
+
+\[h'(x) = 4x(1 + \ln (x)).\]
+
+\begin{enumerate}[resume]
+\item Sur l'intervalle $\left]\dfrac{1}{\text{e}}~;~2\right]$, la fonction $h$ s'annule :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} exactement 0 fois. &\textbf{b.~~}  exactement 1 fois.\\
+ \textbf{c.~~} exactement 2 fois. &\textbf{d.~~}  exactement 3 fois.
+\end{tabularx}
+\end{center}
+
+\item Une équation de la tangente à $\mathcal{C}_h$ au point d'abscisse $\sqrt{\text{e}}$ est:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} $y = \left(6\text{e}^{\frac12}\right) .{} x $&
+\textbf{b.~~} $y = \left(6\sqrt{\text{e}}\right).{} x + 2\text{e}$\\
+\textbf{c.~~} $y = 6\text{e}^{\frac{x}{2}}$&\textbf{d.~~} $y = \left(6\text{e}^{\frac12}\right) .{} x - 4\text{e}$.
+\end{tabularx}
+\end{center}
+
+\item Sur l'intervalle ]0~;~2], le nombre de points d'inflexion de la courbe $\mathcal{C}_h$ est égal à :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~} 0&\textbf{b.~~} 1 &\textbf{c.~~}  2 &\textbf{d.~~}  3
+\end{tabularx}
+\end{center}
+
+\item \footnote{Uniquement au Liban} On considère la suite $\left(u_n\right)$ définie pour tout entier naturel $n$ par 
+
+\[u_{n+1} = \dfrac12u_n + 3\quad \text{et}\quad u_0 = 6.\]
+
+On peut affirmer que :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} la suite $\left(u_n\right)$ est strictement croissante.&\textbf{b.~~} la suite $\left(u_n\right)$ est strictement décroissante.\\
+\textbf{c.~~} la suite $\left(u_n\right)$ n'est pas monotone. &\textbf{d.~~} la suite $\left(u_n\right)$ est constante.
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \quad 6 points\hfill Thème: Fonction exponentielle }
+
+\medskip
+
+\begin{tabularx}{\linewidth}{|X|}\hline
+\textbf{Principaux domaines abordés :} Suites;
+Fonctions, Fonction exponentielle.\\ \hline
+\end{tabularx}
+
+\bigskip
+
+\textbf{Partie A}
+
+\medskip
+
+On considère la fonction $f$ définie pour tout réel $x$ par:
+
+\[ f(x) = 1+x - \text{e}^{0,5x - 2}.\]
+
+On admet que la fonction $f$ est dérivable sur $\R$. On note $f'$ sa dérivée.
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Déterminer la limite de la fonction $f$ en $- \infty$.
+		\item Démontrer que, pour tout réel $x$ non nul, $f(x) = 1+ 0,5x\left(2 - \dfrac{\text{e}^{0,5x}}{0,5x} \times \text{e}^{-2}\right)$.
+		
+En déduire la limite de la fonction $f$ en $+\infty$. 
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Déterminer $f'(x)$ pour tout réel $x$.
+		\item Démontrer que l'ensemble des solutions de l'inéquation $f'(x) < 0$ est l'intervalle 
+		
+		$]4 + 2\ln (2)~;~+\infty[$.
+	\end{enumerate}	
+\item Déduire des questions précédentes le tableau de variation de la fonction $f$ sur $\R$. On fera figurer la valeur exacte de l'image de $4 + 2\ln (2)$ par $f$.
+\item Montrer que l'équation $f(x) = 0$ admet une unique solution sur l'intervalle $[-1~;~0]$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B}
+
+\medskip
+
+On considère la suite $\left(u_n\right)$ définie par $u_0 = 0$ et, pour tout entier naturel $n$,
+\: $u_{n+1} = f\left(u_n\right)$ où $f$ est la fonction définie à la partie A.
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Démontrer par récurrence que, pour tout entier naturel $n$, on a : 
+		
+		\[u_n \leqslant u_{n+1} \leqslant 4.\]
+		
+		\item En déduire que la suite $\left(u_n\right)$ converge. On notera $\ell$ la limite.
+	\end{enumerate}	
+\item 
+	\begin{enumerate}
+		\item On rappelle que $f$ vérifie la relation $\ell = f(\ell)$.
+		
+Démontrer que $\ell  = 4$.
+		\item ~
+		
+\begin{minipage}{0.48\linewidth}On considère la fonction \texttt{valeur} écrite ci-contre dans le langage Python :
+		\end{minipage}\hfill 
+\begin{minipage}{0.48\linewidth}
+\begin{tabular}{|l|}\hline
+\texttt{def valeur (a) :}\\
+\quad \texttt{u = 0}\\
+\quad \texttt{n = 0}\\
+\quad \texttt{while u $\leqslant$ a:}\\
+\qquad \texttt{u=1 + u - exp(0.5*u - 2)}\\
+\qquad \texttt{n = n+1}\\ 
+\quad return \texttt{n}\\ \hline
+\end{tabular}
+\end{minipage}
+
+L'instruction \texttt{valeur}(3.99) renvoie la valeur 12.
+
+Interpréter ce résultat dans le contexte de l'exercice.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4} \quad 6 points\hfill Thème: Fonction exponentielle }
+
+\medskip
+
+\begin{tabularx}{\linewidth}{|X|}\hline
+\textbf{Principaux domaines abordés :} Géométrie dans l'espace\\ \hline
+\end{tabularx}
+
+\medskip
+
+L'espace est muni d'un repère orthonormé \Oijk.
+
+On considère les points A$(5~;~0~;~-1)$, B$(1~;~4~;~-1)$, C(1~;~0~;~3), D(5~;~4~;~3) et E(10~;~9~;~8).
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Soit R le milieu du segment [AB].
+		
+Calculer les coordonnées du point R ainsi que les coordonnées du vecteur $\vect{\text{AB}}$.
+		\item %Soit $\mathcal{P}_1$ le plan passant par le point R et dont $\vect{\text{AB}}$ est un vecteur normal. Démontrer qu'une équation cartésienne du plan $\mathcal{P}_1$ est:
+
+%\[x - y - 1 = 0.\]
+
+
+
+
+		\item Démontrer que le point E appartient au plan $\mathcal{P}_1$ et que EA = EB .
+	\end{enumerate}	
+\item  On considère le plan $\mathcal{P}_2$ d'équation cartésienne $x - z - 2 = 0$. 
+	\begin{enumerate}
+		\item Justifier que les plans $\mathcal{P}_1$ et $\mathcal{P}_2$ sont sécants.
+		\item On note $\Delta$ la droite d'intersection de $\mathcal{P}_1$ et $\mathcal{P}_2$.
+		
+Démontrer qu'une représentation paramétrique de la droite $\Delta$ est :
+
+\[\left\{\begin{array}{l c r}
+x&=&2+t\\
+y&=&1+t \\
+z&=&t\end{array}\right.(t \in \R).\]
+
+	\end{enumerate}
+\item  On considère le plan $\mathcal{P}_3$ d'équation cartésienne $y + z - 3 = 0$.
+
+Justifier que la droite $\Delta$ est sécante au plan $\mathcal{P}_3$ en un point $\Omega$ dont on déterminera les coordonnées.
+\end{enumerate}
+
+\medskip
+
+Si S et T sont deux points distincts de l'espace, on rappelle que l'ensemble des points M de l'espace tels que MS = MT est un plan, appelé plan médiateur du segment [ST]. On admet que les plans $\mathcal{P}_1$,\: $\mathcal{P}_2$ et $\mathcal{P}_3$ sont les plans médiateurs respectifs des
+segments [AB], [AC] et [AD].
+
+\begin{enumerate}[resume]
+\item
+	\begin{enumerate}
+		\item Justifier que $\Omega \text{A} = \Omega \text{B} = \Omega \text{C} = \Omega \text{D}$.
+		\item En déduire que les points A, B, C et D appartiennent à une même sphère dont
+on précisera le centre et le rayon.
+	\end{enumerate}
+\end{enumerate}
+\end{document}

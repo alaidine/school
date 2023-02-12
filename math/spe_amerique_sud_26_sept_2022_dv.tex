@@ -1,0 +1,322 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+%Relecture : 
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl}
+\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Amérique du Sud 26 septembre 2021},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Amérique du Sud}}
+\rfoot{\small{26 septembre 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Amérique du Sud 26 septembre 2022~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ Jour 1}}
+\end{center}
+
+\vspace{0,25cm}
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 exercices et \textbf{ne doit traiter que ces 3 exercices}
+
+\medskip
+
+Chaque exercice est noté sur 7 points (le total sera ramené sur 20 points).
+
+Les traces de recherche, même incomplètes ou infructueuses, seront prises en compte.
+
+\bigskip
+
+\textbf{\textsc{Exercice 1 Probabilités} \hfill 7 points}
+
+\medskip
+
+\textbf{PARTIE A}
+
+\medskip
+
+Le système d'alarme d'une entreprise fonctionne de telle sorte que, si un danger se présente, l'alarme s'active avec une probabilité de $0,97$. 
+
+La probabilité qu'un danger se présente est de $0,01$ et la probabilité que l'alarme s'active est de \np{0,01465}.
+
+On note $A$ l'évènement \og  l'alarme s'active \fg{}  et $D$ l'événement \og  un danger se présente \fg . 
+
+On note $\overline{M}$ l'évènement contraire d'un évènement $M$ et $P(M)$ la probabilité de l'évènement $M$.
+
+\medskip
+
+\begin{enumerate}
+\item Représenter la situation par un arbre pondéré qui sera complété au fur et à mesure de l'exercice.
+\item  
+	\begin{enumerate}
+		\item Calculer la probabilité qu'un danger se présente et que l'alarme s'active.
+		\item En déduire la probabilité qu'un danger se présente sachant que l'alarme s'active.
+Arrondir le résultat à $10^{-3}$.
+	\end{enumerate}
+\item  Montrer que la probabilité que l'alarme s'active sachant qu'aucun danger ne s'est présenté est $0,005$.
+\item On considère qu'une alarme ne fonctionne pas normalement lorsqu'un danger se présente et qu'elle ne s'active pas ou bien lorsqu'aucun danger ne se présente et qu'elle s'active.
+
+Montrer que la probabilité que l'alarme ne fonctionne pas normalement est inférieure à $0,01$.
+\end{enumerate}
+
+\medskip
+
+\textbf{PARTIE B}
+
+\medskip
+
+Une usine fabrique en grande quantité des systèmes d'alarme. On prélève successivement et au hasard $5$ systèmes d'alarme dans la production de l'usine. Ce prélèvement est assimilé à un tirage avec remise.
+
+On note $S$ l'évènement \og  l'alarme ne fonctionne pas normalement \fg{}  et on admet que
+
+$P(S) = \np{0,00525}$.
+
+On considère $X$ la variable aléatoire qui donne le nombre de systèmes d'alarme ne fonctionnant pas normalement parmi les $5$ systèmes d'alarme prélevés.
+
+Les résultats seront arrondis à $10^{-4}$.
+
+\medskip
+
+\begin{enumerate}
+\item Donner la loi de probabilité suivie par la variable aléatoire X et préciser ses paramètres.
+\item Calculer la probabilité que, dans le lot prélevé, un seul système d'alarme ne fonctionne pas normalement.
+\item Calculer la probabilité que, dans le lot prélevé, au moins un système d'alarme ne fonctionne pas normalement.
+\end{enumerate}
+
+\medskip
+
+\textbf{PARTIE C}
+
+\medskip
+
+Soit $n$ un entier naturel non nul. On prélève successivement et au hasard $n$ systèmes d'alarme. Ce prélèvement est assimilé à un tirage avec remise.
+
+Déterminer le plus petit entier $n$ tel que la probabilité d'avoir, dans le lot prélevé, au moins un système d'alarme qui ne fonctionne pas normalement soit supérieure à $0,07$.
+
+\bigskip
+
+\textbf{\textsc{Exercice 2 Suites} \hfill 7 points}
+
+\medskip
+
+Soit $\left(u_n\right)$ la suite définie par $u_0 = 4$ et, pour tout entier naturel $n$,\: $u_{n+1} = \dfrac15 u_n^2$.
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Calculer $u_1$ et $u_2$.
+		\item Recopier et compléter la fonction ci-dessous écrite en langage Python.
+Cette fonction est nommée \emph{suite\_u} et prend pour paramètre l'entier naturel $p$.
+
+Elle renvoie la valeur du terme de rang $p$ de la suite $\left(u_n\right)$.
+
+\begin{center}
+\begin{tabular}{l}
+\texttt{def suite\_u(p) :}\\
+	\quad \texttt{u= \ldots}\\
+	\quad \texttt{for i in range(1,\ldots) :}\\
+	\quad \quad \texttt{u =\ldots}\\
+	\quad \texttt{return u}\\
+	\end{tabular}
+\end{center}
+
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Démontrer par récurrence que pour tout entier naturel $n$,\: $0 < u_n \leqslant 4$.
+		\item Démontrer que la suite $\left(u_n\right)$ est décroissante.
+		\item En déduire que la suite $\left(u_n\right)$ est convergente.
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Justifier que la limite $\ell$ de la suite $\left(u_n\right)$ vérifie l'égalité $\ell = \dfrac15 \ell^2$.
+		\item En déduire la valeur de $\ell$.
+	\end{enumerate}
+\item Pour tout entier naturel $n$, on pose $v_n = \ln \left(u_n\right)$ et $w_n = v_n - \ln (5)$.
+	\begin{enumerate}
+		\item Montrer que, pour tout entier naturel $n$,\: $v_{n+1} = 2v_n - \ln (5)$.
+		\item Montrer que la suite $\left(w_n\right)$ est géométrique de raison 2.
+		\item Pour tout entier naturel $n$, donner l'expression de $w_n$ en fonction de $n$ et montrer que $v_n = \ln \left(\dfrac45 \right) \times 2^n + \ln (5)$.
+	\end{enumerate}
+\item Calculer $\displaystyle\lim_{n \to + \infty} v_n$ et retrouver $\displaystyle\lim_{n \to + \infty} u_n$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3 Fonctions, fonction logarithme} \hfill 7 points}
+
+\medskip
+
+Soit $g$ la fonction définie sur l'intervalle $]0~;~+\infty[$ par 
+
+\[g(x) = 1+ x^2[1 - 2 \ln (x)].\]
+
+La fonction $g$ est dérivable sur l'intervalle $]0~;~+\infty[$ et on note $g'$ sa fonction dérivée.
+
+On appelle $\mathcal{C}$ la courbe représentative de la fonction $g$ dans un repère orthonormé du plan.
+
+\medskip
+
+\textbf{PARTIE A}
+
+\medskip
+
+\begin{enumerate}
+\item Justifier que $g(\text{e})$ est strictement négatif.
+\item Justifier que $\displaystyle\lim_{x \to + \infty} g(x) = - \infty$.
+\item 
+	\begin{enumerate}
+		\item Montrer que, pour tout $x$ appartenant à l'intervalle $]0~;~+\infty[$,\: $g'(x) = -4x \ln (x)$.
+		\item Étudier le sens de variation de la fonction $g$ sur l'intervalle $]0~;~+\infty[$ 
+		\item Montrer que l'équation $g(x) = 0$ admet une unique solution, notée $\alpha$, sur l'intervalle $[1~;~+\infty[$.
+		\item Donner un encadrement de $\alpha$ d'amplitude $10^{-2}$
+	\end{enumerate}
+\item Déduire de ce qui précède le signe de la fonction $g$ sur l'intervalle $[1~;~+\infty[$.
+\end{enumerate}
+
+\medskip
+
+\textbf{PARTIE B}
+
+\medskip
+
+\begin{enumerate}
+\item On admet que, pour tout $x$ appartenant à l'intervalle $[1~;~\alpha]$, $g''(x) = - 4[\ln (x) + 1]$.
+
+Justifier que la fonction $g$ est concave sur l'intervalle $[1~;~\alpha]$.
+\end{enumerate}
+
+\begin{minipage}{0.48\linewidth}
+\begin{enumerate}[resume]
+\item Sur la figure ci-contre, A et B sont les points de la
+courbe $\mathcal{C}$ d'abscisses respectives 1 et $\alpha$.
+	\begin{enumerate}
+		\item Déterminer l'équation réduite de la droite (AB).
+		\item En déduire que pour tout réel $x$ appartenant à
+l'intervalle $[1~;~\alpha]$,\: $g(x) \geqslant \dfrac{- 2}{\alpha - 1} x + \dfrac{2\alpha}{\alpha - 1}$.
+	\end{enumerate}
+\end{enumerate}
+\end{minipage} \hfill
+\begin{minipage}{0.48\linewidth}
+\begin{center}
+\psset{unit=1.3cm,arrowsize=2pt 3}
+\begin{pspicture}(-0.2,-0.2)(2.5,3)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.15pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(2.5,3)
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=red]{1}{1.9}{1 x ln 2 mul sub x dup mul mul 1 add}
+\uput[ul](1,2){\red A}\uput[ur](1.9,0){\red B}\uput[d](1.9,0.05){$\alpha$}
+\uput[ur](1.5,1.5){\red $\mathcal{C}$}
+\end{pspicture}
+\end{center}
+\end{minipage}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4 Géométrie dans l'espace} \hfill 7 points}
+
+\medskip
+
+Dans la figure ci-dessous, ABCDEFGH est un parallélépipède rectangle tel que 
+
+AB $= 5$, AD $= 3$ et AE $= 2$.
+
+L'espace est muni d'un repère orthonormé d'origine A dans lequel les points B, D et E ont respectivement pour coordonnées (5~;~0~;~0), (0~;~3~;~0) et (0~;~0~;~2).
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(9,5)
+%\psgrid
+\psframe(0.2,0.2)(7.2,3)%ABFE
+\psline(7.2,0.2)(8.4,1.6)(8.4,4.4)(7.2,3)%BCGF
+\psline(8.4,4.4)(1.6,4.4)(0.2,3)%GHE
+\psline[linestyle=dashed](0.2,0.2)(1.6,1.6)(8.4,1.6)%ADC
+\psline[linestyle=dashed](1.6,1.6)(1.6,4.4)%DH
+\pspolygon[linestyle=dotted,linewidth=1.5pt](0.2,0.2)(8.4,1.6)(3,4.4)%ACM
+\uput[dl](0.2,0.2){A} \uput[dr](7,0.2){B} \uput[r](8.4,1.6){C}
+\uput[ur](1.6,1.6){D} \uput[l](0.2,3){E} \uput[ul](7.2,3){F}
+\uput[ur](8.4,4.4){G} \uput[ul](1.6,4.4){H} \uput[u](3,4.4){M}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Donner, dans le repère considéré, les coordonnées des points H et G.
+		\item Donner une représentation paramétrique de la droite (GH).
+	\end{enumerate}	
+\item Soit M un point du segment [GH] tel que $\vect{\text{HM}} =k\vect{\text{HG}}$ avec $k$ un nombre réel de l'intervalle [0~;~1].
+	\begin{enumerate}
+		\item Justifier que les coordonnées de M sont $(5k~;~3~;~2)$.
+		\item En déduire que $\vect{\text{AM}} \cdot \vect{\text{CM}} = 25k^2  - 25k + 4$.
+		\item Déterminer les valeurs de $k$ pour lesquelles AMC est un triangle rectangle en
+M.
+	\end{enumerate}
+\end{enumerate}	
+
+Dans toute la suite de l'exercice, on considère que le point M a pour coordonnées (1~;~3~;~2).
+
+On admet que le triangle AMC est rectangle en M .
+
+On rappelle que le volume d'un tétraèdre est donné par la formule $\dfrac13 \times\text{Aire de la base}  \times h$ où $h$ est la hauteur relative à la base.
+
+\begin{enumerate}[resume]
+\item On considère le point K de coordonnées (1~;~3~;~0).
+	\begin{enumerate}
+		\item Déterminer une équation cartésienne du plan (ACD).
+		\item Justifier que le point K est le projeté orthogonal du point M sur le plan (ACD).
+		\item En déduire le volume du tétraèdre MACD.
+	\end{enumerate}	
+\item On note P le projeté orthogonal du point D sur le plan (AMC).
+
+Calculer la distance DP ; en donner une valeur arrondie à $10^{-1}$.
+\end{enumerate}
+
+\end{document}

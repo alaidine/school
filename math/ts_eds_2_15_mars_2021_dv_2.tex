@@ -1,0 +1,421 @@
+\documentclass[10pt,a4paper,french]{article}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{amsmath,amssymb,amstext}
+\usepackage{fancybox}
+\usepackage{tabularx}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage[euler]{textgreek}
+\usepackage{textcomp,enumitem,mathcomp}
+\usepackage[table]{xcolor}
+\usepackage{lscape}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\newcommand{\euro}{\eurologo{}}
+\usepackage{pst-tree,pst-plot,pst-text,pst-func,pst-math,pst-bspline,pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=2cm, bottom=2.cm]{geometry}
+\usepackage{esvect}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O},~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O},~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O},~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat Général},
+pdftitle = {épreuve de spécialité - session 2021 },
+allbordercolors = white,
+pdfstartview=FitH}
+\usepackage[np]{numprint}
+\renewcommand\arraystretch{1.4}
+\newcommand{\e}{\text{e}}
+%\frenchbsetup{StandardLists=true}
+\usepackage{babel}
+\begin{document}
+\setlength\parindent{0mm}
+
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat Général Épreuve d'enseignement de spécialité }
+\lfoot{\small{Épreuve 2}}
+\rfoot{\small{session 15 mars 2021}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+\begin{center}{\textbf{\Large\decofourleft~BACCALAURÉAT GÉNÉRAL}~\decofourright\\[6pt]
+{\large ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}\\[6pt]
+\textbf{Session 15 mars 2021 Sujet 2}}
+
+\vspace{1cm}
+
+Durée de l’épreuve : \textbf{4 heures}
+
+\vspace{0,5cm}
+
+\emph{L’usage de la calculatrice avec mode examen actif est autorisé.\\
+L’usage de la calculatrice sans mémoire, \og type collège \fg, est autorisé.}
+
+\end{center}
+
+\vspace{0,25cm}
+
+Le candidat traite \textbf{4 exercices} : les exercices 1, 2 et 3 communs à tous les candidats et un seul des deux exercices A ou B.
+
+\bigskip
+
+\textbf{Exercice 1, commun à tous les candidats \hfill 5 points}
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples. Pour chacune des questions suivantes, une seule des quatre réponses proposées est exacte.\\ Une réponse exacte rapporte un point. Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point.\\ Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie.\\ Aucune justification n'est demandée.}
+
+\bigskip
+
+\textbf{PARTIE I}
+
+\medskip
+
+Dans un centre de traitement du courrier, une machine est équipée d'un lecteur optique automatique de reconnaissance de l'adresse postale. Ce système de lecture permet de reconnaître convenablement 97\,\% des adresses ; le reste du courrier, que l'on qualifiera d'illisible pour la machine, est orienté vers un employé du centre chargé de lire les adresses.
+
+Cette machine vient d'effectuer la lecture de neuf adresses. On note $X$ la variable aléatoire qui donne le nombre d'adresses illisibles parmi ces neuf adresses.
+
+On admet que $X$ suit la loi binomiale de paramètres $n = 9$ et $p = 0,03$.
+
+\medskip
+
+
+\begin{enumerate}
+\item La probabilité qu'aucune des neuf adresses soit illisible est égale, au centième près, à :
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~} 0 &\textbf{b.~} 1 &\textbf{c.~} $0,24$ &\textbf{d.~} $0,76$
+\end{tabularx}
+\end{center}
+\item  La probabilité qu'exactement deux des neuf adresses soient illisibles pour la machine est:
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~} $\binom{9}{2} \times  0,97^2 \times 0,03^7$ &\textbf{b.~} $\binom{7}{2} \times  0,97^2 \times 0,03^7$\\
+\textbf{c.~} $\binom{9}{2} \times 0,97^7 \times  0,03^2$ &\textbf{d.~} $\binom{7}{2} \times 0,97^7 \times 0,03^2$
+\end{tabularx}
+\end{center}
+\item  La probabilité qu'au moins une des neuf adresses soit illisible pour la machine est:
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~} $P(X < 1)$ &\textbf{b.~} $P(X \leqslant 1)$ &\textbf{c.~} $P(X \geqslant 2)$ &\textbf{d.~} $1- P(X = 0)$
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+\medskip
+
+\textbf{PARTIE II}
+
+\medskip
+
+Une urne contient 5 boules vertes et 3 boules blanches, indiscernables au toucher.
+
+On tire au hasard successivement et sans remise deux boules de l'urne.
+
+On considère les évènements suivants:
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] $V_1$ : \og la première boule tirée est verte \fg{} ;
+\item[$\bullet~~$] $B_1$ : \og la première boule tirée est blanche \fg{} ;
+\item[$\bullet~~$] $V_2$ : \og la seconde boule tirée est verte \fg{} ;
+\item[$\bullet~~$] $B_2$ : \og la seconde boule tirée est blanche \fg.
+\end{itemize}
+\setlength\parindent{0cm}
+
+\begin{enumerate}[resume]
+\item  La probabilité de $V_2$ sachant que $V_1$ est réalisé, notée $P_{V_1}\left(V_2\right)$, est égale à :
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~}$\dfrac{5}{8}$&\textbf{b.~} $\dfrac{4}{7}$&\textbf{c.~} $\dfrac{5}{14}$&\textbf{d.~}
+$\dfrac{20}{56}$
+\end{tabularx}
+\end{center}
+\item La probabilité de l'évènement $V_2$ est égale à :
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~}$\dfrac{5}{8}$&\textbf{b.~} $\dfrac{5}{7}$&\textbf{c.~} $\dfrac{3}{28}$&\textbf{d.~}
+$\dfrac{9}{7}$
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Exercice 2, commun à tous les candidats \hfill 6 points}
+
+\medskip
+
+On considère les suites $\left(u_n\right)$ et $\left(v_n\right)$ définies pour tout entier naturel $n$ par :
+
+\[\left\{\begin{array}{l !{=} l}
+u_0		& v_0 = 1\\
+u_{n+1}	&  u_n +v_n\\
+v_{n+1}	&  2u_n + v_n
+\end{array}\right.\]
+
+Dans toute la suite de l'exercice, on \textbf{admet} que les suites $\left(u_n\right)$ et $\left(v_n\right)$ \textbf{sont strictement positives}.
+
+\medskip
+
+\begin{enumerate}
+\item
+	\begin{enumerate}
+		\item Calculez $u_1$ et $v_1$.
+		\item Démontrer que la suite $\left(v_n\right)$ est strictement croissante, puis en déduire que, pour tout entier naturel $n$,\: $v_n \geqslant 1$.
+		\item Démontrer par récurrence que, pour tout entier naturel $n$, on a : $u_n \geqslant  n + 1$.
+		\item En déduire la limite de la suite $\left(u_n\right)$.
+	\end{enumerate}
+\item On pose, pour tout entier naturel $n$ :
+
+\[r_n = \dfrac{v_n}{u_n}.\]
+
+On admet que:
+
+\[r_n^2 = 2 + \dfrac{(- 1)^{n+1}}{u_n^2}\]
+
+	\begin{enumerate}
+		\item Démontrer que pour tout entier naturel $n$ :
+
+\[- \dfrac{1}{u_n^2} \leqslant \dfrac{(- 1)^{n+1}}{u_n^2} \leqslant \dfrac{1}{u_n^2}.\]
+		\item En déduire :
+
+\[\displaystyle\lim_{n \to + \infty} \dfrac{(- 1)^{n+1}}{u_n^2}.\]
+
+		\item Déterminer la limite de la suite $\left(r_n^2\right)$ et en déduire que $\left(r_n\right)$ converge vers $\sqrt{2}$.
+		\item  Démontrer que pour tout entier naturel $n$,
+
+\[r_{n+1} = \dfrac{2 + r_n}{1 + r_n}.\]
+
+		\item On considère le programme suivant écrit en langage Python :
+		
+\begin{center}
+\fbox{
+\begin{tabularx}{0.5\linewidth}{X}
+\textbf{def seuil()}:\\
+\qquad  n = 0\\
+\qquad  r = 1\\
+\qquad \textbf{while} abs(r-sqrt(2)) > 10**(-4) :\\
+\quad \qquad r = (2+r)/(1+r)\\
+\quad \qquad n = n+1\\
+\qquad \textbf{return} n\\
+\end{tabularx}
+}
+\end{center}
+
+\smallskip
+
+(abs désigne la valeur absolue, sqrt la racine carrée et 10** (-4) représente $10^{-4}$).
+
+La valeur de $n$ renvoyée par ce programme est 5.
+
+ À quoi correspond-elle ?
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Exercice 3, commun à tous les candidats \hfill 4 points}
+
+\medskip
+
+Dans l'espace rapporté à un repère orthonormé \Oijk, on considère les points:
+
+\text{A} de coordonnées (2~;~0~;~0), B de coordonnées (0~;~3~;~0) et C de coordonnées
+(0~;~0~;~1).
+
+\psset{unit=1cm}
+\begin{center}
+\begin{pspicture}(-0.5,-0.5)(12,6)
+\pspolygon[fillstyle=solid,fillcolor=gray!20,linestyle=dashed](0,0)(2.4,4.5)(10.4,2)
+%\psgrid
+\psline(0,0)(8,0)(10.4,2)(10.4,4.5)(8,2.5)(8,0)
+\psline(8,2.5)(0,2.5)(0,0)
+\psline(0,2.5)(2.4,4.5)(10.4,4.5)
+\psline[linestyle=dashed](0,0)(2.4,2)(2.4,4.5)
+\psline[linestyle=dashed](2.4,2)(10.4,2)
+\uput[dl](0,0){A}\uput[u](2.4,4.5){C}\uput[r](10.4,2){B}\uput[d](2.5,2){O}
+\end{pspicture}
+\end{center}
+
+\medskip
+
+L'objectif de cet exercice est de calculer l'aire du triangle ABC.
+
+\medskip
+
+\begin{enumerate}
+\item
+	\begin{enumerate}
+		\item Montrer que le vecteur $\vect{n}\begin{pmatrix}3\\2\\6\end{pmatrix}$ est normal au plan (ABC).
+		\item En déduire qu'une équation cartésienne du plan (ABC) est : $3x + 2y + 6z - 6 = 0$.
+	\end{enumerate}
+\item  On note $d$ la droite passant par O et orthogonale au plan (ABC).
+	\begin{enumerate}
+		\item Déterminer une représentation paramétrique de la droite $d$.
+		\item Montrer que la droite $d$ coupe le plan (ABC) au point H de coordonnées $\left(\frac{18}{49}~;~\frac{12}{49}~;~\frac{36}{49}\right)$.
+		\item Calculer la distance OH.
+	\end{enumerate}
+\item  On rappelle que le volume d'une pyramide est donné par: $V = \dfrac{1}{3}\mathcal{B}h$, où $\mathcal{B}$ est l'aire d'une
+base et $h$ est la hauteur de la pyramide correspondant à cette base.
+
+En calculant de deux façons différentes le volume de la pyramide OABC, déterminer l'aire du triangle ABC.
+\end{enumerate}
+
+\bigskip
+
+\textbf{EXERCICE au choix du candidat \hfill 5 points}
+
+\medskip
+
+\textbf{Le candidat doit traiter un seul des deux exercices A ou B.}
+
+\textbf{Il indique sur sa copie l'exercice choisi: exercice A ou exercice B.}
+
+
+\textbf{Pour éclairer son choix, les principaux domaines abordés par chaque exercice sont indiqués dans un encadré.}
+
+\bigskip
+
+\textbf{Exercice A}
+
+\medskip
+
+\begin{tabularx}{\linewidth}{|X|}\hline
+\textbf{Principaux domaines abordés: Fonction exponentielle; dérivation.}\\ \hline
+\end{tabularx}
+
+\bigskip
+
+\parbox{0.34\linewidth}{\raggedright Le graphique ci-contre représente, dans un repère orthogonal, les courbes
+$\mathcal{C}_f$ et $\mathcal{C}_g$ des fonctions $f$ et $g$ définies sur $\R$ par :
+
+\[f(x) = x^2\text{e}^{-x}\quad \text{et} \quad g(x) = \text{e}^{-x}.\]}
+\hfill \parbox{0.65\linewidth}{\psset{xunit=1.8cm,yunit=0.9cm}
+\begin{pspicture*}(-2.5,-1)(2.5,9)
+\multido{\n=0+2}{5}{\psline[linewidth=0.1pt](-2.5,\n)(2.5,\n)}
+\multido{\n=-2+1}{5}{\psline[linewidth=0.1pt](\n,-1)(\n,9)}
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle,Dy=2]{->}(0,0)(-2.5,-1)(2.5,9)
+\psplot[linewidth=1.25pt,linecolor=blue,plotpoints=2000]{-2.5}{2.5}{x dup mul 2.71828 x exp div}
+\psplot[linewidth=1.25pt,linecolor=red,plotpoints=2000]{-2.5}{2.5}{2.71828 x neg exp}
+\psline[linestyle=dashed,linewidth=1.25pt](-0.6,-1)(-0.6,9)
+\psdots(-0.6,0.656)(-0.6,1.822)
+\uput[r](-0.6,0.656){\footnotesize $N$}\uput[r](-0.6,1.822){\footnotesize $M$}
+\uput[r](-1.4,7){\blue $\mathcal{C}_f$}\uput[l](-2.1,7.4){\red $\mathcal{C}_g$}
+\end{pspicture*}}
+
+\textbf{La question 3 est indépendante des questions 1 et 2.}
+
+\medskip
+
+\begin{enumerate}
+\item
+	\begin{enumerate}
+		\item Déterminer les coordonnées des points d'intersection de $\mathcal{C}_f$ et $\mathcal{C}_g$.
+		\item Étudier la position relative des courbes $\mathcal{C}_f$ et $\mathcal{C}_g$.
+	\end{enumerate}
+\item  Pour tout nombre réel $x$ de l'intervalle $[-1~;~1]$, on considère les points $M$ de coordonnées $(x~;~f(x))$ et $N$ de coordonnées $(x~;~g(x))$, et on note $d(x)$ la distance $MN$. On admet que : $d(x)= \text{e}^{-x} - x^2\text{e}^{-x}$.
+
+On admet que la fonction $d$ est dérivable sur l'intervalle $[-1~;~1]$ et on note $d'$ sa fonction dérivée.
+	\begin{enumerate}
+		\item Montrer que $d'(x) = \text{e}^{-x}\left(x^2 - 2x - 1\right)$.
+		\item En déduire les variations de la fonction $d$ sur l'intervalle $[-1~;~1]$.
+		\item Déterminer l'abscisse commune $x_0$ des points $M_0$ et $N_0$ permettant d'obtenir une
+distance $d\left(x_0\right)$ maximale, et donner une valeur approchée à $0,1$ près de la distance $M_0N_0$.
+	\end{enumerate}
+\item  Soit $\Delta$ la droite d'équation $y = x + 2$.
+
+On considère la fonction $h$ dérivable sur $\R$ et définie par: $h(x) = \text{e}^{-x} - x - 2$.
+
+En étudiant le nombre de solutions de l'équation $h(x) = 0$, déterminer le nombre de points d'intersection de la droite $\Delta$ et de la courbe $\mathcal{C}_g$.
+\end{enumerate}
+
+\textbf{Exercice B}
+
+\medskip
+
+\begin{tabularx}{\linewidth}{|X|}\hline
+\textbf{Principaux domaines abordés :
+Fonction logarithme ; dérivation.}\\ \hline
+\end{tabularx}
+
+\bigskip
+
+\textbf{Partie I: Étude d'une fonction auxiliaire}
+
+\medskip
+
+Soit $g$ la fonction définie sur $]0~;~+\infty[$ par :
+
+\[g(x) = \ln(x) + 2x - 2.\]
+
+\smallskip
+
+\begin{enumerate}
+\item Déterminer les limites de $g$ en $+\infty$ et $0$.
+\item Déterminer le sens de variation de la fonction $g$ sur $]0~;~ +\infty[$.
+\item Démontrer que l'équation $g(x) = 0$ admet une unique solution $\alpha$ sur $]0~;~ +\infty[$.
+\item Calculer $g(1)$ puis déterminer le signe de $g$ sur $]0~;~ +\infty[$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie II : Étude d'une fonction } \boldmath $f$\unboldmath
+
+\medskip
+
+On considère la fonction $f$, définie sur $]0~;~ +\infty[$ par:
+
+\[f(x) = \left(2 - \dfrac{1}{x}\right)\left(\ln (x) - 1\right).\]
+
+\begin{enumerate}
+\item
+	\begin{enumerate}
+		\item On admet que la fonction $f$ est dérivable sur $]0~;~ +\infty[$ et on note $f'$ sa dérivée.
+
+Démontrer que, pour tout $x$ de $]0~;~ +\infty[$, on a :
+
+\[f'(x) = \dfrac{g(x)}{x^2}.\]
+
+		\item Dresser le tableau de variation de la fonction $f$ sur $]0~;~ +\infty[$. Le calcul des limites n'est pas demandé.
+	\end{enumerate}
+\item  Résoudre l'équation $f(x) = 0$ sur $]0~;~ +\infty[$ puis dresser le tableau de signes de $f$ sur l'intervalle $]0~;~ +\infty[$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie III : Étude d'une fonction \boldmath $F$\unboldmath{} admettant pour dérivée la fonction \boldmath $f$\unboldmath}
+
+\medskip
+
+On admet qu'il existe une fonction $F$ dérivable sur $]0~;~ +\infty[$ dont la dérivée $F'$ est la fonction $f$.
+
+Ainsi, on a : $F' = f$.
+
+On note $\mathcal{C}_F$ la courbe représentative de la fonction $F$ dans un repère orthonormé \Oij. On ne cherchera pas à déterminer une expression de $F(x)$.
+
+\medskip
+
+\begin{enumerate}
+\item Étudier les variations de $F$ sur $]0~;~ +\infty[$.
+\item La courbe $\mathcal{C}_F$ représentative  de $F$ admet-elle des tangentes parallèles à l'axe des abscisses ?
+
+Justifier la réponse.
+\end{enumerate}
+\end{document}

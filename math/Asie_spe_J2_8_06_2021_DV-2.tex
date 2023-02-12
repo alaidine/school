@@ -1,0 +1,438 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb,MnSymbol}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+%Relecture : 
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl}
+\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3.1cm, bottom=3cm]{geometry}
+\setlength\headheight{13.6pt}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\newcommand{\e}{\text{e}}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP réf : 21MATJ2JAI},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Polynésie juin 2021},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Asie}}
+\rfoot{\small{8 juin 2021}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Asie 8 juin 2021 Jour 2~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}}
+\end{center}
+
+\vspace{0,25cm}
+
+\textbf{Le candidat traite 4 exercices : les exercices 1, 2 et 3 communs à tous les candidats et un seul des deux exercices A ou B.}
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+
+\textbf{Cet exercice est un questionnaire à choix multiples (QCM)}
+
+\medskip
+
+
+\emph{Pour chaque question, trois affirmations sont proposées, une seule de ces affirmations est exacte.\\
+Le candidat recopiera sur sa copie le numéro de chaque question et la lettre de la réponse choisie pour celle-ci.\\
+ AUCUNE JUSTIFICATION n'est demandée. Une réponse fausse ou l'absence de réponse n'enlève aucun point.}
+
+\medskip
+
+\begin{enumerate}
+\item On considère la fonction $f$ définie sur $\R$ par 
+
+\[f(x) = \left(x^2 - 2x - 1\right)\e^x.\]
+
+\textbf{A.} La fonction dérivée de $f$ est la fonction définie par $f'(x) = (2x - 2)\e^x$.
+
+\textbf{B.} La fonction $f$ est décroissante sur l'intervalle $]-\infty~;~2]$.
+
+\textbf{C.} $\displaystyle\lim_{x \to - \infty} f(x) = 0$.
+\item  On considère la fonction $f$ définie sur $\R$ par $f(x) = \dfrac{3}{5 + \e^x}$.
+
+Sa courbe représentative dans un repère admet :
+
+\textbf{A.} une seule asymptote horizontale;
+
+\textbf{B.} une asymptote horizontale et une asymptote verticale; 
+
+\textbf{C.} deux asymptotes horizontales.
+\item  On donne ci-dessous la courbe $\mathcal{C}_{f''}$ représentant la fonction dérivée seconde $f''$  d'une fonction $f$ définie et deux fois dérivable sur l'intervalle $[-3,5~;~6]$.
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(-4,-3)(7,5)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.1pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-4,-3)(7,5)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{-3.5}{6}{x 3 exp 0.1 mul  x dup mul 0.4 mul sub 1.1 x mul sub 3 add}
+\uput[u](6.8,0){$x$} \uput[r](0,4.8){$y$}
+\uput[u](1.5,4){Courbe de la fonction dérivée seconde $f''$}
+\end{pspicture}
+\end{center}
+\textbf{A.} La fonction $f$ est convexe sur l'intervalle $[-3~;~3]$.
+
+\textbf{B.}  La fonction $f$ admet trois points d'inflexion.
+
+\textbf{C.} La fonction dérivée $f'$ de $f$ est décroissante sur l'intervalle [0~;~2].
+
+
+\item  On considère la suite $\left(u_n\right)$ définie pour tout entier naturel $n$ par $u_n = n^2 - 17n + 20$. 
+
+\textbf{A.} La suite $\left(u_n\right)$ est minorée.
+
+\textbf{B.} La suite $\left(u_n\right)$ est décroissante.
+
+\textbf{C.} L'un des termes de la suite $\left(u_n\right)$ est égal à \np{2021}.
+\item On considère la suite $\left(u_n\right)$ définie par $u_0 = 2$ et, pour tout entier naturel $n$,\,
+
+ $u_{n+1} = 0,75u_n +5$.
+
+On considère la fonction \og seuil \fg{} suivante écrite en Python :
+
+\begin{center}
+\begin{tabular}{|l|}\hline
+def seuil() :\\
+\quad u = 2\\
+\quad n = 0\\
+\quad while u < 45 :\\
+\qquad u = 0,75*u + 5\\
+\qquad n = n+1\\
+\quad return n\\ \hline
+\end{tabular}
+\end{center}
+
+Cette fonction renvoie :
+
+\textbf{A.} la plus petite valeur de $n$ telle que $u_n \geqslant  45$ ;
+ 
+\textbf{B.} la plus petite valeur de $n$ telle que $u_n  < 45$ ;
+ 
+\textbf{C.} la plus grande valeur de $n$ telle que $u_n \geqslant 45$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+
+On considère un pavé droit ABCDEFGH tel que AB = AD = 1 et AE = 2, représenté ci- dessous.
+
+Le point I est le milieu du segment [AE]. Le point K est le milieu du segment [DC]. Le point L
+est défini par: $\vect{\text{DL}} = \dfrac{3}{2}\vect{\text{AI}}$. N est le projeté orthogonal du point D sur le plan (AKL).
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 4}
+\begin{pspicture}(6,10)
+\pspolygon(0.5,0.5)(4,0)(4,7.2)(0.5,7.7)%BCGF
+\uput[d](0.5,0.5){B} \uput[d](4,0){C} \uput[ul](4,7.2){G} \uput[ul](0.5,7.7){F} 
+\psline(4,0)(5,1.4)(5,8.6)(4,7.2)%CDHG
+\uput[r](5,1.4){D} \uput[ur](5,8.6){H} \uput[d](1.5,1.9){A} \uput[dr](4.5,0.7){K}\uput[l](1.5,5.5){I}
+\uput[r](5,7.3){L}
+\psline(5,8.6)(1.5,9.1)(0.5,7.7)%HEF
+\uput[u](1.5,9.1){E}
+\psline[linestyle=dashed]{->}(1.5,1.9)(1.5,5.5)%AI
+\psline[linestyle=dashed]{->}(1.5,1.9)(0.5,0.5)%AB
+\psline[linestyle=dashed]{->}(1.5,1.9)(5,1.4)%AD
+\psline[linestyle=dashed](4.5,0.7)(1.5,1.9)(5,7.3)%KAL
+\psline[linestyle=dashed](1.5,5.5)(1.5,9.1)
+\psline(4.5,0.7)(5,7.3)
+\end{pspicture}
+\end{center}
+
+\bigskip
+
+On se place dans le repère orthonormé $\left(\text{A}~;~\vect{\text{AB}},~\vect{\text{AD}},~\vect{\text{AI}}\right)$. 
+
+On admet que le point L a pour coordonnées $\left(0~;~1~;~\dfrac{3}{2}\right)$.
+
+\medskip
+
+\begin{enumerate}
+\item Déterminer les coordonnées des vecteurs $\vect{\text{AK}}$ et $\vect{\text{AL}}$.
+\item  
+	\begin{enumerate}
+		\item Démontrer que le vecteur $\vect{n}$ de coordonnées $(6~;~-3~;~2)$ est un vecteur normal au plan (AKL).
+		\item En déduire une équation cartésienne du plan (AKL).
+		\item Déterminer un système d'équations paramétriques de la droite $\Delta$ passant par D et
+perpendiculaire au plan (AKL).
+		\item En déduire que le point N de coordonnées $\left(\dfrac{18}{49}~;~\dfrac{40}{49}~;~\dfrac{6}{49}\right)$ est le projeté orthogonal du point D sur le plan (AKL).
+	\end{enumerate}
+\end{enumerate}
+
+On rappelle que le volume $\mathcal{V}$ d'un tétraèdre est donné par la formule : 
+
+\[\mathcal{V} = \dfrac{1}{3}\times  (\text{aire de la base}) \times \text{hauteur}.\]
+
+\begin{enumerate}[resume]
+\item 
+	\begin{enumerate}
+		\item Calculer le volume du tétraèdre ADKL en utilisant le triangle ADK comme base. 
+		\item Calculer la distance du point D au plan (AKL).
+		\item Déduire des questions précédentes l'aire du triangle AKL.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+Une société de jeu en ligne propose une nouvelle application pour smartphone nommée \og Tickets coeurs! \fg.
+
+Chaque participant génère sur son smartphone un ticket comportant une grille de taille $3 \times 3$ sur laquelle sont placés trois cœurs répartis au hasard, comme par exemple ci-dessous.
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(3,3)
+\multido{\n=0+1}{4}{\psline(\n,0)(\n,3)}
+\multido{\n=0+1}{4}{\psline(0,\n)(3,\n)}
+\rput(1.5,2.5){$\heartsuit$}\rput(0.5,1.5){$\heartsuit$}\rput(2.5,0.5){$\heartsuit$}
+\end{pspicture}
+\end{center}
+
+Le ticket est gagnant si les trois cœurs sont positionnés côte à côte sur une même ligne, sur une
+même colonne ou sur une même diagonale.
+
+\medskip
+
+\begin{enumerate}
+\item Justifier qu'il y a exactement $84$ façons différentes de positionner les trois cœurs sur une grille.
+\item Montrer que la probabilité qu'un ticket soit gagnant est égale à $\dfrac{2}{21}$.
+\item Lorsqu'un joueur génère un ticket, la société prélève 1~\euro{} sur son compte en banque. Si le ticket est gagnant, la société verse alors au joueur $5$~\euro. Le jeu est-il favorable au joueur?
+\item Un joueur décide de générer $20$ tickets sur cette application. On suppose que les générations des tickets sont indépendantes entre elles.
+	\begin{enumerate}
+		\item Donner la loi de probabilité de la variable aléatoire $X$ qui compte le nombre de tickets gagnants parmi les $20$ tickets générés.
+		\item Calculer la probabilité, arrondie à $10^{-3}$, de l'évènement $(X  =  5)$.
+		\item Calculer la probabilité, arrondie à $10^{-3}$, de l'évènement $(X \geqslant 1)$ et interpréter le résultat dans le contexte de l'exercice.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{EXERCICE au choix du candidat \hfill5 points}
+
+\medskip
+
+\textbf{Le candidat doit traiter UN SEUL des deux exercices A ou B}
+
+\medskip
+
+\textbf{Il indique sur sa copie l'exercice choisi : exercice A ou exercice B}
+
+\medskip
+
+\textbf{EXERCICE -- A}
+
+\medskip
+
+\begin{tabular}{|l|}\hline
+\textbf{Principaux domaines abordés}\\
+-- Suites\\
+-- Équations différentielles\\ \hline
+\end{tabular}
+
+\medskip
+
+Dans cet exercice, on s'intéresse à la croissance du bambou Moso de taille maximale 20 mètres. 
+
+Le modèle de croissance de Ludwig von Bertalanffy suppose que la vitesse de croissance pour un tel bambou est proportionnelle à l'écart entre sa taille et la taille maximale.
+
+\bigskip
+
+\textbf{Partie I : modèle discret}
+
+\medskip
+
+Dans cette partie, on observe un bambou de taille initiale $1$~mètre.
+
+Pour tout entier naturel $n$, on note $u_n$ la taille, en mètre, du bambou $n$ jours après le début de l'observation. On a ainsi $u_0 = 1$.
+
+Le modèle de von Bertalanffy pour la croissance du bambou entre deux jours consécutifs se traduit par l'égalité :
+
+\[u_{n+1} = u_n + 0,05\left(20 - u_n\right)\,  \text{pour tout entier naturel}\,  n.\]
+
+\medskip
+
+\begin{enumerate}
+\item Vérifier que $u_1 = 1,95$.
+\item 
+	\begin{enumerate}
+		\item Montrer que pour tout entier naturel $n$,\,  $u_{n+1} = 0,95u_n + 1$.
+		\item On pose pour tout entier naturel $n$,\,  $v_n = 20 - u_n$. 
+		
+Démontrer que la suite $\left(v_n\right)$ est une suite géométrique dont on précisera le terme initial $v_0$ et la raison.
+		\item En déduire que, pour tout entier naturel $n$,\,  $u_n = 20 - 19 \times 0,95^n$.
+	\end{enumerate}
+\item Déterminer la limite de la suite $\left(u_n\right)$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie II : modèle continu}
+
+\medskip
+
+Dans cette partie, on souhaite modéliser la taille du même bambou Moso par une fonction donnant sa taille, en mètre, en fonction du temps $t$ exprimé en jour. 
+
+D'après le modèle de von Bertalanffy, cette fonction est solution de l'équation différentielle
+
+\[(E) \qquad y' = 0,05(20 - y)\]
+
+où $y$ désigne une fonction de la variable $t$, définie et dérivable sur $[0~;~+\infty[$ et $y'$ désigne sa fonction dérivée.
+
+Soit la fonction $L$ définie sur l'intervalle $[0~;~+\infty[$ par 
+
+\[L(t) = 20 - 19\e^{-0,05t}.\]
+
+\smallskip
+
+\begin{enumerate}
+\item Vérifier que la fonction $L$ est une solution de $(E)$ et qu'on a également $L(0) = 1$.
+\item On prend cette fonction $L$ comme modèle et on admet que, si on note $L'$ sa fonction dérivée,
+$L'(t)$ représente la vitesse de croissance du bambou à l'instant $t$.
+	\begin{enumerate}
+		\item Comparer $L'(0)$ et $L'(5)$.
+		\item Calculer la limite de la fonction dérivée $L'$ en $+\infty$. 
+		
+Ce résultat est-il en cohérence avec la description du modèle de croissance exposé au début de l'exercice ?
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{EXERCICE -- B}
+
+\medskip
+
+\begin{tabular}{|l|}\hline
+\textbf{Principaux domaines abordés}\\
+-- Suites, étude de fonction\\
+-- Fonction logarithme\\ \hline
+\end{tabular}
+
+\medskip
+
+Soit la fonction $f$ définie sur l'intervalle $]1~;~ +\infty[$ par 
+
+\[f(x) = x - \ln (x - 1).\]
+
+On considère la suite $\left(u_n\right)$ de terme initial $u_0 = 10$ et telle que $u_{n+1} = f\left(u_n\right)$ pour tout entier naturel $n$.
+
+\bigskip
+
+\textbf{Partie I :}
+
+\medskip
+
+La feuille de calcul ci-dessous a permis d'obtenir des valeurs approchées des premiers termes de la suite $\left(u_n\right)$.
+
+\begin{center}
+\begin{tabularx}{0.6\linewidth}{|c|*{2}{>{\centering \arraybackslash}X|}}\hline
+&A &B\\ \hline
+1 &$n$&$u_n$\\ \hline
+2 &0&10\\ \hline
+3& 1&\np{7,80277542}\\ \hline
+4& 2&\np{5,88544474}\\ \hline
+5& 3&\np{4,29918442}\\ \hline
+6& 4&\np{3,10550913}\\ \hline
+7& 5&\np{2,36095182}\\ \hline
+8& 6&\np{2,0527675}\\ \hline
+9& 7&\np{2,00134509}\\ \hline
+10& 8&\np{2,0000009}\\ \hline
+\end{tabularx}
+\end{center}
+
+\medskip
+
+\begin{enumerate}
+\item Quelle formule a été saisie dans la cellule B3 pour permettre le calcul des valeurs approchées de $\left(u_n\right)$ par recopie vers le bas ?
+\item À l'aide de ces valeurs, conjecturer le sens de variation et la limite de la suite $\left(u_n\right)$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie II :}
+
+\medskip
+
+On rappelle que la fonction $f$ est définie sur l'intervalle $]1~;~ +\infty[$ par 
+
+\[f(x) = x - \ln (x - 1).\]
+
+\medskip
+
+\begin{enumerate}
+\item Calculer $\displaystyle\lim_{x \to 1} f(x)$. On admettra que $\displaystyle\lim_{x \to + \infty} f(x) = + \infty$.
+\item  
+	\begin{enumerate}
+		\item Soit $f'$ la fonction dérivée de $f$. Montrer que pour tout $x \in ]1~;~ +\infty[$,\,  $f'(x) = \dfrac{x - 2}{x - 1}$.
+		\item En déduire le tableau des variations de $f$ sur l'intervalle $]1~;~ +\infty[$, complété par les limites.
+		\item Justifier que pour tout $x
+\geqslant  2$,\,  $f(x) \geqslant  2$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie III :}
+
+\medskip
+
+\begin{enumerate}
+\item En utilisant les résultats de la partie II, démontrer par récurrence que $u_n \geqslant  2$ pour tout entier naturel $n$.
+\item Montrer que la suite $\left(u_n\right)$ est décroissante.
+\item En déduire que la suite $\left(u_n\right)$ est convergente. On note $\ell$ sa limite.
+\item On admet que $\ell$ vérifie $f(\ell) = \ell$. Donner la valeur de $\ell$.
+\end{enumerate}
+\end{document}

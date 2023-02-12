@@ -1,0 +1,419 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+%Relecture : François Hache
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl}
+\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Polynésie 2 juin 2021},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Polynésie}}
+\rfoot{\small{2 juin 2021}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Polynésie 2 juin 2021~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ \no 2}}
+\end{center}
+
+\vspace{0,25cm}
+
+Le candidat traite \textbf{4 exercices} : les exercices 1, 2 et 3 communs à tous les candidats et un seul des deux exercices A ou B.
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+
+On considère la suite $\left(u_n\right)$ définie par $u_0 = \np{10000}$ et pour tout entier naturel $n$ : 
+
+\[u_{n+1} = 0,95u_n + 200.\]
+
+\begin{enumerate}
+\item Calculer $u_1$ et vérifier que $u_2 = \np{9415}$. 
+\item 
+	\begin{enumerate}
+		\item Démontrer, à l'aide d'un raisonnement par récurrence, que pour tout entier naturel $n$ :
+
+\[u_n > \np{4000}.\]
+
+		\item On admet que la suite $\left(u_n\right)$ est décroissante. Justifier qu'elle converge.
+	\end{enumerate}
+\item  Pour tout entier naturel $n$, on considère la suite $\left(v_n\right)$ définie par: $v_n = u_n - \np{4000}$.
+	\begin{enumerate}
+		\item Calculer $v_0$.
+		\item Démontrer que la suite $\left(v_n\right)$ est géométrique de raison égale à $0,95$.
+		\item En déduire que pour tout entier naturel $n$ :
+
+\[u_n = \np{4000} + \np{6000} \times 0,95^n.\]
+
+		\item Quelle est la limite de la suite $\left(u_n\right)$ ? Justifier la réponse.
+	\end{enumerate}
+\item En 2020, une espèce animale comptait \np{10000} individus. L'évolution observée les années précédentes conduit à estimer qu'à partir de l'année 2021, cette population baissera de 5\,\% chaque début d'année.
+
+Pour ralentir cette baisse, il a été décidé de réintroduire $200$ individus à la fin de chaque année, à partir de 2021.
+
+Une responsable d'une association soutenant cette stratégie affirme que : \og l'espèce ne devrait pas s'éteindre, mais malheureusement, nous n'empêcherons pas une disparition de plus de la moitié de la population \fg.
+
+Que pensez-vous de cette affirmation ? Justifier la réponse.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+
+Un test est mis au point pour détecter une maladie dans un pays.
+
+Selon les autorités sanitaires de ce pays, 7\,\% des habitants sont infectés par cette maladie. 
+
+Parmi les individus infectés, 20\,\% sont déclarés négatifs.
+
+Parmi les individus sains, 1\,\% sont déclarés positifs.
+
+Une personne est choisie au hasard dans la population.
+
+On note :
+
+\setlength\parindent{9mm}
+\begin{itemize}
+\item[$\bullet~~$]$M$ l'évènement : \og la personne est infectée par la maladie\fg{} ;
+\item[$\bullet~~$]$T$ l'évènement: \og le test est positif \fg.
+\end{itemize}
+\setlength\parindent{0mm}
+
+\medskip
+
+\begin{enumerate}
+\item Construire un arbre pondéré modélisant la situation proposée.
+\item 
+	\begin{enumerate}
+		\item Quelle est la probabilité pour que la personne soit infectée par la maladie et que son test soit positif?
+		\item Montrer que la probabilité que son test soit positif est de \np{0,0653}.
+	\end{enumerate}
+\item On sait que le test de la personne choisie est positif. 
+
+Quelle est la probabilité qu'elle soit infectée ?
+
+On donnera le résultat sous forme approchée à $10^{-2}$ près.
+\item On choisit dix personnes au hasard dans la population. La taille de la population de ce pays permet d'assimiler ce prélèvement à un tirage avec remise.
+
+On note $X$ la variable aléatoire qui comptabilise le nombre d'individus ayant un test positif parmi les dix personnes.
+	\begin{enumerate}
+		\item Quelle est la loi de probabilité suivie par $X$ ? Préciser ses paramètres.
+		\item Déterminer la probabilité pour qu'exactement deux personnes aient un test positif.
+
+On donnera le résultat sous forme approchée à $10^{-2}$ près.
+	\end{enumerate}
+\item Déterminer le nombre minimum de personnes à tester dans ce pays pour que la probabilité qu'au moins une de ces personnes ait un test positif, soit supérieure à 99\,\%.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+Dans l'espace, on considère le cube ABCDEFGH d'arête de longueur égale à 1.
+
+On munit l'espace du repère orthonormé $\left(\text{A}~;~\vect{\text{AB}},~\vect{\text{AD}},~\vect{\text{AE}}\right)$.
+
+On considère le point M tel que $\vect{\text{BM}} = \dfrac{1}{3}\vect{\text{BH}}$.
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(-4,-2.75)(4.5,5.5)
+\psline[linewidth=1.25pt]{->}(0,5.5)\uput[u](0,5.5){$z$}
+\psline[linewidth=1.25pt]{->}(4.5,-1.8)\uput[dr](4.5,-1.8){$y$}
+\psline[linewidth=1.25pt]{->}(-4,-2)\uput[dl](-4,-2){$x$}
+\pspolygon[linewidth=1.25pt](-2.4,-1.16)(0.5,-2.4)(2.85,-1.1)(2.85,2.6)(0,3.6)(-2.4,2.3)%BCDHEF
+\psline[linewidth=1.25pt](-2.4,2.3)(0.5,1.06)(2.85,2.6)%FGH
+\psline[linewidth=1.25pt](0.5,1.06)(0.5,-2.4)%GC
+\psline[linestyle=dashed,linewidth=1.25pt](-2.4,-1.16)(2.85,2.6)
+\psdots(-0.65,0.093) \uput[ul](-0.65,0.093){M}
+\uput[d](-2.4,-1.16){B} \uput[d](0.5,-2.4){C} \uput[d](2.85,-1.1){D} 
+\uput[r](2.85,2.6){H} \uput[ur](0,3.6){E} \uput[l](-2.4,2.3){F} 
+\uput[d](0,0){A} \uput[u](0.5,1.06){G}
+\end{pspicture}
+\end{center}
+
+
+\begin{enumerate}
+\item Par lecture graphique, donner les coordonnées des points B, D, E, G et H.
+\item 
+	\begin{enumerate}
+		\item Quelle est la nature du triangle EGD ? Justifier la réponse.
+		\item On admet que l'aire d'un triangle équilatéral de côté $c$ est égale à $\dfrac{\sqrt{3}}{4}c^2$.
+		
+Montrer que l'aire du triangle EGD est égale à $\dfrac{\sqrt{3}}{2}$.
+	\end{enumerate}
+\item Démontrer que les coordonnées de M sont $\left(~\dfrac{2}{3}~;~\dfrac{1}{3}~; ~\dfrac{1}{3}\right)$.
+\item
+	\begin{enumerate}
+		\item Justifier que le vecteur $\vect{n}(-1~;~1~;~1)$ est normal au plan (EGD).
+		\item En déduire qu'une équation cartésienne du plan (EGD) est: $- x + y + z - 1 = 0$.
+		\item Soit $\mathcal{D}$ la droite orthogonale au plan (EGD) et passant par le point M. 
+		
+Montrer qu'une représentation paramétrique de cette droite est:
+
+\renewcommand\arraystretch{1.7}
+\[\mathcal{D} \, :\, \left\{\begin{array}{l c l}
+x&=&\dfrac{2}{3} - t\\
+y&=&\dfrac{1}{3} + t\\
+z&=&\dfrac{1}{3} + t
+\end{array}\right., \, t \in \R\]
+\renewcommand\arraystretch{1}
+	\end{enumerate}
+\item Le cube ABCDEFGH est représenté ci-dessus selon une vue qui permet de mieux
+percevoir la pyramide GEDM, en gris sur la figure :
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(-7,-0.5)(2,6.8)
+\psline[linewidth=2pt,fillstyle=solid,fillcolor=lightgray](-4.2,0.6)(-0.5,2.6)(0,4.2)(-2.9,6.2)%DMEG
+\pspolygon[linestyle=dotted,linewidth=2pt,fillstyle=solid,fillcolor=gray](-2.9,6.2)(-4.2,0.6)(-0.5,2.6)%GDM
+\psline[linewidth=2pt](-4.2,0.6)(0,4.2)(-2.9,6.2)%DEG
+\psline[linewidth=1.25pt]{->}(1.9,2.3)\uput[ur](1.9,2.3){$x$}
+\psline[linewidth=1.25pt]{->}(-6.4,0.9)\uput[ul](-6.4,0.9){$y$}
+\psline[linewidth=1.25pt]{->}(0,6.2)\uput[u](0,6.2){$z$}
+\pspolygon[linewidth=1.25pt](0,0)(1.3,1.55)(1.3,5.8)(-2.9,6.2)(-4.2,4.6)(-4.2,0.6)%ABFGHDA
+\psline[linewidth=1.25pt](-4.2,4.6)(0,4.2)(1.3,5.8)%HEF
+
+\psline[linestyle=dashed,linewidth=1.25pt](1.3,1.55)(-2.9,2.1)(-2.9,6.2)%BCG
+\psline[linestyle=dashed,linewidth=1.25pt](-2.9,2.1)(-4.2,0.6)%CD
+
+\psline[linestyle=dotted,linewidth=2pt](-0.5,2.6)(0,4.2)%ME
+
+\uput[d](-0.5,2.6){M}
+\uput[r](1.3,1.55){B} \uput[ul](-2.9,2.1){C} \uput[d](-4.2,0.6){D} 
+\uput[l](-4.2,4.6){H} \uput[r](0,4.2){E} \uput[r](1.3,5.8){F} 
+\uput[d](0,0){A} \uput[u](-2.9,6.2){G}
+\end{pspicture}
+\end{center}
+
+Le but de cette question est de calculer le volume de la pyramide GEDM.
+
+	\begin{enumerate}
+		\item Soit K, le pied de la hauteur de la pyramide GEDM issue du point M.
+		
+Démontrer que les coordonnées du point K sont $\left(\dfrac{1}{3}~;~\dfrac{2}{3}~;~\dfrac{2}{3}\right)$.
+		\item En déduire le volume de la pyramide GEDM.
+		
+\emph{On rappelle que le volume $V$ d'une pyramide est donné par la formule }
+
+\emph{$V = \dfrac{b \times h}{3}$ où 
+$b$ désigne l'aire d'une base et $h$ la hauteur associée}.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{EXERCICE au choix du candidat \hfill 5 points}
+
+\medskip
+
+\textbf{Le candidat doit traiter un seul des deux exercices A ou B.}
+
+\textbf{Il indique sur sa copie l'exercice choisi: exercice A ou exercice B.}
+
+\textbf{Pour éclairer son choix, les principaux domaines abordés par chaque exercice sont indiqués dans un encadré.}
+
+\medskip
+
+\textbf{EXERCICE A}
+
+\medskip
+
+\begin{tabularx}{\linewidth}{|X|}\hline
+\textbf{Principaux domaines abordés : Fonction exponentielle, convexité, dérivation, }\\ \textbf{équations différentielles}\\ \hline
+\end{tabularx}
+
+\medskip
+
+Cet exercice est composé de trois parties indépendantes.
+
+\medskip
+
+On a représenté ci-dessous, dans un repère orthonormé, une portion de la courbe
+représentative $\mathcal{C}$ d'une fonction $f$ définie sur $\R$ :
+
+\begin{center}
+\psset{unit=1.25cm}
+\begin{pspicture*}(-3,-0.95)(3.5,3.5)
+\psgrid[gridlabels=0pt,subgriddiv=1,griddots=8]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-3,-0.95)(3.5,3.5)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-2.25}{3.5}{x 2 add 2.71828 x exp div}
+\psplot[plotpoints=200,linewidth=1.5pt,linestyle=dotted]{-1.5}{2.5}{ 2 x sub}
+\uput[ul](-1.6,2){\red $\mathcal{C}$}\uput[ur](0,2){A}\uput[ur](2,0){B}
+\uput[d](3.4,0){\small $x$}\uput[l](0,3.4){\small $y$}
+\end{pspicture*}
+\end{center}
+
+On considère les points A(0~;~2) et B(2~;~0).
+
+\bigskip
+
+\begin{center}\textbf{Partie 1}\end{center}
+
+Sachant que la courbe $\mathcal{C}$ passe par A et que la droite (AB) est la tangente à la courbe $\mathcal{C}$ au point A, donner par lecture graphique : 
+
+\medskip
+
+\begin{enumerate}
+\item La valeur de $f(0)$ et celle de $f'(0)$.
+\item Un intervalle sur lequel la fonction $f$ semble convexe.
+\end{enumerate}
+
+\bigskip
+
+\begin{center}\textbf{Partie 2}\end{center}
+
+On note $(E)$ l'équation différentielle 
+
+\[y' = -y + \text{e}^{-x}.\]
+
+On admet que $g :\,  x \longmapsto  x\text{e}^{-x}$ est une solution particulière de $(E)$.
+
+\medskip
+
+\begin{enumerate}
+\item Donner toutes les solutions sur $\R$ de l'équation différentielle $(H)$ : 
+$y' = -y$.
+\item En déduire toutes les solutions sur $\R$ de l'équation différentielle $(E)$.
+\item Sachant que la fonction $f$ est la solution particulière de $(E)$ qui vérifie $f(0) = 2$, déterminer une expression de $f(x)$ en fonction de $x$.
+\end{enumerate}
+
+\bigskip
+
+\begin{center}\textbf{Partie 3}\end{center}
+
+On admet que pour tout nombre réel $x$,\, $f(x) = (x + 2)\text{e}^{-x}$.
+
+\medskip
+
+\begin{enumerate}
+\item On rappelle que $f'$ désigne la fonction dérivée de la fonction $f$.
+	\begin{enumerate}
+		\item Montrer que pour tout $x \in \R,\, f'(x) = (-x - 1) \text{e}^{-x}$.
+		\item Étudier le signe de $f'(x)$ pour tout $x \in \R$ et dresser le tableau des variations de $f$ sur $\R$.
+
+On ne précisera ni la limite de $f$ en $- \infty$ ni la limite de $f$ en $+ \infty$.
+
+On calculera la valeur exacte de l'extremum de $f$ sur $\R$.
+	\end{enumerate}
+\item On rappelle que $f''$ désigne la fonction dérivée seconde de la fonction $f$.
+	\begin{enumerate}
+		\item Calculer pour tout $x \in \R,\, f''(x)$.
+		\item Peut-on affirmer que $f$ est convexe sur l'intervalle $[0~;~+\infty[$?
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{EXERCICE B}
+
+\medskip
+
+\fbox{\textbf{Principaux domaines abordés: Fonction logarithme népérien, dérivation}}
+
+\medskip
+
+Cet exercice est composé de deux parties.
+
+\medskip
+
+Certains résultats de la première partie seront utilisés dans la deuxième.
+
+\medskip
+
+\begin{center}\textbf{Partie 1 : Étude d'une fonction auxiliaire}\end{center}
+
+Soit la fonction $f$ définie sur l'intervalle [1~;~4] par : 
+
+\[f(x) = - 30x + 50 + 35\ln x.\]
+
+\begin{enumerate}
+\item On rappelle que $f'$ désigne la fonction dérivée de la fonction $f$.
+	\begin{enumerate}
+		\item Pour tout nombre réel $x$ de l'intervalle [1~;~4], montrer que: 
+		
+\[f'(x) = \dfrac{35- 30x}{x}.\]
+
+		\item Dresser le tableau de signe de $f'(x)$ sur l'intervalle [1~;~4].
+		\item En déduire les variations de $f$ sur ce même intervalle.
+	\end{enumerate}
+\item Justifier que l'équation $f(x) = 0$ admet une unique solution, notée $\alpha$, sur l'intervalle [1~;~4] puis donner une valeur approchée de $\alpha$ à $10^{-3}$ près.
+\item  Dresser le tableau de signe de $f(x)$ pour $x \in [1~;~4]$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie 2 : Optimisation}
+
+\medskip
+
+Une entreprise vend du jus de fruits. Pour $x$ milliers de litres vendus, avec $x$ nombre réel de l'intervalle [1~;~4], l'analyse des ventes conduit à modéliser le bénéfice $B(x)$ par l'expression donnée en milliers d'euros par :
+
+\[B(x) = - 15x^2 + 15x +35x \ln x.\]
+
+\begin{enumerate}
+\item D'après le modèle, calculer le bénéfice réalisé par l'entreprise lorsqu'elle vend \np{2500}~litres de jus de fruits.
+
+On donnera une valeur approchée à l'euro près de ce bénéfice.
+\item Pour tout $x$ de l'intervalle [1~;~4], montrer que $B'(x) = f(x)$ où $B'$ désigne la fonction dérivée de $B$.
+\item 
+	\begin{enumerate}
+		\item À l'aide des résultats de la \textbf{partie 1}, donner les variations de la fonction $B$ sur l'intervalle [1~;~4].
+		\item En déduire la quantité de jus de fruits, au litre près, que l'entreprise doit vendre afin de réaliser un bénéfice maximal.
+	\end{enumerate}
+\end{enumerate}
+\end{document}

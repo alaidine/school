@@ -1,0 +1,359 @@
+\documentclass[11pt,a4paper,french]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl,pst-3dplot,pstricks-add}
+\usepackage{esvect}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=2.5cm, right=2.5cm, top=2cm, bottom=3cm]{geometry}
+\headheight15 mm
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\newcommand{\e}{\text{e}}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat Spécialité},
+pdftitle = {Centres étrangers Sujet 11  mai 2022},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage{babel}
+\usepackage[np]{numprint}
+\renewcommand\arraystretch{1.3}
+\frenchsetup{StandardLists=true}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité sujet 1}
+\lfoot{\small{Centres étrangers}}
+\rfoot{\small{11  mai 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Centres étrangers\footnote{Arabie saoudite, Bahreïn, Chypre, Éthiopie, Grèce, Israël, Jordanie, Koweït, Qatar, Roumanie et Turquie} 11 mai 2022~\decofourright\\[7pt]  Sujet 1\\[7pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}}
+\end{center}
+
+\vspace{0,25cm}
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 exercices et \textbf{ne doit traiter que ces 3 exercices}
+
+Chaque exercice est noté sur 7 points (le total sera ramené sur 20 points).
+Les traces de recherche, même incomplètes ou infructueuses, seront prises en compte.
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \quad 7 points\hfill Thème: Fonction logarithme }
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples. Pour chacune des questions suivantes, une seule des quatre réponses proposées est exacte. Les six questions sont indépendantes.}
+
+\smallskip
+
+\emph{Une réponse incorrecte, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point. Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie. \\
+Aucune justification n'est demandée.}
+
+\medskip
+
+\begin{enumerate}
+\item On considère la fonction $f$ définie pour tout réel $x$ par $f(x) = \ln \left(1  + x^2\right)$. 
+
+Sur $\R$, l'équation $f(x) = \np{2022}$
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} n'admet aucune solution. &\textbf{b.~~} admet exactement une solution.\\
+\textbf{c.~~}admet exactement deux solutions.&\textbf{d.~~} admet une infinité de solutions.
+\end{tabularx}
+\end{center}
+
+\item Soit la fonction $g$ définie pour tout réel $x$ strictement positif par: 
+\[g(x) = x \ln (x) - x^2\]
+
+On note $\mathcal{C}_g$ sa courbe représentative dans un repère du plan.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} La fonction $g$ est convexe sur $]0~;~+\infty[$.&\textbf{b.~~} La fonction $g$ est concave sur $]0~;~+\infty[$.\\
+\textbf{c.~~}La courbe $\mathcal{C}_g$ admet exactement un point d'inflexion sur $]0~;~+\infty[$.&\textbf{d.~~}La courbe $\mathcal{C}_g$ admet exactement
+deux points d'inflexion sur $]0~;~+\infty[$.
+\end{tabularx}
+\end{center}
+
+\item On considère la fonction $f$ définie sur $]- 1~;~1[$ par
+
+\[f(x) = \dfrac{x}{1 - x^2}\]
+
+Une primitive de la fonction $f$ est la fonction $g$ définie sur l'intervalle $] - 1~;~1[$ par :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} $g(x) = - \dfrac12 \ln \left(1 - x^2\right)$&\textbf{b.~~} $g(x) =  \dfrac{1 + x^2}{ \left(1 - x^2\right)^2}$\\
+\textbf{c.~~} $g(x)= \dfrac{x^2}{2\left(x - \dfrac{x^3}{3}\right)}$&\textbf{d.~~} $g(x) = \dfrac{x^2}{2}\ln \left(1 - x^2\right)$
+\end{tabularx}
+\end{center}
+
+\item La  fonction $x \longmapsto  \ln \left(-x^2- x + 6\right)$ est définie sur
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} $]- 3~;~2[$&\textbf{b.~~} $]- \infty~;~6]$\\
+\textbf{c.~~} $]0~;~+\infty[$&\textbf{d.~~} $]2~;~+\infty[$
+\end{tabularx}
+\end{center}
+
+\item On considère la fonction $f$ définie sur $]0,5~;~+ \infty [$ par 
+
+\[f(x) =x^2- 4x+ 3 \ln (2x - 1)\]
+
+Une équation de la tangente à la courbe représentative de $f$ au point d'abscisse 1 est:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}$y = 4x- 7$ &\textbf{b.~~}$y = 2x - 4$\\
+\textbf{c.~~}$y = -3(x - 1) + 4$ &\textbf{d.~~}$y = 2x - 1$
+\end{tabularx}
+\end{center}
+
+\item L'ensemble $S$ des solutions dans $\R$ de l'inéquation $\ln (x + 3) < 2\ln (x + 1)$ est:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}$S = ]- \infty~;~-2[ \cup ]1~;~+\infty[$&\textbf{b.~~}$S = ]1~;~+ \infty[$\\
+\textbf{c.~~} $S = \emptyset$&\textbf{d.~~} $S = ]- 1~;~1[$
+\end{tabularx}
+\end{center}
+
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \quad 7 points\hfill Thème: Géométrie dans l'espace}
+
+\medskip
+
+Dans l'espace, rapporté à un repère orthonormé \Oijk, on considère les points : 
+
+\[\text{A}(2~;~0~;~3),\: \text{B}(0~;~2~;~1), \text{C}(-1~;~-1~;~2)\:\: \text{et D}(3~;~-3~;~ -1).\]
+\smallskip
+
+\begin{enumerate}
+\item \textbf{Calcul d'un angle}
+	\begin{enumerate}
+		\item Calculer les coordonnées des vecteurs $\vect{\text{AB}}$ et $\vect{\text{AC}}$ et en déduire que les points A, B et C ne sont pas alignés.
+		\item Calculer les longueurs AB et AC.
+		\item À l'aide du produit scalaire $\vect{\text{AB}}\cdot \vect{\text{AC}}$, déterminer la valeur du cosinus de l'angle
+$\widehat{\text{BAC}}$ puis donner une valeur approchée de la mesure de l'angle $\widehat{\text{BAC}}$ au dixième de degré.
+	\end{enumerate}
+\item \textbf{Calcul d'une aire}
+	\begin{enumerate}
+		\item Déterminer une équation du plan $\mathcal{P}$ passant par le point C et perpendiculaire à la droite (AB).
+		\item Donner une représentation paramétrique de la droite (AB).
+		\item En déduire les coordonnées du projeté orthogonal E du point C sur la droite
+(AB), c'est-à-dire du point d'intersection de la droite (AB) et du plan $\mathcal{P}$
+		\item Calculer l'aire du triangle ABC.
+	\end{enumerate}
+\item \textbf{Calcul d'un volume}
+	\begin{enumerate}
+		\item Soit le point F$(1~;~-1~;~3)$. Montrer que les points A, B, C et F sont coplanaires.
+		\item Vérifier que la droite (FD) est orthogonale au plan (ABC).
+		\item Sachant que le volume d'un tétraèdre est égal au tiers de l'aire de sa base
+multiplié par sa hauteur, calculer le volume du tétraèdre ABCD.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \quad 7 points\hfill Thèmes: Fonction exponentielle et suite}
+
+\bigskip
+
+\textbf{Partie A :}
+
+\medskip
+
+Soit $h$ la fonction définie sur $\R$ par
+
+\[h(x) = \text{e}^x - x\]
+
+\smallskip
+
+\begin{enumerate}
+\item Déterminer les limites de $h$ en $-\infty$ et $+\infty$.
+\item Étudier les variations de $h$ et dresser son tableau de variation. 
+\item En déduire que :
+
+si $a$ et $b$ sont deux réels tels que $0 < a < b$ alors $h(a) - h(b) < 0$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B :}
+
+\medskip
+
+Soit $f$ la fonction définie sur $\R$ par
+
+\[f(x) = \text{e}^x\]
+
+On note $\mathcal{C}_f$ sa courbe représentative dans un repère \Oij.
+
+\medskip
+
+\begin{enumerate}
+\item Déterminer une équation de la tangente $T$ à $\mathcal{C}_f$ au point d'abscisse 0.
+\end{enumerate}
+
+Dans la suite de l'exercice on s'intéresse à l'écart entre $T$ et $\mathcal{C}_f$ au voisinage de $0$.
+
+Cet écart est défini comme la différence des ordonnées des points de $T$ et $\mathcal{C}_f$ de même abscisse.
+
+On s'intéresse aux points d'abscisse $\dfrac{1}{n}$, avec $n$ entier naturel non nul.
+
+On considère alors la suite $\left(u_n\right)$ définie pour tout entier naturel non nul $n$ par :
+
+\[u_n = \text{exp} \left(\dfrac{1}{n}\right) - \dfrac{1}{n} - 1\]
+
+\begin{enumerate}[resume]
+\item Déterminer la limite de la suite $\left(u_n\right)$.
+\item 
+	\begin{enumerate}
+		\item Démontrer que, pour tout entier naturel non nul $n$,
+		
+\[u_{n+1} - u_n = h\left(\dfrac{1}{n + 1}\right) - h\left(\dfrac{1}{n}\right) \]
+
+où $h$ est la fonction définie à la partie A.
+		\item En déduire le sens de variation de la suite $\left(u_n\right)$.
+	\end{enumerate}
+\item Le tableau ci-dessous donne des valeurs approchées à $10^{-9}$ des premiers termes de la suite $\left(u_n\right)$.
+
+\begin{center}
+$\begin{array}{|l|c|}\hline
+n &u_n\\ \hline
+1 &\np{0,718281828}\\ \hline
+2 &\np{0,148721271}\\ \hline
+3 &\np{0,062279092}\\ \hline
+4 &\np{0,034025417}\\ \hline
+5 &\np{0,021402758}\\ \hline
+6 &\np{0,014693746}\\ \hline
+7 &\np{0,010707852}\\ \hline
+8 &\np{0,008148453}\\ \hline
+9 &\np{0,006407958}\\ \hline
+10 &\np{0,005170918}\\ \hline
+\end{array}$
+\end{center}
+
+Donner la plus petite valeur de l'entier naturel $n$ pour laquelle l'écart entre $T$ et $\mathcal{C}_f$ semble être inférieur à $10^{-2}$.
+
+
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4} \quad 7 points\hfill Thème: Probabilités}
+
+\bigskip
+
+Les parties A et B peuvent être traitées de façon indépendante.
+
+\medskip
+
+Au cours de la fabrication d'une paire de lunettes, la paire de verres doit subir deux traitements notés T1 et T2.
+
+\bigskip
+
+\textbf{Partie A}
+
+\medskip
+
+On prélève au hasard une paire de verres dans la production.
+
+On désigne par $A$ l'évènement : \og la paire de verres présente un défaut pour le traitement T1 \fg.
+
+On désigne par $B$ l'évènement : \og la paire de verres présente un défaut pour le traitement T2 \fg.
+
+On note respectivement $\overline{A}$ et $\overline{B}$ les évènements contraires de $A$ et $B$.
+
+Une étude a montré que :
+
+\begin{itemize}
+\item la probabilité qu'une paire de verres présente un défaut pour le traitement T1 notée $P(A)$ est égale à 0,1.
+\item la probabilité qu'une paire de verres présente un défaut pour le traitement T2 notée $P(B)$ est égale à 0,2.
+\item la probabilité qu'une paire de verres ne présente aucun des deux défauts est $0,75$.
+\end{itemize}
+
+\medskip
+
+\begin{enumerate}
+\item Recopier et compléter le tableau suivant avec les probabilités correspondantes.
+
+\begin{center}
+\begin{tabularx}{0.45\linewidth}{|*{4}{>{\centering \arraybackslash}X|}}\hline
+				&$A$ 	&$\overline{A}$	&Total\\ \hline
+$B$				&		&				&\\ \hline
+$\overline{B}$	&		&				&\\ \hline
+Total			&		&				&1\\ \hline
+\end{tabularx}
+\end{center}
+
+\item
+	\begin{enumerate}
+		\item Déterminer, en justifiant la réponse, la probabilité qu'une paire de verres, prélevée au hasard dans la production, présente un défaut pour au moins un des deux traitements T1 ou T2.
+		\item Donner la probabilité qu'une paire de verres, prélevée au hasard dans la production, présente deux défauts, un pour chaque traitement T1 et T2.
+		\item Les évènements $A$ et $B$ sont-ils indépendants ? Justifier la réponse.
+	\end{enumerate}	
+\item Calculer la probabilité qu'une paire de verres, prélevée au hasard dans la production, présente un défaut pour un seul des deux traitements.
+\item Calculer la probabilité qu'une paire de verres, prélevée au hasard dans la production, présente un défaut pour le traitement T2, sachant que cette paire de verres présente un défaut pour le traitement T1.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B}
+
+\medskip
+
+On prélève, au hasard, un échantillon de $50$ paires de verres dans la production. On suppose que la production est suffisamment importante pour assimiler ce prélèvement à un tirage avec remise.
+
+On note $X$ la variable aléatoire qui, à chaque échantillon de ce type, associe le nombre de paires de verres qui présentent le défaut pour le traitement T1.
+
+\medskip
+
+\begin{enumerate}
+\item Justifier que la variable aléatoire $X$ suit une loi binomiale et préciser les paramètres de cette loi.
+\item Donner l'expression permettant de calculer la probabilité d'avoir, dans un tel échantillon, exactement $10$ paires de verres qui présentent ce défaut.
+
+Effectuer ce calcul et arrondir le résultat à $10^{-3}$.
+\item En moyenne, combien de paires de verres ayant ce défaut peut-on trouver dans un échantillon de $50$ paires ?
+\end{enumerate}
+\end{document}

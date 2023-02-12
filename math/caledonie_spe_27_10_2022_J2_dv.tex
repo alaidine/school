@@ -1,0 +1,394 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb,MnSymbol}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%merci pour le sujet à Florence Vigne et Sébastien Dibos
+%Tapuscrit : Denis Vergès
+%Relecture : 
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl}
+\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3.1cm, bottom=3cm]{geometry}
+\setlength\headheight{13.6pt}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\newcommand{\e}{\text{e}}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP réf : 21MATJ2JAI},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Nouvelle-Calédonie 27 octobre 2022},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Nouvelle-Calédonie Jour 2}}
+\rfoot{\small{27 octobre 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Nouvelle-Calédonie 27 octobre 2022 Jour 2~\decofourright\\[7pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}}
+\end{center}
+
+\vspace{0,25cm}
+
+\textbf{Le candidat traite 4 exercices : les exercices 1, 2 et 3 communs à tous les candidats et un seul des deux exercices A ou B.}
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \hfill 7 points}
+
+\textbf{Principaux domaines abordés :} Probabilités
+
+\medskip
+
+Au basket-ball, il existe deux sortes de tir :
+
+\begin{itemize}
+\item les tirs à deux points.
+
+Ils sont réalisés près du panier et rapportent deux points s'ils sont réussis.
+\item les tirs à trois points.
+
+Ils sont réalisés loin du panier et rapportent trois points s'ils sont réussis.
+\end{itemize}
+
+\smallskip
+
+Stéphanie s'entraîne au tir. On dispose des données suivantes :
+
+\begin{itemize}
+\item[$\bullet~~$] Un quart de ses tirs sont des tirs à deux points. Parmi eux, 60\,\% sont réussis.
+\item[$\bullet~~$] Trois quarts de ses tirs sont des tirs à trois points. Parmi eux, 35\,\% sont réussis.
+\end{itemize}
+
+\medskip
+
+\begin{enumerate}
+\item Stéphanie réalise un tir. 
+
+On considère les évènements suivants :
+
+\begin{description}
+\item[ ] $D$ : \og Il s'agit d'un tir à deux points \fg.
+\item[ ] $R$ : \og le tir est réussi \fg.
+\end{description}
+	\begin{enumerate}
+		\item Représenter la situation à l'aide d'un arbre de probabilités.
+		\item Calculer la probabilité $p\left(\overline{D} \cap R\right)$.
+		\item Démontrer que la probabilité que Stéphanie réussisse un tir est égale à $0,4125$.
+		\item Stéphanie réussit un tir. Calculer la probabilité qu'il s'agisse d'un tir à trois points. Arrondir le résultat au centième.
+	\end{enumerate}	
+\item Stéphanie réalise à présent une série de $10$ tirs à trois points.
+
+On note $X$ la variable aléatoire qui compte le nombre de tirs réussis.
+
+On considère que les tirs sont indépendants. On rappelle que la probabilité que Stéphanie réussisse un tir à trois points est égale à $0,35$.
+	\begin{enumerate}
+		\item Justifier que $X$ suit une loi binomiale. Préciser ses paramètres.
+		\item Calculer l'espérance de $X$. Interpréter le résultat dans le contexte de l'exercice.
+		\item Déterminer la probabilité que Stéphanie rate $4$ tirs ou plus. Arrondir le résultat au centième.
+		\item Déterminer la probabilité que Stéphanie rate au plus $4$ tirs. Arrondir le résultat au centième.
+	\end{enumerate}
+\item Soit $n$ un entier naturel non nul.
+
+Stéphanie souhaite réaliser une série de $n$ tirs à trois points. 
+
+On considère que les tirs sont indépendants. On rappelle que la probabilité qu'elle réussisse un tir à trois points est égale à $0,35$.
+
+Déterminer la valeur minimale de $n$ pour que la probabilité que Stéphanie réussisse au moins un tir parmi les $n$ tirs soit supérieure ou égale à $0,99$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \hfill 7 points}
+
+\textbf{Principaux domaines abordés :} fonctions, fonction logarithme.
+
+\medskip
+
+Soit $f$ la fonction définie sur l'intervalle $]0~;~+\infty[$ par :
+
+\[f(x) = x \ln (x) - x - 2.\]
+
+On admet que la fonction $f$ est deux fois dérivable sur $]0~;~+\infty[$.
+
+On note $f'$ sa dérivée, $f''$ sa dérivée seconde et $\mathcal{C}_f$ sa courbe représentative dans un repère.
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Démontrer que, pour tout $x$ appartenant à $]0~;~+\infty[$, on a $f'(x) = \ln (x)$.
+		\item Déterminer une équation de la tangente $T$ à la courbe $\mathcal{C}_f$ au point
+d'abscisse $x = $e.
+		\item Justifier que la fonction $f$ est convexe sur l'intervalle $]0~;~+\infty[$.
+		\item En déduire la position relative de la courbe $\mathcal{C}_f$ et de la tangente $T$.
+	\end{enumerate}	
+\item 
+	\begin{enumerate}
+		\item Calculer la limite de la fonction $f$ en $0$.
+		\item Démontrer que la limite de la fonction $f$ en $+\infty$ est égale à $+\infty$.
+	\end{enumerate}
+\item Dresser le tableau de variations de la fonction $f$ sur l'intervalle $]0~;~+\infty[$.
+\item 
+	\begin{enumerate}
+		\item Démontrer que l'équation $f(x) = 0$ admet une unique solution dans
+l'intervalle $]0~;~+\infty[$. On note $\alpha$ cette solution.
+		\item Justifier que le réel $\alpha$ appartient à l'intervalle ]4,3~;~4,4[.
+		\item En déduire le signe de la fonction $f$ sur l'intervalle $]0~;~+\infty[$.
+	\end{enumerate}	
+\item On considère la fonction \texttt{seuil} suivante écrite dans le langage Python :
+
+On rappelle que la fonction \texttt{log} du module \texttt{math} (que l'on suppose importé)
+désigne la fonction logarithme népérien ln.
+
+\begin{center}
+\begin{tabular}{|l l|} \hline
+\texttt{def}& \texttt{seuil(pas) :}\\
+&\texttt{x=4.3}\\
+&\texttt{while x*log (x) - x - 2 < 0:}\\
+&\quad \texttt{x=x+pas}\\
+&\texttt{return x}\\ \hline
+\end{tabular}
+\end{center}
+
+Quelle est la valeur renvoyée à l'appel de la fonction \texttt{seuil(0.01)} ?
+
+Interpréter ce résultat dans le contexte de l'exercice.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \hfill 7 points}
+
+\textbf{Principaux domaines abordés :} géométrie dans l'espace
+
+\medskip
+
+\begin{minipage}{0.5\linewidth}
+Une maison est modélisée par un parallélépipède rectangle ABCDEFGH surmonté d'une pyramide EFGHS.
+
+On a DC $= 6$,\:\: DA = DH $= 4$. 
+
+Soit les points I, J et K tels que
+
+$\vect{\text{DI}} = \dfrac16\vect{\text{DC}}, \quad \vect{\text{DJ}} = \dfrac14\vect{\text{DA}},\quad \vect{\text{DK}} = \dfrac14\vect{\text{DH}}$.
+
+On note $\vect{\imath} = \vect{\text{DI}},\:\vect{\jmath} = \vect{\text{DJ}},\: \vect{k} = \vect{\text{DK}}$.
+
+On se place dans le repère orthonormé $\left(\text{D}~;~\vect{\imath},\:\vect{\jmath}, \: \vect{k}\right)$.
+
+On admet que le point S a pour coordonnées (3~;~2~;~6).
+\end{minipage} \hfill
+\begin{minipage}{0.46\linewidth}
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(6.3,6)
+\pspolygon(0.3,3.9)(0.3,0.7)(2.7,0.3)(2.7,3.5)%GCBF
+\psline(2.7,0.3)(6,1.1)(6,4.3)(2.7,3.5)%BAEF
+\psline[linestyle=dotted,linewidth=1.25pt](0.3,0.7)(3.6,1.5)(6,1.1)%CDA
+\psline[linestyle=dotted,linewidth=1.25pt](3.6,1.5)(3.6,4.7)(3.1,5.6)%DHS
+\psline[linestyle=dotted,linewidth=1.25pt](0.3,3.9)(3.6,4.7)(6,4.3)%GHE
+\psline(6,4.3)(3.1,5.6)(2.7,3.5)%ESF
+\psline(3.1,5.6)(0.3,3.9)%SG
+\psline(4.3,4.8)(4.3,5.35)%PQ
+\psline[linewidth=1.25pt]{->}(3.6,1.5)(3.05,1.37)
+\psline[linewidth=1.25pt]{->}(3.6,1.5)(4.2,1.4)
+\psline[linewidth=1.25pt]{->}(3.6,1.5)(3.6,2.3)
+\uput[r](6,1.1){A} \uput[d](2.7,0.3){B} \uput[dl](0.3,0.7){C} \uput[d](3.6,1.5){D}
+\uput[ur](6,4.3){E} \uput[dl](2.7,3.5){F} \uput[l](0.3,3.9){G} \uput[ur](3.6,4.7){H}
+\uput[u](3.1,5.6){S} \uput[d](4.3,4.8){P} \uput[u](4.3,5.35){Q} \uput[u](3.05,1.37){I}
+\uput[ur](4.2,0.9){J} \uput[r](3.6,2.3){K} \uput[d](3.32,1.42){$\vect{\imath}$} \uput[u](3.9,1.3){$\vect{\jmath}$}
+\uput[l](3.6,1.9){$\vect{k}$}
+\end{pspicture}
+\end{center}
+\end{minipage}
+
+\medskip
+
+\begin{enumerate}
+\item Donner, sans justifier, les coordonnées des points B, E, F et G.
+\item Démontrer que le volume de la pyramide EFGHS représente le septième du volume total de la maison.
+
+On rappelle que le volume $V$ d'un tétraèdre est donné par la formule :
+
+\[V = \dfrac13 \times (\text{aire de la base}) \times  \text{hauteur}.\]
+\item 
+	\begin{enumerate}
+		\item Démontrer que le vecteur $\vect{n}$ de coordonnées $\begin{pmatrix}0\\1\\1\end{pmatrix}$ est normal au plan (EFS).
+		\item En déduire qu'une équation cartésienne du plan (EFS) est $y + z - 8 = 0$.
+	\end{enumerate}	
+\item On installe une antenne sur le toit, représentée par le segment [PQ]. On dispose des données suivantes:
+
+\begin{itemize}
+\item[$\bullet~~$] le point P appartient au plan (EFS) ;
+\item[$\bullet~~$] le point Q a pour coordonnées (2~;~3~;~5,5) ;
+\item[$\bullet~~$] la droite (PQ) est dirigée par le vecteur $\vect{k}$.
+\end{itemize}
+	\begin{enumerate}
+		\item Justifier qu'une représentation paramétrique de la droite (PQ) est :
+
+\[\left\{\begin{array}{l c l}
+x &=&2\\
+y &=&3\\
+z &=& 5,5 + t
+\end{array}\right. \quad (t \in \R)\]
+		\item En déduire les coordonnées du point P.
+		\item En déduire la longueur PQ de l'antenne.
+	\end{enumerate}	
+\item Un oiseau vole en suivant une trajectoire modélisée par la droite $\Delta$ dont une représentation paramétrique est :
+
+\[\left\{\begin{array}{l c r}
+x & =& -4 +6s\\ y &=& 7 - 4s\\z &=& 2 + 4s
+\end{array}\right.\quad (s \in \R)\]
+
+Déterminer la position relative des droites (PQ) et $\Delta$.
+
+L'oiseau va-t-il percuter l'antenne représentée par le segment [PQ] ?
+
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4} \hfill 7 points}
+
+\textbf{Principaux domaines abordés :} suites, fonctions, primitives
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples.\\
+Pour chacune des questions suivantes, une seule des quatre réponses proposées est exacte.\\
+Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point.\\
+Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie.\\
+Aucune justification n'est demandée.}
+
+\medskip
+
+\begin{enumerate}
+\item On considère la suite $\left(u_n\right)$ définie pour tout entier naturel $n$ par
+
+\[u_n  = \dfrac{(- 1)^n}{n + 1}.\]
+
+On peut affirmer que:
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~} la suite $\left(u_n\right)$ diverge vers $+\infty$. &\textbf{b.~~} la suite $\left(u_n\right)$ diverge vers $-\infty$.\\
+\textbf{c.~~}  la suite $\left(u_n\right)$ n'a pas de limite. &\textbf{d.~~} la suite $\left(u_n\right)$ converge.
+\end{tabularx}
+\end{center}
+
+\begin{center} \decosix \decosix \decosix  \end{center}
+\end{enumerate}
+
+Dans les questions 2 et 3, on considère deux suites $\left(v_n\right)$  et $\left(w_n\right)$ vérifiant la relation : 
+
+\[w_n = \e^{- 2v_n} + 2.\]
+
+\begin{enumerate}[resume]
+\item  Soit $a$ un nombre réel strictement positif. On a $v_0 = \ln (a)$.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~} $w_0 = \dfrac{1}{a^2}  +2$&\textbf{b.~~}$w_0 = \dfrac{1}{a^2  +2}$\\
+\textbf{c.~~} $w_0 = -2a +2$&\textbf{d.~~}$w_0 = \dfrac{1}{- 2a} + 2$
+\end{tabularx}
+\end{center}
+
+\item On sait que la suite $\left(v_n\right)$ est croissante. On peut affirmer que la suite $\left(w_n\right)$ est :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~}décroissante et majorée par 3.&\textbf{b.~~}décroissante et minorée par 2 .\\
+\textbf{c.~~}croissante et majorée par 3 .&\textbf{d.~~}croissante et minorée par 2.
+\end{tabularx}
+\end{center}
+
+\item On considère la suite $\left(a_n\right)$ ainsi définie :
+
+\[a_0 = 2 \:\:\text{et, pour tout entier naturel}\: n, \quad a_{n+1} = \dfrac13a_n + \dfrac83.\]
+
+
+Pour tout entier naturel $n$, on a :
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~}$a_n = 4 \times \left(\dfrac13\right)^n - 2$&\textbf{b.~~}$a_n = - \dfrac{2}{3^n} + 4$\\
+\textbf{c.~~}$a_n = 4 - \left(\dfrac13\right)^n$ & \textbf{d.~~} $a_n = 2 \times \left(\dfrac13\right)^n + \dfrac{8n}{3}$
+\end{tabularx}
+\end{center}
+\item On considère une suite $\left(b_n\right)$ telle que, pour tout entier naturel $n$, on a :
+
+\[b_{n+1} = b_n + \ln \left(\dfrac{2}{\left(b_n \right)^2 + 3}\right).\]
+
+On peut affirmer que :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~} la suite $\left(b_n\right)$ est croissante.&\textbf{b.~~}la suite $\left(b_n\right)$ est décroissante.\\
+\textbf{c.~~} la suite $\left(b_n\right)$ n'est pas monotone.&\textbf{d.~~}le sens de variation de la suite $\left(b_n\right)$ dépend de $b_0$.
+\end{tabularx}
+\end{center}
+
+\item On considère la fonction $g$ définie sur l'intervalle $]0~;~+\infty[$ par : 
+
+\[g(x) = \dfrac{\e^x}{x}.\]
+
+On note $\mathcal{C}_g$ la courbe représentative de la fonction $g$ dans un repère orthogonal.
+
+La courbe $\mathcal{C}_g$ admet :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~}une asymptote verticale
+et une asymptote horizontale.&\textbf{b.~~}une asymptote verticale
+et aucune asymptote horizontale.\\
+\textbf{c.~~}aucune asymptote verticale et une asymptote horizontale.&\textbf{d.~~}aucune asymptote verticale et aucune asymptote horizontale.
+\end{tabularx}
+\end{center}
+\item Soit $f$ la fonction définie sur $\R$ par
+
+\[f(x) = x\e^{x^2+1}.\]
+
+Soit $F$ une primitive sur $\R$ de la fonction $f$. Pour tout réel $x$, on a :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~}$F(x) = \dfrac12x^2\e^{x^2+1}$ 	& \textbf{b.~~}$F(x) = \left(1 + 2x^2 \right)\e^{x^2+1}$ \\
+\textbf{c.~~}$F(x) = \e^{x^2+1}$				& \textbf{d.~~}$F(x) = \dfrac12\e^{x^2+1}$
+\end{tabularx}
+\end{center}
+\end{enumerate}
+\end{document}

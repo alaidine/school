@@ -1,0 +1,531 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl,pst-3dplot,pstricks-add}
+\usepackage{esvect}
+%\usepackage{pgf,tikz,tkz-tab}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=1.5cm, right=1.5cm, top=2cm, bottom=2.5cm]{geometry}
+\headheight15 mm
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\newcommand{\e}{\text{e}}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Corrigé du baccalauréat spécialité},
+pdftitle = {Polynésie 5 mai 2022},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\renewcommand\arraystretch{1.2}
+\frenchsetup{StandardLists=true}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Corrigé du baccalauréat spécialité}
+\lfoot{\small{}}
+\rfoot{\small{5 mai 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+\begin{center}
+{\Large \textbf{Corrigé du baccalauréat spécialité Polynésie 5 mai 2022}}
+\bigskip
+
+
+L'usage de la calculatrice avec mode examen actif est autorisé
+\end{center}
+\medskip
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 et \textbf{ne doit traiter que ces 3 exercices}
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \quad 7 points\hfill Thèmes : fonctions, primitives, probabilités}
+
+\medskip
+
+%\emph{Cet exercice est un questionnaire à choix multiples. \\
+%Pour chacune des six questions suivantes, une seule des quatre réponses proposées est exacte.\\
+%Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point.\\
+%Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie.\\
+%Aucune justification n'est demandée.}
+
+\medskip
+
+\begin{enumerate}
+\item On considère la fonction $f$ définie et dérivable sur $]0~;~+\infty[$ par:
+
+\[f(x) = x \ln(x) - x + 1.\]
+
+La fonction $f$ est dérivable sur $]0~;~+\infty[$  comme somme et produit de fonctions dérivables. 
+
+On a alors  $f'(x)=1\ln(x)+x \times \dfrac{1}{x}-1=\ln(x)+1-1=\ln(x)$ soit la réponse a.
+
+\item On considère la fonction $g$ définie sur $]0~;~+\infty[$ par $g(x) = x^2[1 - \ln (x)]$.
+
+
+On peut écrire $g(x) = x^2[1 - \ln (x)]=x^2-x^2\ln(x)$.
+
+On a : 
+
+$\displaystyle\lim_{x \to 0^+} x^2 = 0$ et $\displaystyle\lim_{x \to 0^+} x^2\ln(x) = 0$ d'après une propriété du cours sur les croissances comparées.
+
+On aura donc $\displaystyle\lim_{x \to 0} g(x) = 0$ soit la réponse c.
+\item On considère la fonction $f$ définie sur $\R$ par $f(x) = x^3 - 0,9x^2 -0,1x$.
+%Le nombre de solutions de l'équation $f(x) = 0$ sur $\R$ est :
+
+%la fonction $f$ est dérivable sur $\R$ comme fonction polynôme.
+%
+%On a $f'(x)=3x^2-1,8x-0,1$. 
+%l'équation $f(x)=0$ admet deux solutions distinctes : $x_1=\dfrac{9-\sqrt{111}}{30}\approx -0,05$ et $x_2=\dfrac{9+\sqrt{111}}{30}\approx 0,65$.
+%
+%On a de plus $f(x_1) \approx 0,002$ et $f(x_2)\approx -0,17$
+%
+%On a $\displaystyle\lim_{x \to -\infty} f(x) = \displaystyle\lim_{x \to 0} x^3) = - \infty$ et $\displaystyle\lim_{x \to +\infty} f(x) = \displaystyle\lim_{x \to 0} x^3) = + \infty$
+%
+%On peut donc construire le tableau de variation suivant : 
+%
+% \begin{center}
+%\begin{tikzpicture}
+%\tkzTabInit[lgt=2,espcl=4]{$x$/1,signe de $f'(x)$/1,variation de $f$/1}{$-\infty$,$x_1$,$x_2$,$+\infty$}
+%\tkzTabLine{,+,z,-,z,+,}
+%\tkzTabVar{- /$-\infty$,+/$f(x_1)$,-/$f(x_2)$,+/$+\infty$}
+%\tkzTabVal[draw]{1}{2}{0.5}{$\alpha$}{0}
+%\tkzTabVal[draw]{1}{4}{0.5}{$\beta$}{0}
+%\tkzTabVal[draw]{1}{4}{0.8}{$\gamma$}{0}
+%\end{tikzpicture}
+%\end{center}
+%
+%Comme $f$ est continue sur $\R$,  en utilisant trois fois le théorème des valeurs  sur les intervalles où la fonction $f$ est monotone, on peut affirmer que l'équation $f(x)=0$ admet  trois solutions soit la réponse d.
+
+$f(x) = x\left(x^2 - 0,9x - 0,1 \right)$, donc 
+
+$f(x) = 0 \iff \left\{\begin{array}{l c l}
+x&=&0\\
+x^2  - 0,9 x - 0,1&=&0
+\end{array}\right.$
+
+Pour l'équation du second degré $x^2  - 0,9 x - 0,1 = 0$, $\Delta = 0,81 + 0,4 = 1,21 = 1,1^2$.
+
+Cette équation a donc deux solutions distinctes $x_2 = \dfrac{0,9 + 1,1}{2} = 1$ et $x_3 = \dfrac{0,9 - 1,1}{2} = - 0,1$.
+
+Conclusion l'équation a trois solutions : $- 0,1\: ;\: 0\: ;\: 1$. Réponse d.
+\item Si $H$ est une primitive d'une fonction $h$ définie et continue sur $\R$, 
+et si $k$ est la fonction définie sur $\R$ par $k(x) = h(2x)$, 
+alors, une primitive $K$ de $k$ est définie sur $\R$ par :
+
+Pour montrer qu'une fonction est une primitive d'une fonction donnée,  il suffit de la dériver.
+
+Soit $K(x)=\dfrac{1}{2}H(2x)$.
+
+$K$ est dérivable comme composée de fonction dérivable et $K'(x)=\dfrac{1}{2}\times 2H'(2x)=k(x)$.
+
+car $H'(x)=h(x)$ car $H$ est une primitive de $h$.
+
+D'où la réponse c.
+
+\item L'équation réduite de la tangente au point d'abscisse 1 de la courbe de la fonction $f$ définie sur $\R$ par $f(x) = x\text{e}^x$ est:
+
+
+$f$est une fonction dérivable comme produit de fonction dérivable.
+
+La tangente en $x=1$ aura alors comme équation $y=f'(1)(x-1)+f(1)$.
+
+$f(1)=\e$ et comme $f'(x) = \text{e}^x + x\text{e}^x, \: \:f'(1) = 2\text{e}$.
+
+L'équation de la tangente est donc $y=2\e(x - 1) + e$ ou $y = 2\e x - 2\e + \e$ ou $y = 2\e x - \e$ soit la réponse b.
+\item Les nombres entiers $n$ solutions de l'inéquation $(0,2)^n < 0,001$ sont tous les
+nombres entiers $n$ tels que :
+
+Il faut résoudre l'inéquation :
+
+$(0,2)^n < 0,001 \iff n\ln(0,2)<\ln(0,001) \iff n>\dfrac{\ln(0,001)}{\ln(0,2)}$.
+
+Or $\dfrac{\ln(0,001)}{\ln(0,2)} \approx 4,29$. Le plus petit entier vérifiant $n > 4,29$ est 5 d'où la réponse d.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \quad 7 points\hfill Thèmes : probabilités}
+
+\medskip
+
+Les douanes s'intéressent aux importations de casques audio portant le logo d'une certaine marque. Les saisies des douanes permettent d'estimer que:
+
+\setlength\parindent{10mm}
+\begin{itemize}
+\item[$\bullet~~$] 20\,\% des casques audio portant le logo de cette marque sont des contrefaçons ;
+\item[$\bullet~~$] 2\,\% des casques non contrefaits présentent un défaut de conception ; \item[$\bullet~~$] 10\,\% des casques contrefaits présentent un défaut de conception.
+\end{itemize}
+\setlength\parindent{0mm}
+
+L'agence des fraudes commande au hasard sur un site internet un casque affichant le logo de la marque. On considère les évènements suivants:
+
+\setlength\parindent{10mm}
+\begin{itemize}
+\item[$\bullet~~$] $C$: \og le casque est contrefait \fg{} ;
+\item[$\bullet~~$] $D$: \og le casque présente un défaut de conception \fg{} ;
+\item[$\bullet~~$] $\overline{C}$ et $\overline{D}$ désignent respectivement les évènements contraires de $C$ et $D$.
+\end{itemize}
+\setlength\parindent{0mm}
+
+Dans l'ensemble de l'exercice, les probabilités seront arrondies à $10^{-3}$ si nécessaire.
+
+\bigskip
+
+\textbf{Partie 1}
+
+\medskip
+
+\begin{enumerate}
+\item Calculer $P(C \cap D)$. On pourra s'appuyer sur un arbre pondéré.
+
+Soit l'arbre pondéré suivant :
+
+\begin{center}
+\pstree[treemode=R,nodesepA=0pt,nodesepB=2.5pt,labelsep=0.1pt,treesep=1cm,levelsep=3cm]{\TR{}}
+{\pstree{\TR{$C$~}\taput{$0,2$}}
+	{\TR{$D$}\taput{$0,1$}
+	\TR{$\overline{D}$}\tbput{$0,9$}
+	}
+\pstree{\TR{$\overline{C}$~}\tbput{$0,8$}}
+	{\TR{$D$}\taput{$0,02$}
+	\TR{$\overline{D}$}\tbput{$0,98$}
+	}
+}
+\end{center}
+
+On a $P(C \cap D)= P(C) \times P_C(D) = 0,2\times 0,1 = 0,02$.
+
+\item Démontrer que $P(D) = 0,036$.
+
+$C$ et $\overline{C}$ forment une partition de l'univers, d'après les probabilités totales, 
+
+$P(D) = p(C \cap D) +P\left(\overline{C} \cap D\right) = 0,2 \times 0,1 + 0,8\times 0,02 = 0,02 + 0,016 = 0,036$.
+\item Le casque a un défaut. Quelle est la probabilité qu'il soit contrefait ?
+
+On cherche $P_D(C)=\dfrac{P(D \cap C)}{P(D)}=\dfrac{0,02}{0,036}=\dfrac{5}{9} \approx 0,556$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie 2}
+
+\medskip
+
+On commande $n$ casques portant le logo de cette marque. On assimile cette expérience à
+un tirage aléatoire avec remise. On note $X$ la variable aléatoire qui donne le nombre de casques présentant un défaut de conception dans ce lot.
+
+\medskip
+
+\begin{enumerate}
+\item Dans cette question, $n = 35$.
+	\begin{enumerate}
+		\item Justifier que $X$ suit une loi binomiale $\mathcal{B}(n,~p)$ où $n = 35$ et $p = 0,036$.
+		
+		Comme l'expérience est assimilé à un tirage avec remise, on peut considérer que les 35 tirages sont indépendants. Le succès est le casque a un défaut de conception, soit la probabilité $p = 0,036$. On a bien une loi binomiale de paramètre $n=35$ et $p=0,06$
+		\item Calculer la probabilité qu'il y ait parmi les casques commandés, exactement un casque présentant un défaut de conception.
+		
+On cherche $P(X = 1)=\binom{35}{1}0,036^1\times (1 - 0,036)^{35}\approx 0,362$
+		\item Calculer $P(X \leqslant 1)$.
+		
+$P(X \leqslant 1)= P(X = 0) + P(X = 1) = (1,036)^{35}+\binom{35}{1}0,036^1\times (1-0,036)^{35} \approx 0,639$.
+	\end{enumerate}	
+\item Dans cette question, $n$ n'est pas fixé.
+
+Quel doit être le nombre minimal de casques à commander pour que la probabilité 
+ qu'au moins un casque présente un défaut soit supérieur à $0,99$ ?
+ 
+ On veut $P(Y\geq 1)> 0,99 \iff  1-P(Y=0) >0,99 \iff (1-0,036)^n<0,01 \iff n\ln(0,964)<\ln(0,01) \iff  n > \dfrac{\ln(0,01)}{\ln(0,964)} \iff  n >125,6$ donc il faut commander au moins 126 casques.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \quad 7 points\hfill Thèmes : suites, fonctions}
+
+\medskip
+
+Au début de l'année 2021, une colonie d'oiseaux comptait $40$ individus. L'observation conduit à modéliser l'évolution de la population par la suite $\left(u_n\right)$ définie pour tout entier naturel $n$ par:
+
+\[\left\{\begin{array}{l c l}
+u_0&=&40\\u_{n+}&=&0,008u_n\left(200 - u_n\right)
+\end{array}\right.\]
+
+où $u_n$ désigne le nombre d'individus au début de l'année $(2021+n)$.
+
+\medskip
+
+\begin{enumerate}
+\item Donner une estimation, selon ce modèle, du nombre d'oiseaux dans la colonie au
+début de l'année 2022.
+
+On calcule $u_1 = 0,008u_0(200- u_0) = 51,2$ car le rang 1 correspond à la population d'oiseaux pour l'année 2022. On peut donc estimer qu'il y aura 51 animaux au début de 2022.
+\end{enumerate}
+
+On considère la fonction $f$ définie sur l'intervalle [0~;~100] par $f(x) = 0,008x(200 - x)$.
+
+\begin{enumerate}
+\item Résoudre dans l'intervalle [0~;~100] l'équation $f(x) = x$.
+
+\begin{align*}
+f(x) = x &\iff  0,008x(200-x) = x \\
+&\iff  x(0,008(200-x)-1)=0 \\
+&\iff  x(0,6-0,008x)=0 \\
+&\iff  x=0 \text{~ou~} x=75
+\end{align*}
+
+$S = \left\{0~;~75 \right\}$.
+\item
+	\begin{enumerate}
+		\item Démontrer que la fonction $f$ est croissante sur l'intervalle [0~;~100] et dresser son tableau de variations.
+		
+La fonction $f$ est dérivable comme produit et sommes de fonctions dérivables sur $[0~;~100]$. 
+		
+$f'(x)=0,008(200 - x) - 0,008x = -0,016x + 1,6$, d'où  $f'(x) > 0 \iff 1,6 > 0,016x \iff  x < 100$.
+		
+On a donc $f'(x) > 0$ sur [0~;~100] : la fonction $f$ est croissante sur cet intervalle.
+		
+%d'où le tableau de variations sur  $[0~;~100]$ :
+Sur l'intervalle [0~;~100], la fonction $f$ croît de $f(0) = 0$ à $f(100) = 80$.
+		
+%		\begin{center}
+%		\begin{tikzpicture}
+%		\tkzTabInit[lgt=2,espcl=4]{$x$/1,signe de $f'(x)$/1,variation de $f$/2}{$0$,$100$}
+%		\tkzTabLine{,+,}
+%		\tkzTabVar{-/$0$,+/$80$}
+%		\end{tikzpicture}
+%		\end{center}
+		\item En remarquant que, pour tout entier naturel $n$,\, $u_{n+1} = f\left(u_n\right)$ démontrer par récurrence que, pour tout entier naturel $n$ :
+
+Soit $P_n$ la relation \[0 \leqslant u_n \leqslant u_{n+1} \leqslant 100.\]
+
+\emph{Initialisation} : 
+
+On a vu que $u_0 = 40$ ; $u_1\approx 51$, on a donc $0\leqslant 40 \leqslant 51,2 \leqslant 100$ ; $P_0$ est donc vraie.
+
+\emph{Hérédité }: 
+
+Soit $n \in \N$. Supposons $P_n$ vraie, soit 
+
+$0 \leqslant u_n \leqslant u_{n+1} \leqslant 100$
+
+Par croissance de la fonction $f$ sur $[0~;~100]$on a donc  $f(0) \leqslant f\left(u_n\right) \leqslant f\left(u_{n+1}\right) \leqslant f(100)$.
+
+Comme $f(0) = 0$ et $f(100) = 80$, on a donc
+
+$0 \leqslant u_{n+1} \leqslant u_{n+2} \leqslant 80 < 100$ et enfin 
+
+$0 \leqslant u_{n+1} \leqslant u_{n+2} \leqslant 100$
+
+$P_{n+1}$ est donc vraie.
+
+Conclusion : 
+
+La propriété $P_n$ est vraie au rang 0 et si elle est vraie au rang $n \in \N$, elle est vraie au rang $n + 1$ : d'après le principe de récurrence la propriété $P_n$ est vraie  pour tout entier naturel $n$.
+		\item En déduire que la suite $\left(u_n\right)$ est convergente.
+		
+La suite est croissante est majorée par 100 :  elle est donc convergente vers une limite $\ell \leqslant 100$.
+		\item Déterminer la limite $\ell$ de la suite $\left(u_n\right)$. Interpréter le résultat dans le contexte de l'exercice.
+		
+La fonction $f$ est continue sur $[0~;~100]$ car elle est dérivable.
+		
+Comme $u_{n+1}=f\left(u_n\right)$, la limite $l$ de la suite est donc solution de l'équation $f(\ell)=\ell$ sur l'intervalle $[0~;~100]$.
+
+D'après la question 2., $\ell = 0$ ce qui n'est pas possible puisque $u_0 = 40$, ou alors $\ell = 75$.
+
+À long terme le nombre d'oiseaux plafonnera à 75.
+	\end{enumerate}
+\item On considère l'algorithme suivant:
+
+\begin{center}
+\fbox{\begin{tabular}{l}
+def seuil(p) :\\
+\qquad  n=0\\
+\qquad  u = 40\\
+\qquad  while u < p :\\
+\quad \qquad   n =n+1\\
+\quad \qquad u = 0.008*u*(200-u)\\
+\qquad return(n+2021)\\ 
+\end{tabular}}
+\end{center}
+
+L'exécution de seuil(100) ne renvoie aucune valeur. Expliquer pourquoi à l'aide de la question 3.
+
+Comme la limite de la suite est 75, toutes les valeurs de $u_n$ seront inférieure à 75 et par conséquent à 100, l'exécution de seuil(100) \og tournera \fg{} indéfiniment. La boucle while est donc infinie.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4} \quad 7 points\hfill Thèmes : géométrie dans le plan et dans l'espace}
+
+\medskip
+
+On considère le cube ABCDEFGH d'arête de longueur 1.
+
+L'espace est muni du repère orthonormé $\left(\text{A}~;\, \vect{\text{AB}}, \vect{\text{AD}}, \vect{\text{AE}}\right)$. Le point I est le milieu du
+segment [EF], K le centre du carré ADHE et O le milieu du segment [AG].
+
+\begin{center}
+\psset{unit=0.9cm,radius=0pt}
+\begin{pspicture}(0,-1)(9,7)
+%\psgrid[subgriddiv=2,  gridlabels=0, gridcolor=lightgray]
+%%%%%%%%%%%%%%%%%
+\Cnode*(0.5,0.4){A} \Cnode*(5.5,0){B} 
+\Cnode*(7.5,1.4){C} \Cnode*(2.5,1.8){D}
+\Cnode*(0.5,5.4){E} \Cnode*(5.5,5){F} 
+\Cnode*(7.5,6.4){G} \Cnode*(2.5,6.8){H}
+\Cnode*[radius=2pt](3,5.2){I}% milieu de [EF]
+\Cnode*[radius=2pt](1.5,3.6){K}% milieu de [ED]
+\Cnode*[radius=2pt](4,3.4){O}% centre du cube
+%%%%%%%%%%%%%%%
+\uput[dl](A){A} \uput[dr](B){B} \uput[r](C){C} 
+\uput[ur](D){D} \uput[ul](E){E} \uput[u](F){F} 
+\uput[ur](G){G} \uput[u](H){H} \uput[u](I){I}
+\uput[dr](O){O}
+\uput[l](K){K}
+%%%%%%%%%%%%%%%
+\pspolygon(A)(B)(F)(E)
+\psline(B)(C)(G)(F)
+\psline(G)(H)(E)
+\psline(A)(I)(G)
+\psline[linestyle=dashed](A)(G)
+\psline[linestyle=dashed](A)(D)(H)
+\psline[linestyle=dashed](D)(C)
+\end{pspicture}
+\end{center}
+
+\emph{Le but de l'exercice est de calculer de deux manières différentes, la distance du point B au plan (AIG).}
+
+\bigskip
+
+\textbf{Partie 1. Première méthode}
+
+\medskip
+
+\begin{enumerate}
+\item Donner, sans justification, les coordonnées des points A, B, et G.
+
+$\text{A}(0~;~0~;~0)$ ; $\text{B}(1~;~0~;~0)$ et $\text{G}(1~;~1~;~1)$
+
+On admet que les points I et K ont pour coordonnées I$\left(\dfrac{1}{2}~;~0~;~1\right)$ et K$\left(0~;~\dfrac{1}{2}~;~\dfrac{1}{2}\right)$.
+\item Démontrer que la droite (BK) est orthogonale au plan (AIG).
+
+$\vect{\text{BK}}\begin{pmatrix}
+-1 \\ \frac{1}{2}\\\frac{1}{2}
+\end{pmatrix} $ ; 
+$\vect{\text{AI}}\begin{pmatrix}
+\frac{1}{2} \\ 0\\1
+\end{pmatrix} $ et $\vect{\text{AG}}\begin{pmatrix}
+1 \\ 1\\1
+\end{pmatrix}$.
+
+Les vecteurs $\vect{\text{AI}}$ et $\vect{\text{AG}}$ ne sont pas colinéaires, le point G n'est pas un point de la droite (AI). Les points (AIG) forment donc un plan.
+on a de plus $\vect{\text{BK}}\cdot \vect{\text{AI}}= -1\times \dfrac{1}{2}+\dfrac{1}{2}\times 0+\dfrac{1}{2}\times 1 =0$ 
+et $\vect{\text{BK}}.\vect{\text{AG}}=-1\times 1+\dfrac{1}{2}\times 1+\dfrac{1}{2}\times 1 =0$ 
+
+Le vecteur $\vect{\text{BK}}$ est donc un vecteur normal du plan (AIG)
+\item Vérifier qu'une équation cartésienne du plan (AIG) est : $2x - y - z = 0$.
+
+Comme $\vect{\text{BK}}$, le vecteur $2\vect{\text{BK}}$ est un vecteur normal au plan (AIG).
+
+Soit $M(x~;~y~;~z)$ un point de ce plan, $\vect{\text{AM}}\begin{pmatrix}
+x \\ y\\z
+\end{pmatrix} $ sera donc orthogonal à $2\vect{\text{BK}}$ et donc $2\vect{\text{BK}}.\vect{\text{AM}}=0 \iff 2x - y - z = 0$
+\item Donner une représentation paramétrique de la droite (BK).
+Soit, $M(x~;~y~;~z)$ un point de la droite (BK). 
+
+$M(x~;~y~;~z) \in (\text{BK}) \iff \vect{\text{BM}}=t\vect{\text{BK}}$ ; $t \in \R$ d'où $\begin{cases} x=1+2t\\y=\phantom{1}-t\\z=\phantom{1}-t\end{cases} \quad ,t\in \R $
+\item En déduire que le projeté orthogonal L du point B sur le plan (AIG) a pour
+coordonnées L$\left(\dfrac{1}{3}~;~\dfrac{1}{3}~;~\dfrac{1}{3}\right)$.
+
+Montrons que le point L appartient à (BK) et à (AIG) :
+
+$2\times \dfrac{1}{3}-\dfrac{1}{3}-\dfrac{1}{3}=0$ donc L appartient à (AIG).
+
+En prenant $t=-\dfrac{1}{3}$ dans l'équation paramétrique de la droite (BK), on retrouve les coordonnées de L, qui est donc un point de (BK).
+
+Comme (BK)$\bot$(AIG), L est le projeté orthogonal de B sur (AIG).
+
+\item Déterminer la distance du point B au plan (AIG).
+
+$\vect{\text{BL}}\begin{pmatrix}
+-\dfrac{2}{3}\\ \frac{1}{3}\\ \frac{1}{3}
+\end{pmatrix} $ et BL $=\sqrt{\left(-\dfrac{2}{3}\right)^2+\left(\dfrac{1}{3}\right)^2+\left(\dfrac{1}{3}\right)^2}=\sqrt{\dfrac{2}{3}}$
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie 2. Deuxième méthode}
+
+\medskip
+
+\emph{On rappelle que le volume $V$ d'une pyramide est donné par la formule $V = \dfrac{1}{3} \times  b \times h$, où $b$ est l'aire d'une base et $h$ la hauteur associée à cette base.}
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item %ustifier que dans le tétraèdre ABIG, [GF] est la hauteur relative à la base AIB.
+ABCDEFGH est un cube. L’arête  [FG] est perpendiculaire au plan (ABF)
+
+Le point I est un point de ce plan.  Donc, dans le tétraèdre ABIG, [GF] est la hauteur relative à la base AIB
+
+
+		\item En déduire le volume du tétraèdre ABIG.
+		
+$\mathscr{A}_{AIB}=\dfrac{\text{AB} \times \text{AE}}{2}=\dfrac{1\times 1}{2}=\dfrac{1}{2}$ et GF$=1$
+	\end{enumerate}
+\item On admet que AI = IG $= \dfrac{\sqrt{5}}{2}$ et que AG $= \sqrt 3$.
+
+Le triangle AIG est isocèle en A, soit O le milieu du coté [AG] ; on aura $\text{AO}=\dfrac{\sqrt{3}}{2}$.
+
+Le triangle AIO est rectangle en I, donc d'après le théorème de Pythagore,  on aura :
+
+
+$\text{IO}^2=\text{AI}^2-\text{IO}^2\iff \text{IO}^2=\dfrac{5}{4}-\dfrac{3}{4}=\dfrac{1}{2} \iff \text{OI}=\dfrac{\sqrt{2}}{2}$
+
+L'aire du triangle AIG est donc égale à $\mathscr{A}=\dfrac{\text{OI} \times \text{AG}}{2}=\dfrac{\dfrac{\sqrt{2}}{2}\times \sqrt{3}}{2}=\dfrac{\sqrt{6}}{4}$
+\item En déduire la distance du point B au plan (AIG).
+
+Le volume du tétraèdre AIBG est égale à $\dfrac{1}{3}\mathscr{A}_{\text{AIB}}\times h=\dfrac{1}{6}$ avec $h$ la longueur de la hauteur issue de B dans le tétraèdre AIBG.
+
+On a alors $h=\dfrac{\dfrac{1}{6}}{\dfrac{1}{3}\times \dfrac{\sqrt{6}}{4}}=\dfrac{\sqrt{6}}{3}$
+\end{enumerate}
+\end{document}

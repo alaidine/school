@@ -1,0 +1,348 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+%Relecture : François Hache
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl}
+\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Polynésie 6 mai 2022 sujet 1},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\DecimalMathComma
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Polynésie}}
+\rfoot{\small{5 mai 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Polynésie 6 mai 2022~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ sujet \no 2}}
+
+\bigskip
+
+Durée de l'épreuve : \textbf{4 heures}
+
+\medskip
+
+L'usage de la calculatrice avec mode examen actif est autorisé
+
+\medskip
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 et \textbf{ne doit traiter que ces 3 exercices}
+\end{center}
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \quad 7 points\hfill Thèmes : fonctions, primitives, probabilités}
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples. \\
+Pour chacune des six questions suivantes, une seule des quatre réponses proposées est exacte.\\
+Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point.\\
+Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie.\\
+Aucune justification n'est demandée.}
+
+\medskip
+
+\begin{enumerate}
+\item On considère la fonction $f$ définie et dérivable sur $]0~;~+\infty[$ par:
+\[f(x) = x \ln(x) - x + 1.\]
+
+Parmi les quatre expressions suivantes, laquelle est celle de la fonction dérivée de $f$?
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~} $\ln (x)$&\textbf{b.~~}$\dfrac{1}{x} - 1$&\textbf{c.~~} $\ln (x) - 2$&\textbf{d.~~}$\ln (x) - 1$\rule[-3mm]{0mm}{9mm}\\ \hline
+\end{tabularx}
+\end{center}
+
+\item On considère la fonction $g$ définie sur $]0~;~+\infty[$ par $g(x) = x^2[1 - \ln (x)]$.
+
+ Parmi les quatre affirmations suivantes, laquelle est correcte ?
+ 
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~}$\displaystyle\lim_{x \to 0} g(x) = +\infty$&\textbf{b.~~} 
+$\displaystyle\lim_{x \to 0} g(x) = - \infty$&\textbf{c.~~} $\displaystyle\lim_{x \to 0} g(x) = 0$&\textbf{d.~~} La fonction $g$ n'admet pas de limite en 0.\\ \hline
+\end{tabularx}
+\end{center}
+
+\item On considère la fonction $f$ définie sur $\R$ par $f(x) = x^3 - 0,9x^2 -0,1x$. Le nombre de solutions de l'équation $f(x) = 0$ sur $\R$ est :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~} $0$&\textbf{b.~~}$1$&\textbf{c.~~} $2$&\textbf{d.~~}$3$\\ \hline
+\end{tabularx}
+\end{center}
+
+\item Si $H$ est une primitive d'une fonction $h$ définie et continue sur $\R$, 
+et si $k$ est la fonction définie sur $\R$ par $k(x) = h(2x)$, 
+alors, une primitive $K$ de $k$ est définie sur $\R$ par :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~} $K(x) =H(2x)$&\textbf{b.~~}$K(x) =2H(2x)$&\textbf{c.~~} $ K(x) =\dfrac{1}{2}H(2x)$&\textbf{d.~~}$K(x) =2H(x)$\rule[-3mm]{0mm}{9mm}\\ \hline
+\end{tabularx}
+\end{center}
+
+\item L'équation réduite de la tangente au point d'abscisse 1 de la courbe de la fonction $f$ définie sur $\R$ par $f(x) = x\text{e}^x$ est:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~} $y = \text{e}x + \text{e}$&\textbf{b.~~}$y =2\text{e}x - \text{e}$&\textbf{c.~~} $y = 2\text{e}x +  \text{e}$&\textbf{d.~~}$y = \text{e}x$\\ \hline
+\end{tabularx}
+\end{center}
+
+\item Les nombres entiers $n$ solutions de l'inéquation $(0,2)^n < 0,001$ sont tous les
+nombres entiers $n$ tels que :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~} $n \leqslant 4$&\textbf{b.~~}$n\leqslant 5$&\textbf{c.~~} $n \geqslant 4$ &\textbf{d.~~}$n \geqslant 5$\\ \hline
+\end{tabularx}
+\end{center}
+
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \quad 7 points\hfill Thèmes : probabilités}
+
+\medskip
+
+Les douanes s'intéressent aux importations de casques audio portant le logo d'une certaine marque. Les saisies des douanes permettent d'estimer que:
+
+\setlength\parindent{10mm}
+\begin{itemize}
+\item[$\bullet~~$] 20\,\% des casques audio portant le logo de cette marque sont des contrefaçons ;
+\item[$\bullet~~$] 2\,\% des casques non contrefaits présentent un défaut de conception ;\item[$\bullet~~$] 10\,\% des casques contrefaits présentent un défaut de conception.
+\end{itemize}
+\setlength\parindent{0mm}
+
+L'agence des fraudes commande au hasard sur un site internet un casque affichant le logo de la marque. On considère les évènements suivants:
+
+\setlength\parindent{10mm}
+\begin{itemize}
+\item[$\bullet~~$] $C$: \og le casque est contrefait \fg{} ;
+\item[$\bullet~~$] $D$: \og le casque présente un défaut de conception \fg{} ;
+\item[$\bullet~~$] $\overline{C}$ et $\overline{D}$ désignent respectivement les évènements contraires de $C$ et $D$.
+\end{itemize}
+\setlength\parindent{0mm}
+
+Dans l'ensemble de l'exercice, les probabilités seront arrondies à $10^{-3}$ si nécessaire.
+
+\bigskip
+
+\textbf{Partie 1}
+
+\medskip
+
+\begin{enumerate}
+\item Calculer $P(C \cap D)$. On pourra s'appuyer sur un arbre pondéré.
+\item Démontrer que $P(D) = 0,036$.
+\item Le casque a un défaut. Quelle est la probabilité qu'il soit contrefait ?
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie 2}
+
+\medskip
+
+On commande $n$ casques portant le logo de cette marque. On assimile cette expérience à
+un tirage aléatoire avec remise. On note $X$ la variable aléatoire qui donne le nombre de casques présentant un défaut de conception dans ce lot.
+
+\medskip
+
+\begin{enumerate}
+\item Dans cette question, $n = 35$.
+	\begin{enumerate}
+		\item Justifier que $X$ suit une loi binomiale $\mathcal{B}(n,~p)$ où $n = 35$ et $p = 0,036$.
+		\item Calculer la probabilité qu'il y ait parmi les casques commandés, exactement un casque présentant un défaut de conception.
+		\item Calculer $P(X \leqslant 1)$.
+	\end{enumerate}	
+\item Dans cette question, $n$ n'est pas fixé.
+
+Quel doit être le nombre minimal de casques à commander pour que la probabilité 
+ qu'au moins un casque présente un défaut soit supérieur à $0,99$ ?
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \quad 7 points\hfill Thèmes : suites, fonctions}
+
+\medskip
+
+Au début de l'année 2021, une colonie d'oiseaux comptait $40$ individus. L'observation conduit à modéliser l'évolution de la population par la suite $\left(u_n\right)$ définie pour tout entier naturel $n$ par:
+
+\[\left\{\begin{array}{l c l}
+u_0&=&40\\
+u_{n+1}&=&0,008u_n\left(200 - u_n\right)
+\end{array}\right.\]
+
+où $u_n$ désigne le nombre d'individus au début de l'année $(2021+n)$.
+
+\medskip
+
+
+\begin{enumerate}
+\item Donner une estimation, selon ce modèle, du nombre d'oiseaux dans la colonie au
+début de l'année 2022.
+\end{enumerate}
+
+On considère la fonction $f$ définie sur l'intervalle [0~;~100] par $f(x) = 0,008x(200 - x)$.
+
+\begin{enumerate}[resume]
+\item Résoudre dans l'intervalle [0~;~100] l'équation $f(x) = x$.
+\item
+	\begin{enumerate}
+		\item Démontrer que la fonction $f$ est croissante sur l'intervalle [0~;~100] et dresser son tableau de variations.
+		\item En remarquant que, pour tout entier naturel $n$,\, $u_{n+1} = f\left(u_n\right)$ démontrer par récurrence que, pour tout entier naturel $n$ :
+
+\[0 \leqslant u_n \leqslant u_{n+1} \leqslant 100.\]
+
+		\item En déduire que la suite $\left(u_n\right)$ est convergente.
+		\item Déterminer la limite $\ell$ de la suite $\left(u_n\right)$. Interpréter le résultat dans le contexte de l'exercice.
+	\end{enumerate}
+\item On considère l'algorithme suivant:
+
+\begin{center}
+\fbox{\begin{tabular}{l}
+def seuil(p) :\\
+\qquad n=0\\
+\qquad u = 40\\
+\qquad while u < p :\\
+\quad \qquad n =n+1\\
+\quad \qquad u = 0.008*u*(200-u)\\
+\qquad return(n+2021)\\ 
+\end{tabular}}
+\end{center}
+
+L'exécution de seuil(100) ne renvoie aucune valeur. Expliquer pourquoi à l'aide de la question 3.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4} \quad 7 points\hfill Thèmes : géométrie dans le plan et dans l'espace}
+
+\medskip
+
+On considère le cube ABCDEFGH d'arête de longueur 1.
+
+L'espace est muni du repère orthonormé $\left(\text{A}~;\, \vect{\text{AB}}, \vect{\text{AD}}, \vect{\text{AE}}\right)$. Le point I est le milieu du
+segment [EF], K le centre du carré ADHE et O le milieu du segment [AG].
+
+\begin{center}
+\psset{unit=0.9cm,radius=0pt}
+\begin{pspicture}(0,-1)(9,7)
+%%%%%%%%%%%%%%%%%
+\Cnode*(0.5,0.4){A} \Cnode*(5.5,0){B} 
+\Cnode*(7.5,1.4){C} \Cnode*(2.5,1.8){D}
+\Cnode*(0.5,5.4){E} \Cnode*(5.5,5){F} 
+\Cnode*(7.5,6.4){G} \Cnode*(2.5,6.8){H}
+\Cnode*[radius=2pt](3,5.2){I}% milieu de [EF]
+\Cnode*[radius=2pt](1.5,3.6){K}% milieu de [ED]
+\Cnode*[radius=2pt](4,3.4){O}% centre du cube
+%%%%%%%%%%%%%%%
+\uput[dl](A){A} \uput[dr](B){B} \uput[r](C){C} 
+\uput[ur](D){D} \uput[ul](E){E} \uput[u](F){F} 
+\uput[ur](G){G} \uput[u](H){H} \uput[u](I){I}
+\uput[dr](O){O}
+\uput[l](K){K}
+%%%%%%%%%%%%%%%
+\pspolygon(A)(B)(F)(E)
+\psline(B)(C)(G)(F)
+\psline(G)(H)(E)
+\psline(A)(I)(G)
+\psline[linestyle=dashed](A)(G)
+\psline[linestyle=dashed](A)(D)(H)
+\psline[linestyle=dashed](D)(C)
+\end{pspicture}
+\end{center}
+
+\emph{Le but de l'exercice est de calculer de deux manières différentes, la distance du point B au plan (AIG).}
+
+\bigskip
+
+\textbf{Partie 1. Première méthode}
+
+\medskip
+
+\begin{enumerate}
+\item Donner, sans justification, les coordonnées des points A, B, et G. 
+
+On admet que les points I et K ont pour coordonnées I$\left(\dfrac{1}{2}~;~0~;~1\right)$ et K$\left(0~;~\dfrac{1}{2}~;~\dfrac{1}{2}\right)$.
+\item Démontrer que la droite (BK) est orthogonale au plan (AIG).
+\item Vérifier qu'une équation cartésienne du plan (AIG) est : $2x - y - z = 0$.
+\item Donner une représentation paramétrique de la droite (BK).
+\item En déduire que le projeté orthogonal L du point B sur le plan (AIG) a pour
+coordonnées L$\left(\dfrac{1}{3}~;~\dfrac{1}{3}~;~\dfrac{1}{3}\right)$.
+\item Déterminer la distance du point B au plan (AIG).
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie 2. Deuxième méthode}
+
+\medskip
+
+\emph{On rappelle que le volume $V$ d'une pyramide est donné par la formule $V = \dfrac{1}{3} \times  b \times h$, où $b$ est l'aire d'une base et $h$ la hauteur associée à cette base.}
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Justifier que dans le tétraèdre ABIG, [GF] est la hauteur relative à la base AIB. 
+		\item En déduire le volume du tétraèdre ABIG.
+	\end{enumerate}
+\item On admet que AI = IG $= \dfrac{\sqrt{5}}{2}$ et que AG $= \sqrt 3$.
+
+Démontrer que l'aire du triangle isocèle AIG est égale à $\dfrac{\sqrt{6}}{4}$ unité d'aire.
+\item En déduire la distance du point B au plan (AIG).
+\end{enumerate}
+\end{document}

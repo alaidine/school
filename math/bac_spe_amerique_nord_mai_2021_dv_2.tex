@@ -1,0 +1,382 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+%Relecture : François Hache
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl}
+\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat S},
+pdftitle = {Amérique du Nord mai 2021},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[frenchb]{babel}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat S}
+\lfoot{\small{Amérique du Nord}}
+\rfoot{\small{mai 2021}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Amérique du Nord mai 2021~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}}
+\end{center}
+
+\vspace{0,25cm}
+
+Le candidat traite 4 exercices : les exercices 1, 2 et 3 communs à tous les candidats et un seul des deux exercices A ou B.
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+
+
+Les probabilités demandées dans cet exercice seront arrondies à $10^{-3}$.
+
+\medskip
+
+Un laboratoire pharmaceutique vient d'élaborer un nouveau test anti-dopage. 
+
+\bigskip
+
+\textbf{Partie A}
+
+\medskip
+
+Une étude sur ce nouveau test donne les résultats suivants:
+
+\setlength\parindent{9mm}
+\begin{itemize}
+\item[$\bullet~~$] si un athlète est dopé, la probabilité que le résultat du test soit positif est $0,98$ (sensibilité du test) ;
+\item[$\bullet~~$]si un athlète n'est pas dopé, la probabilité que le résultat du test soit négatif est $0,995$ (spécificité du test).
+\end{itemize}
+\setlength\parindent{0mm}
+
+\smallskip
+
+On fait subir le test à un athlète sélectionné au hasard au sein des participants à une compétition d'athlétisme. 
+
+On note $D$ l'évènement \og l'athlète est dopé \fg{} et $T$ l'évènement \og le test est positif \fg. 
+
+On admet que la probabilité de l'évènement $D$ est égale à 0,08.
+
+\medskip
+
+\begin{enumerate}
+\item Traduire la situation sous la forme d'un arbre pondéré.
+\item Démontrer que $P(T) = 0,083$.
+\item 
+	\begin{enumerate}
+		\item Sachant qu'un athlète présente un test positif, quelle est la probabilité qu'il soit dopé ?
+		\item Le laboratoire décide de commercialiser le test si la probabilité de l'évènement \og un athlète présentant un test positif est dopé \fg{} est supérieure ou égale à $0,95$.
+
+Le test proposé par le laboratoire sera-t-il commercialisé ? Justifier.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B}
+
+\medskip
+
+Dans une compétition sportive, on admet que la probabilité qu'un athlète contrôlé présente un test positif est $0,103$.
+
+\medskip
+
+\begin{enumerate}
+\item Dans cette question \textbf{1.} on suppose que les organisateurs décident de contrôler $5$ ~athlètes au hasard parmi les athlètes de cette compétition. 
+
+On note $X$ la variable aléatoire égale au nombre d'athlètes présentant un test positif parmi les $5$ athlètes contrôlés.
+	\begin{enumerate}
+		\item Donner la loi suivie par la variable aléatoire $X$. Préciser ses paramètres.
+		\item Calculer l'espérance $E(X)$ et interpréter le résultat dans le contexte de l'exercice.
+		\item Quelle est la probabilité qu'au moins un des 5 athlètes contrôlés présente un test positif ?
+	\end{enumerate}
+\item Combien d'athlètes faut-il contrôler au minimum pour que la probabilité de l'évènement \og au moins un athlète contrôlé présente un test positif\fg{} soit supérieure ou égale à $0,75$ ? Justifier.
+\end{enumerate}
+\vspace{0,5cm}
+\bigskip
+
+\textbf{\textsc{Exercice 2} \hfill 5 points}
+ 
+\medskip
+
+
+Un biologiste s'intéresse à l'évolution de la population d'une espèce animale sur une île du Pacifique.
+
+Au début de l'année 2020, cette population comptait $600$ individus. On considère que l'espèce sera menacée d'extinction sur cette île si sa population devient inférieure ou égale à 20 individus.
+
+\smallskip
+
+Le biologiste modélise le nombre d'individus par la suite $\left(u_n\right)$ définie par : 
+
+\[\left\{\begin{array}{l c l}
+u_0		&=	&0,6\\
+u_{n+1}	&=	&0,75 u_n\left(1 - 0,15 u_n\right)
+\end{array}\right.\]
+
+où pour tout entier naturel $n$, $u_n$ désigne le nombre d'individus, en milliers, au début de l'année $2020 + n$.
+
+\medskip
+
+\begin{enumerate}
+\item Estimer, selon ce modèle, le nombre d'individus présents sur l'île au début de l'année 2021 puis au début de l'année 2022.
+\end{enumerate}
+
+Soit $f$ la fonction définie sur l'intervalle [0~;~1] par 
+
+\[f(x) = 0,75x (1 - 0,15x).\]
+
+\begin{enumerate}[resume]
+\item Montrer que la fonction $f$ est croissante sur l'intervalle [0~;~1] et dresser son tableau de variations.
+\item Résoudre dans l'intervalle [0~;~1] l'équation $f(x) = x$.
+\end{enumerate}
+
+On remarquera pour la suite de l'exercice que, pour tout entier naturel $n$,\, $u_{n+1} = f\left(u_n\right)$.
+
+\begin{enumerate}[resume]
+\item 
+	\begin{enumerate}
+		\item Démontrer par récurrence que pour tout entier naturel $n$,\, $0 \leqslant u_{n+1} \leqslant  u_n \leqslant 1$.
+		\item En déduire que la suite $\left(u_n\right)$ est convergente.
+		\item Déterminer la limite $\ell$ de la suite $\left(u_n\right)$.
+	\end{enumerate}
+\item Le biologiste a l'intuition que l'espèce sera tôt ou tard menacée d'extinction.
+	\begin{enumerate}
+		\item Justifier que, selon ce modèle, le biologiste a raison.
+		\item Le biologiste a programmé en langage Python la fonction \textbf{menace()} ci-dessous:
+
+\begin{center}
+\fbox{
+\begin{tabular}{l}%\hline
+def menace()\\
+\quad u = 0,6\\
+\quad n = 0\\
+\quad while u > 0,02\\
+\hspace{1cm} u = 0,75*u*(1-0,15*u)\\
+\hspace{1cm} n = n+1\\
+\quad return n\\ %\hline
+\end{tabular}
+}
+\end{center}
+
+Donner la valeur numérique renvoyée lorsqu'on appelle la fonction menace(). 
+
+Interpréter ce résultat dans le contexte de l'exercice.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \hfill 5 points}
+ 
+\textbf{Commun à tous les candidats}
+
+\smallskip
+
+\textbf{Les questions 1. à 5. de cet exercice peuvent être traitées de façon indépendante}
+
+\medskip
+
+On considère un cube ABCDEFGH. Le point I est le milieu du segment [EF], le point J est le milieu du segment [BC] et le point K est le milieu du segment [AE].
+
+
+\begin{center}
+\psset{unit=0.9cm}
+\begin{pspicture}(6,7)
+\pspolygon(0.5,0.4)(5.5,0)(5.5,5)(0.5,5.4)%ABFE
+\uput[dl](0.5,0.4){A} \uput[dr](5.5,0){B} \uput[u](5.5,5){F} \uput[ul](0.5,5.4){E}
+\psline(5.5,0)(8.5,1.4)(8.5,6.4)(5.5,5)%BCGF
+\uput[r](8.5,1.4){C} \uput[ur](8.5,6.4){G} 
+\psline(8.5,6.4)(3.5,6.8)(0.5,5.4)%GHE 
+\uput[u](3.5,6.8){H} \uput[u](3,5.2){I}\uput[dr](7,0.7){J}\uput[l](0.5,2.9){K}
+\psline[linewidth=1.6pt](0.5,0.4)(3,5.2)%AI
+\psline[linestyle=dashed,linewidth=1.6pt](3,5.2)(7,0.7)%IJ
+\psline[linestyle=dashed,linewidth=1.6pt](0.5,2.9)(3.5,6.8)%KH
+\psline[linestyle=dashed](0.5,0.4)(3.5,1.8)(3.5,6.8)%ADH
+\uput[ur](3.5,1.8){D}
+\psline[linestyle=dashed](3.5,1.8)(8.5,1.4)%DC
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item 
+Les droites (AI) et (KH) sont-elles parallèles ? Justifier votre réponse,
+\end{enumerate}
+
+Dans la suite, on se place dans le repère orthonormé $\left(\text{A}~;~\vect{\text{AB}},~ \vect{\text{AD}},~ \vect{\text{AE}}\right)$.
+
+\begin{enumerate}[resume]
+\item 
+	\begin{enumerate}
+		\item Donner les coordonnées des points I et J.
+		\item Montrer que les vecteurs $\vect{\text{IJ}},~\vect{\text{AE}}$ et $\vect{\text{AC}}$ sont coplanaires.
+	\end{enumerate}
+\end{enumerate}
+	
+On considère le plan $\mathcal P$ d'équation $x + 3y - 2z + 2 = 0$ ainsi que les droites $d_1$ et $d_2$ définies par les représentations paramétriques ci-dessous:
+
+\[d_1  : \left\{\begin{array}{l c l}
+x	&=&3 + t\\
+y 	&=& 8 - 2t\\
+z	&=& - 2 + 3t\\
+\end{array}\right. , t \in \R\quad \text{et}\quad 
+d_2  : \left\{\begin{array}{l c l}
+x	&=&4 + t\\
+y 	&=&1 + t\\
+z	&=&8 + 2t\\
+\end{array}\right. , t \in \R.\]
+
+\begin{enumerate}[resume]
+\item Les droites $d_1$ et $d_2$ sont-elles parallèles ? Justifier votre réponse.
+\item Montrer que la droite $d_2$ est parallèle au plan $\mathcal P$.
+\item Montrer que le point L(4~;~0~;~3) est le projeté orthogonal du point M(5~;~3~;~1) sur le plan $\mathcal P$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice au choix du candidat}}
+
+Le candidat doit traiter un seul des deux exercices A ou B.
+
+Il indique sur sa copie l'exercice choisi: exercice A ou exercice B.
+
+\bigskip
+
+\textbf{Exercice A  \hfill 5 points}
+
+\smallskip
+
+\begin{tabular}{|l|}\hline
+Principaux domaines abordés :\\
+\hspace{1.25cm}$\bullet~~$Fonction exponentielle\\
+\hspace{1.25cm}$\bullet~~$Convexité\\ \hline
+\end{tabular}
+
+\medskip
+
+Pour chacune des affirmations suivantes, indiquer si elle est vraie ou fausse. 
+
+On justifiera chaque réponse. 
+
+\medskip
+
+\textbf{Affirmation 1 :} Pour tous réels $a$ et $b$,\, $\left(\text{e}^{a+b}\right)^2 = \text{e}^{2a} + \text{e}^{2b}$.
+
+\smallskip
+\textbf{Affirmation 2 :}  Dans le plan muni d'un repère, la tangente au point A d'abscisse 0 à la courbe représentative de la fonction $f$ définie sur $\R$ par $f(x) = - 2 + (3 - x)\text{e}^x$ admet pour équation réduite $y = 2x + 1$.
+
+\smallskip
+\textbf{Affirmation 3 :} $\displaystyle\lim_{x \to + \infty} \text{e}^{2x} - \text{e}^{x} + \dfrac{3}{x}= 0$.
+
+\smallskip
+\textbf{Affirmation 4 :} L'équation $1 - x + \text{e}^{-x} = 0$ admet une seule solution appartenant à l'intervalle [0~;~2].
+
+\smallskip
+\textbf{Affirmation 5 :} La fonction $g$ définie sur $\R$ par $g(x) = x^2 - 5x + \text{e}^x$ est convexe.
+
+\bigskip
+
+\textbf{\textsc{Exercice B} \hfill 5 points}
+ 
+\smallskip
+
+\begin{tabular}{|l|}\hline
+Principaux domaines abordés : \\ 
+\hspace{1cm}$\bullet~~$Fonction logarithme népérien\\
+\hspace{1cm}$\bullet~~$Convexité\\ \hline
+\end{tabular}
+
+\medskip
+
+Dans le plan muni d'un repère, on considère ci-dessous la courbe $\mathcal{C}_f$ représentative d'une fonction $f$, deux fois dérivable sur l'intervalle $]0~;~ +\infty[$. 
+
+La courbe $\mathcal{C}_f$ admet une tangente horizontale $T$ au point A(1~;~4).
+
+\begin{center}
+\psset{unit=1.25cm}
+\begin{pspicture*}(-0.5,-0.8)(6.4,4.4)
+\psgrid[gridlabels=0pt,subgriddiv=5,gridcolor=gray](0,-1)(9,5)
+\psaxes[linewidth=1.25pt]{->}(0,0)(0,-0.8)(6.4,4.4)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0.1}{6.4}{x ln 1 add 4 mul x div}
+\psline[linewidth=1.25pt](0,4)(6.4,4)\uput[u](5.8,4){$T$}
+\uput[u](5.8,1.9){\red $\mathcal{C}_f$}
+\uput[u](1,4){A}
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+\begin{enumerate}
+\item Préciser les valeurs $f(1)$ et $f'(1)$.
+\end{enumerate}
+
+On admet que la fonction $f$ est définie pour tout réel $x$ de l'intervalle $]0~;~ +\infty[$ par:
+
+\[f(x) = \dfrac{a + b \ln x}{x} \,\, 
+\text{où }\, a \text{ et}\, b \text{ sont deux nombres réels}.\]
+
+\begin{enumerate}[resume]
+\item Démontrer que, pour tout réel $x$ strictement positif, on a :
+
+\[f'(x) = \dfrac{b - a - b\, \ln x}{x^2}.\]
+
+\item En déduire les valeurs des réels $a$ et $b$.
+\end{enumerate}
+
+Dans la suite de l'exercice, on admet que la fonction $f$ est définie pour tout réel $x$ de l'intervalle $]0~;~ +\infty[$ par:
+
+\[f(x) = \dfrac{4 + 4\ln x}{x}.\]
+
+\begin{enumerate}[resume]
+\item Déterminer les limites de $f$ en $0$ et en $+\infty$.
+\item Déterminer le tableau de variations de $f$ sur l'intervalle $]0~;~ +\infty[$. 
+\item Démontrer que, pour tout réel $x$ strictement positif, on a :
+
+\[f''(x) = \dfrac{- 4 + 8\ln x}{x^3}.\]
+
+\item Montrer que la courbe $\mathcal{C}_f$ possède un unique point d'inflexion B dont on précisera les coordonnées.
+\end{enumerate}
+\end{document}

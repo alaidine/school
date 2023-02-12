@@ -1,0 +1,464 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl}
+\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat Spécialité},
+pdftitle = {Amérique du Nord 19 mai }2022,
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[frenchb]{babel}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat Spécialité}
+\lfoot{\small{Amérique du Nord}}
+\rfoot{\small{19 mai 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Amérique du Nord Jour 2 19 mai 2022~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}}
+\end{center}
+
+\vspace{0,25cm}
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 exercices et \textbf{ne doit traiter que ces 3 exercices}
+
+Chaque exercice est noté sur \textbf{7 points (le total sera ramené sur 20 points)}.
+
+Les traces de recherche, même incomplètes ou infructueuses, seront prises en compte.
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \quad (7 points)\hfill Thème : probabilités, suites}
+
+\medskip
+
+Dans une région touristique, une société propose un service de location de vélos pour la journée.
+
+\smallskip
+
+La société dispose de deux points de location distinctes, le point A et le point B. Les vélos peuvent être empruntés et restitués indifféremment dans l'un où l'autre des deux points de location.
+
+\smallskip
+
+On admettra que le nombre total de vélos est constant et que tous les matins, à l'ouverture du service, chaque vélo se trouve au point A ou au point B.
+
+\smallskip
+
+D'après une étude statistique :
+
+\smallskip
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] Si un vélo se trouve au point A un matin, la probabilité qu'il se trouve au point A le matin suivant est égale à $0,84$ ;
+\item[$\bullet~~$] Si un vélo se trouve au point B un matin la probabilité qu'il se trouve au point B le matin suivant est égale à $0,76$.
+\end{itemize}
+\setlength\parindent{0cm}
+
+À l'ouverture du service le premier matin, la société a disposé la moitié de ses vélos au point A, l'autre moitié au point B.
+
+\smallskip
+
+On considère un vélo de la société pris au hasard.
+
+\smallskip
+
+Pour tout entier naturel non nul $n$, on définit les évènements suivants :
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$]$A_n$ : \og le vélo se trouve au point A le $n$-ième matin \fg{}
+\item[$\bullet~~$]$B_n$ : \og le vélo se trouve au point B le $n$-ième matin \fg.
+\end{itemize}
+\setlength\parindent{0cm}
+
+Pour tout entier naturel non nul $n$, on note $a_n$ la probabilité de l'évènement $A_n$ et $b_n$ la probabilité de l'évènement $B_n$. Ainsi $a_1 = 0,5$ et $b_1 =  0,5$.
+
+\medskip
+
+\begin{enumerate}
+\item Recopier et compléter l'arbre pondéré ci-dessous qui modélise la situation pour les deux premiers matins :
+
+\begin{center}
+\pstree[treemode=R,nodesepB=3pt,levelsep=3cm]{\TR{}}
+{\pstree{\TR{$A_1~~$}\taput{\ldots}}
+	{\TR{$A_2$}\taput{\ldots}
+	\TR{$B_2$}\tbput{\ldots}
+	}
+\pstree{\TR{$B_1~~$}\tbput{\ldots}}
+	{\TR{$A_2$}\taput{\ldots}
+	\TR{$B_2$}\tbput{\ldots}
+	}	
+}
+\end{center}
+
+\item
+	\begin{enumerate}
+		\item Calculer $a_2$.
+		\item Le vélo se trouve au point A le deuxième matin. Calculer la probabilité qu'il se soit trouvé au point B le premier matin. La probabilité sera arrondie au millième.
+	\end{enumerate}
+\item
+	\begin{enumerate}
+		\item Recopier et compléter l'arbre pondéré ci-dessous qui modélise la situation pour les $n$-ième et $n + 1$-ième  matins.
+		
+\begin{center}
+\pstree[treemode=R,nodesepB=3pt,levelsep=3cm]{\TR{}}
+{\pstree{\TR{$A_n~~$}\taput{$a_n$}}
+	{\TR{$A_{n+1}$}\taput{\ldots}
+	\TR{$B_{n+1}$}\tbput{\ldots}
+	}
+\pstree{\TR{$B_n~~$}\tbput{\ldots}}
+	{\TR{$A_{n+1}$}\taput{\ldots}
+	\TR{$B_{n+1}$}\tbput{\ldots}
+	}	
+}
+\end{center}
+		\item Justifier que pour tout entier naturel non nul $n$,\: $a_{n+1} = 0,6a_n + 0,24$.
+	\end{enumerate}
+\item Montrer par récurrence que, pour tout entier naturel non nul $n$, \: $a_n = 0,6 - 0,1 \times 0,6^{n - 1}$.
+\item Déterminer la limite de la suite $\left(a_n\right)$ et interpréter cette limite dans le contexte de l'exercice. 
+\item Déterminer le plus petit entier naturel $n$ tel que $a_n \geqslant 0,599$ et interpréter le résultat obtenu dans le contexte de l'exercice.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \quad (7 points)\hfill Thème : fonctions, fonction exponentielle}
+
+\bigskip
+
+\textbf{Partie A}
+
+\medskip 
+
+Soit $p$ la fonction définie sur l'intervalle $[-3~;~4]$ par :
+
+\[p(x) = x^3 - 3x^2 + 5x + 1\]
+
+\begin{enumerate}
+\item Déterminer les variations de la fonction $p$ sur l'intervalle $[-3~;~4]$.
+\item Justifier que l'équation $p(x) = 0$ admet dans l'intervalle $[-3~;~4]$ une unique solution qui sera notée $\alpha$.
+\item Déterminer une valeur approchée du réel $\alpha$ au dixième près.
+\item Donner le tableau de signes de la fonction $p$ sur l'intervalle $[-3~;~4]$. 
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B}
+
+\medskip 
+
+Soit $f$ la fonction définie sur l'intervalle $[-3~;~4]$ par :
+
+\[f(x) = \dfrac{\text{e}^x}{1 + x^2}\]
+
+On note $\mathcal{C}_f$ sa courbe représentative dans un repère orthogonal.
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Déterminer la dérivée de la fonction $f$ sur l'intervalle $[-3~;~4]$.
+		\item Justifier que la courbe $\mathcal{C}_f$ admet une tangente horizontale au point d'abscisse 1.
+	\end{enumerate}
+\item  Les concepteurs d'un toboggan utilisent la courbe $\mathcal{C}_f$ comme profil d'un toboggan. Ils estiment que le toboggan assure de bonnes sensations si le profil possède au moins deux points d'inflexion.
+
+\medskip
+
+\begin{minipage}{0.48\linewidth}
+\psset{unit=0.75cm}
+\begin{pspicture*}(-4,-1.95)(4.25,4.1)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.15pt](-4,0)(4,4)
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle](0,0)(-4,-0)(4.25,4.1)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{-3}{4}{2.71828 x exp x dup mul 1 add div}
+\rput(0,-1){Représentation de la courbe $\mathcal{C}_f$}
+\uput[ul](3,2){\blue \small $\mathcal{C}_f$}
+\end{pspicture*}
+\end{minipage} \hfill
+\begin{minipage}{0.48\linewidth}
+\psset{unit=0.75cm}
+\begin{pspicture}(-4,-1.95)(4.25,4.1)
+%\psgrid
+\def\tobo{\psplot[plotpoints=2000,linewidth=1.25pt]{-3}{4}{2.71828 x exp x dup mul 1 add div}}
+\psplot[plotpoints=2000,linewidth=1.25pt]{-3}{4}{2.71828 x exp x dup mul 1 add div}
+\rput(-0.6,0.6){\tobo}
+\psline(-3,0)(-3.6,0.6)\psline(4,3.2)(3.4,3.8)
+\pscustom[fillstyle=solid,fillcolor=lightgray]
+{\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-3}{4}{2.71828 x exp x dup mul 1 add div}
+\psline(4,3.2)(4,0)(-2,0)}
+\rput(0,-1){Vue de profil du toboggan}
+\end{pspicture}
+\end{minipage}
+
+	\begin{enumerate}
+		\item D'après le graphique ci-dessus, le toboggan semble-t-il assurer de bonnes sensations ? Argumenter.
+		\item On admet que la fonction $f''$, dérivée seconde de la fonction $f$, a pour expression pour tout réel $x$ de l'intervalle $[-3~;~4]$ :
+
+		\[f''(x) = \dfrac{p(x)(x - 1)\text{e}^x}{\left(1 + x^2\right)^3}\]
+
+où $p$ est la fonction définie dans la partie A.
+
+En utilisant l'expression précédente de $f''$, répondre à la question : \og le toboggan assure-t-il de bonnes sensations ? \fg. Justifier.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \quad (7 points)\hfill Thème : géométrie dans l'espace}
+
+\bigskip
+
+
+Une exposition d'art contemporain a lieu dans une salle en forme de pavé droit de largeur 6 m, de longueur 8 m et de hauteur 4 m. 
+
+Elle est représentée par le parallélépipède rectangle OBCDEFGH où
+OB = 6 m, OD = 8 m et OE = 4 m.
+
+On utilise le repère orthonormé \Oijk{} tel que $\vect{\imath} = \dfrac16\vect{\text{OB}}, \vect{\jmath} = \dfrac18\vect{\text{OD}}$ et $\vect{k} =\dfrac14\vect{\text{OE}}$.
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(7.2,5.3)
+%\psgrid
+\pspolygon(0.2,1.2)(4.5,0.2)(4.5,2.7)(0.2,3.7)%BCGF
+\psline(4.5,0.2)(6.9,1.2)(6.9,3.7)(4.5,2.7)%CDHG
+\psline(6.9,3.7)(2.6,4.7)(0.2,3.7)%HEF
+\psline(0.2,2.45)(1.8,3.33)(1.4,4.2)%ART
+\psline[linestyle=dashed,linewidth=1.5pt](0.2,2.45)(1.4,4.2)
+\psline[linestyle=dotted,linewidth=1.5pt](0.2,1.2)(2.6,2.2)(2.6,4.7)%BOE
+\psline[linestyle=dotted,linewidth=1.5pt](2.6,2.2)(6.9,1.2)%OD
+\psline{->}(2.6,2.2)(2.2,2.02)%vect i
+\psline{->}(2.6,2.2)(3.4,2.03)%vect j
+\psline{->}(2.6,2.2)(2.6,2.82)%\vect k
+\psdot(2.7,1.5)%S
+\uput[l](0.2,2.45){A} \uput[dl](0.2,1.2){B} \uput[d](4.5,0.2){C} \uput[dr](6.9,1.2){D}
+\uput[u](2.6,4.7){E} \uput[ul](0.2,3.7){F} \uput[dr](4.5,2.7){G} \uput[ur](6.9,3.7){H}
+\uput[d](2.6,2.2){O} \uput[ur](1.8,3.33){R} \uput[d](2.7,1.5){S} \uput[u](1.4,4.2){T}
+\uput[ul](2.2,2){$\vect{\imath}$}\uput[ur](3.4,2.03){$\vect{\jmath}$}\uput[l](2.6,2.82){$\vect{k}$}
+\end{pspicture}
+\end{center}
+
+Dans ce repère on a, en particulier C(6~;~8~;~0), F(6~;~0~;~4) et G(6~;~8~;~4).
+
+Une des œuvres exposées est un triangle de verre représenté par le triangle ART qui a pour
+
+sommets A(6~;~0~;~2), R(6~;~3~;~4) et T(3~;~0~;~4), Enfin, S est le point de coordonnées $\left(3~;~\dfrac52~;~0\right)$.
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Vérifier que le triangle ART est isocèle en A.
+		\item Calculer le produit scalaire $\vect{\text{AR}} \cdot \vect{\text{AT}}$.
+		\item En déduire une valeur approchée à $0,1$ degré près de l'angle $\widehat{\text{RAT}}$.
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Justifier que le vecteur $\vect{n}\begin{pmatrix}2\\-2\\3\end{pmatrix}$ est un vecteur normal au plan (ART).
+		\item En déduire une équation cartésienne du plan (ART).
+	\end{enumerate}
+\item Un rayon laser dirigé vers le triangle ART est émis du plancher à partir du point S. On admet que ce rayon est orthogonal au plan (ART).
+	\begin{enumerate}
+		\item Soit $\Delta$ la droite orthogonale au plan (ART) et passant par le point S.
+		
+Justifier que le système ci-dessous est une représentation paramétrique de la droite $\Delta$ :
+
+\[\left\{\begin{array}{l c r}
+x&=&3+2k\\
+y&=& \dfrac52 - 2k\\
+z &=& 3k
+\end{array}\right.,\: \text{avec }\:k \in \R.\]
+
+		\item Soit L le point d'intersection de la droite $\Delta$, avec le plan (ART).
+
+Démontrer que L a pour coordonnées $\left(5~;~\dfrac12~;~3\right)$.
+	\end{enumerate}
+\item L'artiste installe un rail représenté  par le segment  [DK] ou K est le milieu du segment [EH].
+
+Sur ce rail, il positionne une source lumineuse laser en un point N du segment [DK] et il oriente ce
+second rayon laser vers le point S.
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(7.2,5.3)
+%\psgrid
+\pspolygon(0.2,1.2)(4.5,0.2)(4.5,2.7)(0.2,3.7)%BCGF
+\psline(4.5,0.2)(6.9,1.2)(6.9,3.7)(4.5,2.7)%CDHG
+\psline(6.9,3.7)(2.6,4.7)(0.2,3.7)%HEF
+\psline(0.2,2.45)(1.8,3.33)(1.4,4.2)%ART
+\psline[linestyle=dashed,linewidth=1.5pt](0.2,2.45)(1.4,4.2)
+\psline[linestyle=dotted,linewidth=1.5pt](0.2,1.2)(2.6,2.2)(2.6,4.7)%BOE
+\psline[linestyle=dotted,linewidth=1.5pt](2.6,2.2)(6.9,1.2)%OD
+\psline[linestyle=dotted,linewidth=1.5pt](4.75,4.2)(6.9,1.2)%KD
+\psline{->}(2.6,2.2)(2.2,2.)%vect i
+\psline{->}(2.6,2.2)(3.4,2.03)%vect j
+\psline{->}(2.6,2.2)(2.6,2.82)%\vect k
+\psline[ArrowInside=->](5.2,3.6)(2.7,1.5)(0.8,3.1)%NSL
+\psdots(5.2,3.6)(2.7,1.5)(0.8,3.1)%NSL
+\uput[l](0.2,2.45){A} \uput[dl](0.2,1.2){B} \uput[d](4.5,0.2){C} \uput[dr](6.9,1.2){D}
+\uput[u](2.6,4.7){E} \uput[ul](0.2,3.7){F} \uput[dr](4.5,2.7){G} \uput[ur](6.9,3.7){H}
+\uput[d](2.6,2.2){O} \uput[ur](1.8,3.33){R} \uput[d](2.7,1.5){S} \uput[u](1.4,4.2){T}
+\uput[u](2.2,2){\small $\vect{\imath}$}\uput[u](3.4,2.03){\small $\vect{\jmath}$}\uput[u](2.6,2.82){\small $\vect{k}$}
+\uput[ur](5.2,3.6){N}\uput[u](4.75,4.2){K}\uput[d](0.8,3.1){L}
+\end{pspicture}
+\end{center}
+
+	\begin{enumerate}
+		\item Montrer que, pour tout réel $t$ de l'intervalle [0~;~1], le point N de coordonnées $(0~;~8 - 4t~;~4t)$ est un point du segment [DK].
+		\item  Calculer les coordonnées exactes du point N tel que les deux rayons laser représentés par les segments [SL] et [SN] soient perpendiculaires.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4} \quad (7 points)\hfill Thème : fonction logarithme népérien, probabilités}
+
+\bigskip
+
+\emph{Cet exercice est un questionnaire à choix multiples (QCM)
+ qui comprend six questions. Les six questions sont indépendantes. Pour chacune des questions, \textbf{une seule des quatre réponses est exacte}. Le candidat indiquera sur sa copie le numéro de la question suivi de la lettre correspondant à la réponse exacte.\\
+Aucune justification n'est demandée.\\
+Une réponse fausse, une réponse multiple ou une absence de réponse ne rapporte ni n'enlève aucun point}
+
+\medskip
+
+\textbf{Question 1}
+
+\medskip
+
+Le réel $a$ est définie par $a = \ln (9) + \ln \left(\dfrac{\sqrt{3}}{3} \right)  + \ln \left(\dfrac19 \right)$ est égal à :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}$1 - \dfrac12 \ln (3)$&\textbf{b.~~} $\dfrac12 \ln (3)$&\textbf{c.~~} $3 \ln (3) + \dfrac12$ &\textbf{d.~~} $- \dfrac12 \ln (3)$
+\end{tabularx}
+\end{center}
+ 
+\medskip
+
+\textbf{Question 2}
+
+\medskip
+
+On note $(E)$ l'équation suivante $\ln x + \ln (x - 10) = \ln 3 + \ln 7$ d'inconnue le réel $x$.
+
+\medskip
+\textbf{a.~~}3 est solution de $(E)$.
+
+\textbf{b.~~}$5 - \sqrt{46}$ est solution de $(E)$.
+
+\textbf{c.~~}L'équation $(E)$ admet une unique solution réelle.
+
+\textbf{d.~~}L'équation $(E)$ admet deux solutions réelles.
+
+\medskip
+
+\textbf{Question 3}
+
+\medskip
+
+La fonction $f$ est définie sur l'intervalle $]0~;~+ \infty[$ par l'expression $f(x) = x^2(- 1 + \ln x)$.
+
+On note $\mathcal{C}_f$ sa courbe représentative dans le plan muni d'un repère.
+
+\textbf{a.~~} Pour tout réel $x$ de l'intervalle $]0~;~+ \infty[$, \: $f'(x) = 2x + \dfrac1x$.
+
+\textbf{b.~~}La fonction $f$ est croissante sur l'intervalle $]0~;~+ \infty[$.
+
+\textbf{c.~~}$f'\left(\sqrt{\text{e}} \right)$ est différent de $0$.
+
+\textbf{d.~~}La droite d'équation $y = - \dfrac12 \text{e}$ est tangente à la courbe $\mathcal{C}_f$ au point d'abscisse $\sqrt{\text{e}}$.
+
+\medskip
+
+\textbf{Question 4}
+
+\medskip
+
+Un sac contient 20 jetons jaunes et 30 jetons bleus. On tire successivement et avec remise 5 jetons du sac.
+
+La probabilité de tirer exactement 2 jetons jaunes, arrondie au millième, est :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}0,683&\textbf{b.~~}0,346 &\textbf{c.~~}0,230&\textbf{d.~~} 0,165
+\end{tabularx}
+\end{center}
+
+\medskip
+
+\textbf{Question 5}
+
+\medskip
+
+Un sac contient 20 jetons jaunes et 30 jetons bleus. On tire successivement et avec remise 5 jetons du sac.
+
+La probabilité de tirer au moins un jeton jaune, arrondie au milllième, est :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}0,078&\textbf{b.~~}0,259 &\textbf{c.~~}0,337&\textbf{d.~~} 0,922
+\end{tabularx}
+\end{center}
+
+\medskip
+
+\textbf{Question 6}
+
+\medskip
+
+Un sac contient $20$ jetons jaunes et $30$ jetons bleus.
+
+On réalise l'expérience aléatoire suivante : on tire successivement et avec remise cinq jetons du sac. 
+
+On note le nombre de jetons jaunes obtenus après ces cinq tirages. 
+
+Si on répète cette expérience aléatoire un très grand nombre de fois alors, en moyenne, le nombre de jetons jaunes est égal à :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~~}0,4&\textbf{b.~~}1,2 &\textbf{c.~~}2&\textbf{d.~~} 2,5
+\end{tabularx}
+\end{center}
+\end{document}

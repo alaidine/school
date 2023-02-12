@@ -1,0 +1,352 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+%Relecture : François Hache
+\usepackage{pst-plot,pst-tree,pst-node,pst-text,pst-bezier,pst-all}%
+\usepackage{pst-eucl}
+%\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Polynésie 4 mai 2022 sujet 1},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\DecimalMathComma
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Polynésie}}
+\rfoot{\small{4 mai 2022}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Polynésie 4 mai 2022~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ sujet \no 1}}
+
+\bigskip
+
+Durée de l'épreuve : \textbf{4 heures}
+
+\medskip
+
+L'usage de la calculatrice avec mode examen actif est autorisé
+
+\medskip
+
+Le sujet propose 4 exercices
+
+Le candidat choisit 3 exercices parmi les 4 et \textbf{ne doit traiter que ces 3 exercices}
+\end{center}
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \quad 7 points\hfill Thèmes : fonctions, suites}
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples. Pour chacune des six questions suivantes, une seule des quatre réponses proposées est exacte.\\
+Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point.\\
+Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie. Aucune justification n'est demandée.}
+
+\medskip
+
+\begin{enumerate}
+\item On considère  la fonction $g$ définie et dérivable sur $]0~;~+ \infty[$ par :
+
+\[g(x) = \ln \left(x^2 + x + 1\right).\]
+
+Pour tout nombre réel $x$ strictement positif :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~}$g'(x) = \dfrac{1}{2x + 1}$&\textbf{b.~~}$g'(x) = \dfrac{1}{x^2 + x + 1}$\\[8pt]
+\textbf{c.~~}$g'(x) = \ln (2x + 1)$&\textbf{d.~~}$g'(x) = \dfrac{2x + 1}{x^2 + x + 1}$
+\end{tabularx}
+\end{center}
+\item La fonction $x \longmapsto \ln (x)$ admet pour primitive sur $]0~;~+ \infty[$ la fonction :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X} }
+\textbf{a.~~}$x \longmapsto \ln (x)$&\textbf{b.~~}$x \longmapsto \dfrac{1}{x}$&\textbf{c.~~}$x \longmapsto x \ln (x) - x$&\textbf{d.~~}$x \longmapsto \dfrac{\ln (x)}{x}$
+\end{tabularx}
+\end{center}
+\item On considère la suite $\left(a_n\right)$ définie  pour tout $n$ dans $\N$ par :
+
+\[a_n = \dfrac{1 - 3^n}{1 + 2^n}.\]
+
+La limite de la suite $\left(a_n\right)$ est égale à :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X} }
+\textbf{a.~~}$- \infty$&\textbf{b.~~}$- 1$&\textbf{c.~~}$1$&\textbf{d.~~}$+ \infty$
+\end{tabularx}
+\end{center}
+\item 
+On considère une fonction $f$ définie et dérivable sur $[-2~;~2]$. Le tableau de variations de la fonction $f'$ dérivée de la fonction $f$ sur l'intervalle $[2~;~2]$ est donné par :
+
+\begin{center}
+{\renewcommand{\arraystretch}{1.2}
+\psset{nodesep=3pt,arrowsize=2pt 3}  % paramètres
+\def\esp{\hspace*{1.5cm}}% pour modifier la largeur du tableau
+\def\hauteur{0pt}% mettre au moins 20pt pour augmenter la hauteur
+$\begin{array}{|c| *4{c} c|}
+\hline
+ x & -2 & \esp & 0 & \esp & 2 \\
+% \hline
+%f'(x) &  &  \pmb{-} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+\hline
+  & \Rnode{max1}{1}  &  &  &  & \Rnode{max2}{-1}   \\
+\text{variations de }f' & &  & & &  \rule{0pt}{\hauteur} \\
+ &  & &   \Rnode{min}{-2} & & \rule{0pt}{\hauteur}
+\ncline{->}{max1}{min} \ncline{->}{min}{max2}
+\rput*(-3.7,0.6){\Rnode{zero}{0}}
+\rput(-3.7,1.85){\Rnode{alpha}{-1}}
+%\ncline[linestyle=dotted, linecolor=blue]{alpha}{zero}
+%\rput*(-1.3,0.65){\Rnode{zero2}{\red 0}}
+%\rput(-1.3,1.7){\Rnode{beta}{\red \beta}}
+%\ncline[linestyle=dotted, linecolor=red]{beta}{zero2}
+\\
+\hline
+\end{array}$
+}
+\end{center}
+
+
+La fonction $f$ est :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~} convexe sur $[- 2~;~- 1]$&\textbf{b.~~} concave sur [0~;~1]\\
+\textbf{c.~~} convexe sur $[- 1~;~2]$&\textbf{d.~~}concave sur $[-2~;~0]$
+\end{tabularx}
+\end{center}
+
+\item On donne ci-dessus la courbe représentative de la dérivée $f'$ d'une fonction $f$ définie sur l'intervalle $[-2~;~4]$.
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture*}(-2.2,-3.2)(4.2,3.2)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridcolor=lightgray]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-2.2,-3.2)(4.2,3.2)
+\psbcurve[plotpoints=5000,linewidth=1.25pt,linecolor=blue](-2,-3)(-1,0)(0,1)L(0.1,1)(1,0)L(1.5,-1)(2,-1)L(2.1,-1)(3,0)(4,3)
+%\pscspline[plotpoints=2000,linewidth=1.25pt,linecolor=red](-2,-3)(-1,0)(0,1)(1,0)(2,-1)(3,0)(4,3)
+\end{pspicture*}
+\end{center}
+
+Par lecture graphique de la courbe de $f'$, déterminer l'affirmation correcte pour $f$ :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~} $f$ est décroissante sur [0~;~2]&\textbf{b.~~}$f$ est décroissante sur $[-1~;~0]$\\
+\textbf{c.~~}$f$ admet un maximum en 1 sur [0~;2]&\textbf{d.~~}$f$ admet un maximum en 3 sur [2~;~4]
+\end{tabularx}
+\end{center}
+
+\item Une action est cotée à 57 \euro. Sa valeur augmente de 3\,\% tous les mois.
+
+La fonction python seuil() qui renvoie le nombre de mois à attendre pour que sa valeur dépasse 200 \euro{} est :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{a.~~}&\textbf{b.~~}\\
+\fbox{\begin{tabular}{l}
+def seuil() :\\
+\quad m=0\\
+\quad v=57\\
+\quad while v < 200 :\\
+\qquad m=m+1\\
+\qquad v = v*1.03\\
+\quad return m
+\end{tabular}
+} & \fbox{\begin{tabular}{l}
+def seuil() :\\
+\quad m=0\\
+\quad v=57\\
+\quad while v > 200 :\\
+\qquad m=m+1\\
+\qquad v = v*1.03\\
+\quad return m
+\end{tabular}
+}  \\
+\textbf{c.~~} &\textbf{d.~~} \\
+\fbox{\begin{tabular}{l}
+def seuil() :\\
+\quad v=57\\
+\quad for i in range (200) :\\
+\qquad v = v*1.03\\
+\quad return v
+\end{tabular}
+} &\fbox{\begin{tabular}{l}
+def seuil() :\\
+\quad m=0\\
+\quad v=57\\
+\quad if v < 200 :\\
+\qquad m=m+1\\
+\quad else :\\
+\qquad v = v*1.03\\
+\quad return m
+\end{tabular}
+}
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2}  \quad  7 points\hfill Thèmes : probabilités}
+
+\medskip
+
+
+Selon les autorités sanitaires d'un pays, 7\,\% des habitants sont affectés par une certaine maladie.
+
+Dans ce pays, un test est mis au point pour détecter cette maladie. Ce test a les caractéristiques suivantes :
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] Pour les individus malades, le test donne un résultat négatif dans $20 \,\%$ des cas ;
+\item[$\bullet~~$] Pour les individus sains, le test donne un résultat positif dans $1\,\%$ des cas.
+\end{itemize}
+\setlength\parindent{0cm}
+
+Une personne est choisie au hasard dans la population et testée.
+
+On considère les évènements suivants :
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] $M$ \og la personne est malade \fg{} ;
+\item[$\bullet~~$]  $T$ \og le test est positif \fg{}.
+\end{itemize}
+\setlength\parindent{0cm}
+
+\medskip
+
+\begin{enumerate}
+\item Calculer la probabilité de l'évènement $M \cap T$. On pourra s'appuyer sur un arbre pondéré.
+\item Démontrer que la probabilité que le test  de la personne choisie au hasard soit positif, est de \np{0,0653}.
+\item Dans un contexte de dépistage de la maladie, est-il plus pertinent de connaître $P_M(T)$ ou $P_T(M)$ ?
+\item On considère dans cette question que la personne choisie au hasard a eu un test positif.
+
+Quelle est la probabilité qu'elle soit malade ? On arrondira le résultat à $10^{-2}$ près.
+\item On choisit des personnes au hasard dans la population. La taille de la population de ce pays permet d'assimiler ce prélèvement à un tirage avec remise.
+
+On note $X$ la variable aléatoire qui donne le nombre d'individus ayant un test positif parmi les 10 personnes. 
+	\begin{enumerate}
+		\item Préciser la nature et les paramètres de la loi de probabilité suivie par $X$.
+		\item Déterminer la probabilité pour qu'exactement deux personnes aient un test positif. On arrondira le résultat à $10^{-2}$ près.
+	\end{enumerate}	
+\item Déterminer le nombre minimum de personnes à tester dans ce pays pour que la probabilité qu'au moins l'une d'entre elle ait un test positif, soit supérieur à $99\,\%$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3}  \quad  7 points\hfill Thèmes : suites}
+
+\medskip
+
+Soit $\left(u_n\right)$ la suite définie par $u_0 = 1$ et pour tout entier naturel $n$
+
+\[u_{n+1} = \dfrac{u_n}{1 + u_n}\]
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Calculer les termes $u_1$, $u_2$  et $u_3$. On  donnera les résultats sous forme de fractions irréductibles.
+		\item Recopier le script python ci-dessous et compléter les lignes 3 et 6 pour que liste(k) prenne en paramètre un entier naturel k et renvoie la liste des premières valeurs de la suite $\left(u_n\right)$ de $u_0$ à $u_k$.
+
+\begin{center}
+\begin{tabularx}{0.5\linewidth}{|l|X|}\hline
+1.&def liste(k) :\\
+2.&\qquad L = []\\
+3.&\qquad u = \ldots\\
+4.&\qquad for i in range(0, k+1) :\\
+5.&\quad \qquad L.append(u)\\
+6.&\quad \qquad u = \ldots\\
+7.&\qquad return(L)\\ \hline
+\end{tabularx}
+\end{center}
+	\end{enumerate}
+\item On admet que, pour tout entier naturel $n$, $u_n$ est strictement positif.
+
+Déterminer le sens de variation de la suite $\left(u_n\right)$.
+\item En déduire que la suite $\left(u_n\right)$ converge.
+\item Déterminer la valeur de sa limite.
+\item 
+	\begin{enumerate}
+		\item Conjecturer une expression de $u_n$ en fonction de $n$.
+		\item Démontrer par récurrence la conjecture précédente.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 4}  \quad  7 points\hfill Thèmes : géométrie dans le plan et dans l'espace}
+
+\medskip
+
+L'espace est rapporté un repère orthonormal où l'on considère :
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$]les points A$(2~;~-1~;~0)$ B$(1~;~0~;~- 3)$, C$(6~;~6~;~1)$  et E$(1~;~2~;~4)$ ;
+\item[$\bullet~~$]Le plan $\mathcal{P}$ d'équation cartésienne $2x - y - z + 4 = 0$.
+\end{itemize}
+\setlength\parindent{0cm}
+
+\medskip
+
+\begin{enumerate}
+\item
+	\begin{enumerate}
+		\item Démontrer que le triangle ABC est rectangle en A.
+		\item Calculer le produit scalaire $\vect{\text{BA}} \cdot \vect{\text{BC}}$ puis les longueurs BA et BC.
+		\item En déduire la mesure en degrés de l'angle $\widehat{\text{ABC}}$ arrondie au degré.
+	\end{enumerate}
+\item
+	\begin{enumerate}
+		\item Démontrer que le plan $\mathcal{P}$ est parallèle au plan ABC.
+		\item En déduire une équation cartésienne du plan ABC.
+		\item Déterminer une représentation paramétrique de la droite $\mathcal{D}$ orthogonale au plan ABC et passant par le point E.
+		\item Démontrer que le projeté orthogonal H  du point E sur le plan ABC a pour coordonnées $\left(4~;~\dfrac{1}{2}~;~\dfrac{5}{2}\right)$.
+	\end{enumerate}
+\item On rappelle que le volume d'une pyramide est donné par $\mathcal{V} = \dfrac13 \mathcal{B}h$ où $\mathcal{B}$ désigne l'aire d'une base et $h$  la hauteur de la pyramide associée à cette base.
+
+Calculer l'aire du triangle ABC puis démontrer que le volume de la pyramide ABCE est égal à $16,5$ unités de volume.
+\end{enumerate}
+\end{document}

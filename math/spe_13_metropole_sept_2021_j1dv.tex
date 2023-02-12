@@ -1,0 +1,462 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+%Relecture : 
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl}
+\usepackage{pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Métropole 13 septembre 2021},
+allbordercolors = white,
+pdfstartview=FitH} 
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Métropole}}
+\rfoot{\small{13 septembre 2021}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Métropole 13 septembre 2021~\decofourright\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}\\[7pt]Candidats libres}
+\end{center}
+
+\vspace{0,25cm}
+
+Le candidat traite 4 exercices : les exercices 1, 2 et 3 communs à tous les candidats et un seul des deux exercices A ou B.
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \hfill 4 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples. Pour chacune des questions suivantes, une seule des quatre réponses proposées est exacte. Une réponse exacte rapporte un point. Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point. \\Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie.\\Aucune
+justification n'est demandée.}
+
+\medskip
+
+\parbox{0.45\linewidth}{Le graphique ci-contre donne la représentation graphique $\mathcal{C}_f$ dans un repère orthogonal d'une fonction $f$ définie et dérivable sur $\R$.
+
+On notera $f'$ la fonction dérivée de $f$.
+
+On donne les points A de coordonnées (0~;~5) et B de coordonnées (1~;~20). Le point C est le point de la courbe $\mathcal{C}_f$ ayant pour abscisse $-2,5$.
+La droite (AB) est la tangente à la courbe $\mathcal{C}_f$ au point A.
+
+\smallskip
+
+Les questions 1 à 3 se rapportent à cette même fonction $f$.}\hfill
+\parbox{0.53\linewidth}{\psset{xunit=1.2cm,yunit=0.25cm}
+\begin{pspicture*}(-5,-4)(1.5,22)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.05pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle,Dy=5]{->}(0,0)(-5,-4)(1.5,22)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-5}{1}{10 x mul 5 add 2.71828 x exp mul}
+\psplot[plotpoints=1000,linewidth=1.25pt,linestyle=dotted]{-0.7}{1}{15 x mul 5 add}
+\psplot[plotpoints=1000,linewidth=1.25pt,linestyle=dotted]{-5}{0}{0.82085 x  mul 3.694 add neg}
+\psdots(1,20)(-2.5,-1.6417)(0,5)
+\uput[r](0,5){A}\uput[r](1,20){B}\uput[d](-2.5,-1.6417){C}\uput[l](0.6,19){$\red \mathcal{C}_f$}
+\end{pspicture*}}
+\medskip
+
+\begin{enumerate}
+\item On peut affirmer que:
+	\begin{enumerate}
+		\item $f'(-0,5) = 0$
+		\item si $x \in ]- \infty~;~-0,5[$, alors $f'(x) < 0$
+		\item $f'(0) = 15$
+		\item la fonction dérivée $f'$ ne change pas de
+signe sur $\R$.
+	\end{enumerate}
+\item On admet que la fonction $f$ représentée ci-dessus est définie sur $\R$ par 
+
+$f(x) = (ax + b)\text{e}^x$, où $a$ et $b$ sont deux nombres réels et que sa courbe coupe l'axe des abscisses en son point de coordonnées $(-0,5~;~ 0)$.
+
+On peut affirmer que:
+	\begin{enumerate}
+		\item $a = 10$ et $b = 5$ 
+		\item $a = 2,5$ et $b = -0,5$ 
+		\item $a = -1,5$ et $b = 5$ 
+		\item $a = 0$ et $b = 5$
+	\end{enumerate}
+\item On admet que la dérivée seconde de la fonction $f$ est définie sur $\R$ par : 
+
+\[f''(x) = (10x + 25)\text{e}^x.\]
+
+On peut affirmer que :
+	\begin{enumerate}
+		\item La fonction $f$ est convexe sur $\R$
+		\item La fonction $f$ est concave sur $\R$
+		\item Le point C est l'unique point d'inflexion de $\mathcal{C}_f$
+		\item $\mathcal{C}_f$ n'admet pas de point d'inflexion
+	\end{enumerate}
+\item On considère deux suites $\left(U_n\right)$ et  $\left(V_n\right)$ définies sur $\N$ telles que : 
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] pour tout entier naturel $n$,\, $U_n \leqslant V_n$;
+\item[$\bullet~~$] $\displaystyle\lim_{n \to+ \infty}  V_n= 2$.
+\end{itemize}
+\setlength\parindent{0cm}
+
+On peut affirmer que:
+
+	\begin{enumerate}
+		\item la suite $\left(U_n\right)$ converge 
+		\item pour tout entier naturel $n$,\, $V_n \leqslant 2$		
+		\item la suite $\left(U_n\right)$ diverge
+		\item la suite $\left(U_n\right)$ est majorée
+	\end{enumerate} 
+\end{enumerate}
+
+\bigskip
+
+\textbf{Exercice 2, commun à tous les candidats \hfill 5 points}
+
+\medskip
+
+Soit $f$ la fonction définie sur l'intervalle $\left]-\dfrac{1}{3}~;~+\infty\right[$ par:
+
+\[ f(x) = \dfrac{4x}{1 + 3x}\]
+
+On considère la suite $\left(u_n\right)$ définie par : $u_0 = \dfrac{1}{2}$ et, pour tout entier naturel $n$,\, $u_{n+1} = f\left(u_n\right)$.
+
+\medskip
+
+\begin{enumerate}
+\item Calculer $u_1$.
+\item On admet que la fonction $f$ est croissante sur l'intervalle $\left]-\dfrac{1}{3}~;~+\infty\right[$.
+	\begin{enumerate}
+		\item Montrer par récurrence que, pour tout entier naturel $n$, on a : $\dfrac{1}{2} \leqslant u_n \leqslant u_{n+1} \leqslant 2$.
+		\item En déduire que la suite $\left(u_n\right)$ est convergente.
+		\item On appelle $\ell$ la limite de la suite $\left(u_n\right)$. Déterminer la valeur de $\ell$.
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Recopier et compléter la fonction Python ci-dessous qui, pour tout réel positif $E$, détermine la plus petite valeur $P$ tel que : $1 - u_{P} < E$.
+		
+\begin{center}
+\begin{tabularx}{0.4\linewidth}{|X|}\hline
+def seuil($E$):\\
+\quad u = 0,5\\
+\quad n = 0 \\
+\quad  while \dotfill\\
+\quad \quad u = \dotfill\\
+\quad \quad n = n + 1\\
+\quad return n\\ \hline
+\end{tabularx}
+\end{center}
+		\item Donner la valeur renvoyée par ce programme dans le cas où $E= 10^{-4}$.
+	\end{enumerate}
+\item On considère la suite $\left(v_n\right)$ définie, pour tout entier naturel $n$, par :
+
+\[v_n  = \dfrac{u_n}{1 - u_n}\]
+
+	\begin{enumerate}
+		\item Montrer que la suite $\left(v_n\right)$ est géométrique de raison 4.
+		
+En déduire, pour tout entier naturel $n$, l'expression de $v_n$ en fonction de $n$.
+		\item Démontrer que, pour tout entier naturel $n$, on a : $u_n = \dfrac{v_n}{v_n + 1}$. 
+		\item Montrer alors que, pour tout entier naturel $n$ , on a : 
+		
+		\[u_n = \dfrac{1}{1 + 0,25^n}.\]
+
+Retrouver par le calcul la limite de la suite $\left(u_n\right)$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Exercice 3, commun à tous les candidats \hfill 5 points}
+
+\medskip
+
+Dans le parc national des Pyrénées, un chercheur travaille sur le déclin d'une espèce protégée dans les lacs de haute-montagne : le \og crapaud accoucheur \fg.
+
+Les parties I et II peuvent être abordées de façon indépendante.
+
+\begin{center}\textbf{Partie I : Effet de l'introduction d'une nouvelle espèce.}\end{center}
+
+Dans certains lacs des Pyrénées, des truites ont été introduites par l'homme afin de permettre des activités de pêche en montagne. Le chercheur a étudié l'impact de cette introduction sur la
+population de crapauds accoucheurs d'un lac.
+
+Ses études précédentes l'amènent à modéliser l'évolution de cette population en fonction du temps par la fonction $f$ suivante : 
+
+\[f(t) = \left(0,04t^2 - 8t + 400\right)\text{e}^{\frac{t}{50}} + 40 \, \text{ pour }\,  t \in [0~;~120]\]
+
+La variable $t$ représente le temps écoulé, en jour, à partir de l'introduction à l'instant $t = 0$ des truites dans le lac, et $f(t)$ modélise le nombre de crapauds à l'instant $t$.
+
+\medskip
+
+\begin{enumerate}
+\item Déterminer le nombre de crapauds présents dans le lac lors de l'introduction des truites.
+\item On admet que la fonction $f$ est dérivable sur l'intervalle [0~;~120] et on note $f'$ sa fonction dérivée.
+
+Montrer, en faisant apparaitre les étapes du calcul, que pour tout nombre réel $t$ appartenant à 
+l'intervalle [0~;~120] on a : 
+
+\[f'(t) = t(t - 100)\text{e}^{\frac{t}{50}} \times 8 \times 10^{-4}.\]
+
+\item Étudier les variations de la fonction $f$ sur l'intervalle [0~;~120], puis dresser le tableau de variations de $f$ sur cet intervalle (on donnera des valeurs approchées au centième).
+\item Selon cette modélisation:
+	\begin{enumerate}
+		\item Déterminer le nombre de jours $J$ nécessaires afin que le nombre de crapauds atteigne son minimum. Quel est ce nombre minimum ?
+		\item Justifier que, après avoir atteint son minimum, le nombre de crapauds dépassera un jour $140$ individus.
+		\item À l'aide de la calculatrice, déterminer la durée en jour à partir de laquelle le nombre de crapauds dépassera $140$ individus.
+	\end{enumerate}
+\end{enumerate}
+
+\begin{center}\textbf{Partie II : Effet de la Chytridiomycose sur une population de têtards}\end{center}
+
+Une des principales causes du déclin de cette espèce de crapaud en haute montagne est une maladie, la \og Chytridiomycose \fg, provoquée par un champignon.
+
+Le chercheur considère que :
+
+\begin{itemize}
+\item[$\bullet~~$]Les trois quarts des lacs de montagne des Pyrénées ne sont pas infectés par le champignon, c'est-à-dire qu'ils ne contiennent aucun têtard (larve du crapaud) contaminé.
+\item[$\bullet~~$]Dans les lacs restants, la probabilité qu'un têtard soit contaminé est de $0,74$.
+\end{itemize}
+
+Le chercheur choisit au hasard un lac des Pyrénées, et y procède à des prélèvements.
+
+\emph{Pour la suite de l'exercice, les résultats seront arrondis au millième lorsque cela est nécessaire.}
+
+Le chercheur prélève au hasard un têtard du lac choisi afin d'effectuer un test avant de le relâcher.
+ 
+On notera $T$ l'évènement \og Le têtard est contaminé par la maladie\fg{} et $L$ l'évènement \og Le lac est infecté par le champignon \fg.
+
+On notera $\overline{L}$ l'évènement contraire de $L$ et $\overline{T}$ l'évènement contraire de $T$.
+
+\medskip
+
+\begin{enumerate}
+\item Recopier et compléter l'arbre de probabilité suivant en utilisant les données de l'énoncé:
+
+\begin{center}
+\pstree[treemode=R,nodesepB=3pt,levelsep=2.75cm]{\TR{}}
+{\pstree{\TR{$L$~~}}
+	{\TR{$T$}
+	\TR{$\overline{T}$}
+	}
+\pstree{\TR{$\overline{L}$~~}}
+	{\TR{$T$}\taput{0}
+	\TR{$\overline{T}$}\tbput{1}
+	}	
+}
+\end{center}
+
+\item Montrer que la probabilité $P(T)$ que le têtard prélevé soit contaminé est de $0,185$.
+\item Le têtard n'est pas contaminé. Quelle est la probabilité que le lac soit infecté ?
+\end{enumerate}
+
+\bigskip
+
+\textbf{Exercice au choix du candidat \hfill 5 points}
+
+\medskip
+ 
+\textbf{Le candidat doit traiter un seul des deux exercices A ou B.}
+
+\textbf{Il indique sur sa copie l'exercice choisi: exercice A ou exercice B.}
+
+\textbf{Pour éclairer son choix, les principaux domaines abordés par chaque exercice sont indiqués dans un encadré.}
+
+\medskip
+
+\textbf{Exercice A}
+
+\medskip
+
+\begin{tabular}{|l|}\hline
+Principaux domaines abordés :\\
+Géométrie de l'espace rapporté à un repère orthonormé.\\ \hline
+\end{tabular}
+
+\bigskip
+
+On considère le cube ABCDEFGH donné en annexe. 
+
+On donne trois points I, J et K vérifiant :
+
+\[\vect{\text{EI}} = \dfrac{1}{4} \vect{\text{EH}},\qquad   \vect{\text{EJ}} = \dfrac{1}{4}  \vect{\text{EF}}, \qquad  \vect{\text{BK}} = \dfrac{1}{4}  \vect{\text{BF}}\]
+
+Les points I, J et K sont représentés sur la \textbf{figure donnée en annexe, à compléter et à rendre avec la copie}.
+
+On se place dans le repère orthonormé $\left(\text{A}~;~\vect{\text{AB}},~\vect{\text{AD}},~\vect{\text{AE}}\right)$.
+
+\medskip
+
+\begin{enumerate}
+\item Donner sans justification les coordonnées des points I, J et K.
+\item Démontrer que le vecteur $\vect{\text{AG}}$ est normal au plan (IJK).
+\item Montrer qu'une équation cartésienne du plan (IJK) est $4x + 4y + 4z - 5 = 0$.
+\item Déterminer une représentation paramétrique de la droite (BC).
+\item En déduire les coordonnées du point L, point d'intersection de la droite (BC) avec le plan (IJK).
+\item Sur la figure en annexe, placer le point L et construire l'intersection du plan (IJK) avec la face (BCGF).
+\item Soit M$\left(\frac{1}{4}~;~1~;~0\right)$. Montrer que les points I, J, L et M sont coplanaires.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Exercice B}
+
+\medskip
+
+\begin{tabular}{|l|}\hline
+Principaux domaines abordés:\\
+Fonction logarithme.\\ \hline
+\end{tabular}
+
+\bigskip
+
+\textbf{Partie I}
+
+\medskip
+
+On considère la fonction $h$ définie sur l'intervalle $]0~;~ +\infty[$ par:
+
+\[h(x) = 1 + \dfrac{\ln (x)}{x}.\]
+
+\smallskip
+
+\begin{enumerate}
+\item Déterminer la limite de la fonction $h$ en $0$.
+\item Déterminer la limite de la fonction $h$ en $+\infty$.
+\item On note $h'$ la fonction dérivée de $h$. Démontrer que, pour tout nombre réel $x$ de $]0~;~ +\infty[$, on a:
+
+\[h'(x) = \dfrac{1 - \ln (x)}{x^2}.\]
+
+\smallskip
+
+\item Dresser le tableau de variations de la fonction $h$ sur l'intervalle $]0~;~ +\infty[$.
+\item Démontrer que l'équation $h(x) = 0$ admet une unique solution $\alpha$ dans $]0~;~ +\infty[$. 
+
+Justifier que l'on a : $0,5 < \alpha < 0,6$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie II}
+
+\medskip
+
+Dans cette partie, on considère les fonctions $f$ et $g$ définies sur $]0~;~ +\infty[$ par : 
+
+\[f(x) = x \ln (x) - x ;\qquad  g(x) = \ln (x).\]
+
+On note $\mathcal{C}_f$ et $\mathcal{C}_g$ les courbes représentant respectivement les fonctions $f$ et $g$ dans un repère orthonormé \Oij.
+
+Pout tout nombre réel $a$ strictement positif, on appelle:
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] $T_a$ la tangente à $\mathcal{C}_f$ en son point d'abscisse $a$ ;
+\item[$\bullet~~$] $D_a$ la tangente à $\mathcal{C}_g$ en son point d'abscisse $a$.
+\end{itemize}
+\setlength\parindent{0cm}
+
+Les courbes  $\mathcal{C}_f$ et $\mathcal{C}_g$ ainsi que deux tangentes $T_a$ et $D_a$ sont représentées ci-dessous.
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture*}(-0.6,-2)(7,6)
+\psgrid[gridlabels=0,subgriddiv=1,gridwidth=0.06pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle](0,0)(0,-2)(6.9,5.9)
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(1,1)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0.01}{7}{x ln x mul x sub}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{0.01}{7}{x ln}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red,linestyle=dashed]{0.01}{7}{1.833 x mul 6.254 sub}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue,linestyle=dashed]{0.01}{7}{0.162 x mul 0.833 add}
+\uput[u](1,1){\blue $D_a$}\uput[r](2.9,-1){\red $T_a$}\uput[l](4.3,2){\red $\mathcal{C}_f$ }
+\uput[r](0.2,-1.8){\blue $\mathcal{C}_g$}
+%\psplotTangent[linecolor=red]{6.25}{4cm}{x ln}
+%\psplotTangent[linecolor=blue]{6.25}{4cm}{1 x div}
+\psline[linestyle=dotted,linewidth=1.25pt](6.25,0)(6.25,5.204)
+\uput[d](6.25,0){$a$}
+\end{pspicture*}
+\end{center}
+
+On recherche d'éventuelles valeurs de $a$ pour lesquelles les droites $T_a$ et $D_a$ sont perpendiculaires. 
+
+Soit $a$ un nombre réel appartenant à l'intervalle $]0~;~ +\infty[$.
+
+
+\medskip
+
+\begin{enumerate}
+\item Justifier que la droite $D_a$ a pour coefficient directeur $\dfrac{1}{a}$.
+\item Justifier que la droite $T_a$ a pour coefficient directeur $\ln (a)$.
+\end{enumerate}
+
+On rappelle que dans un repère orthonormé, deux droites de coefficients directeurs respectifs $m$ et $m'$sont perpendiculaires si et seulement si $mm' = -1$.
+
+\begin{enumerate}[resume]
+\item Démontrer qu'il existe une unique valeur de $a$, que l'on identifiera, pour laquelle les droites $T_a$ et $D_a$ sont perpendiculaires.
+\end{enumerate}
+
+\newpage
+
+\begin{center}
+\textbf{\Large ANNEXE À COMPLÉTER ET À RENDRE AVEC LA COPIE}
+
+\bigskip
+
+\textbf{\large À COMPLÉTER SEULEMENT PAR LES ÉLÈVES AYANT CHOISI DE TRAITER L'EXERCICE A}
+
+\vspace{2.5cm}
+
+\psset{unit=1cm}
+\begin{pspicture}(9.5,9.5)
+\psframe[linewidth=1.25pt](0.5,0.5)(6,6)%BCGF
+\psline[linewidth=1.25pt](6,0.5)(8.7,3.2)(8.7,8.7)(6,6)%CDHG
+\psline[linewidth=1.25pt](8.7,8.7)(3.2,8.7)(0.5,6)%HEF
+\psline[linewidth=1pt,linestyle=dashed](0.5,0.5)(3.2,3.2)(8.7,3.2)%BAD
+\psline[linewidth=1pt,linestyle=dashed](3.2,3.2)(3.2,8.7)%AE
+\uput[d](3.2,3.2){A} \uput[d](0.5,0.5){B} \uput[d](6,0.5){C} \uput[dr](8.7,3.2){D} 
+\uput[u](3.2,8.7){E} \uput[ul](0.5,6){F} \uput[u](6,6){G} \uput[ur](8.7,8.7){H} 
+\uput[u](4.575,8.7){I} \uput[ul](2.525,8.025){J} \uput[l](0.5,1.875){K}
+\psdots(3.2,3.2)(0.5,0.5)(6,0.5)(8.7,3.2)(3.2,8.7)(0.5,6)(6,6)(8.7,8.7)(2.525,8.025)(4.575,8.7)(0.5,1.875)
+\end{pspicture}
+
+
+\end{center}
+\end{document}

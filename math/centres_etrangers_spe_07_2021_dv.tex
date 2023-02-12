@@ -1,0 +1,469 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{makeidx}
+\usepackage{amsmath,amssymb}
+\usepackage{fancybox}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\newcommand{\euro}{\eurologo{}}
+%Tapuscrit : Denis Vergès
+\usepackage{pst-plot,pst-tree,pstricks,pst-node,pst-text}
+\usepackage{pst-eucl,pst-3dplot,pstricks-add}
+\usepackage{esvect}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=2cm, bottom=3cm]{geometry}
+\headheight15 mm
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\newcommand{\e}{\text{e}}
+\usepackage{fancyhdr}
+\usepackage[dvips]{hyperref}
+\hypersetup{%
+pdfauthor = {APMEP},
+pdfsubject = {Baccalauréat spécialité},
+pdftitle = {Métropole 10 juin 2021},
+allbordercolors = white,
+pdfstartview=FitH}
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\renewcommand\arraystretch{1.2}
+\frenchsetup{StandardLists=true}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{\textbf{A. P{}. M. E. P{}.}}
+\lhead{\small Baccalauréat spécialité}
+\lfoot{\small{Centres étrangers candidats libres}}
+\rfoot{\small{10 juin 2021}}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\begin{center}{\Large\textbf{\decofourleft~Baccalauréat Centres étrangers 10 juin 2021~\decofourright\\[6pt] Candidats libres  Sujet 2\\[6pt] ÉPREUVE D'ENSEIGNEMENT DE SPÉCIALITÉ}}
+\end{center}
+
+\vspace{0,25cm}
+
+Le candidat traite 4 exercices : les exercices 1, 2 et 3 communs à tous les candidats et un seul des deux exercices A ou B.
+
+\bigskip
+
+\textbf{\textsc{Exercice 1} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+
+Cet exercice est un questionnaire à choix multiples.
+
+Pour chacune des cinq questions, quatre
+réponses sont proposées; une seule de ces réponses est exacte.
+
+\smallskip
+
+\textbf{Indiquer sur la copie le numéro de la question et recopier la réponse exacte sans justifier le choix effectué.}
+
+\textbf{Barème :} une bonne réponse rapporte un point. Une réponse inexacte ou une absence de réponse n'apporte ni n'enlève aucun point.
+
+\bigskip
+
+\textbf{Question 1 :}
+
+On considère la fonction $g$ définie sur $]0~;~+\infty[$  par $g(x)= x^2+ 2x - \dfrac{3}{x}$.
+
+Une équation de la tangente à la courbe représentative de $g$ au point d'abscisse 1 est:
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~} $y=7(x - 1)$&\textbf{b.~~} $y = x - 1$&\textbf{c.~~} $y = 7x + 7$&\textbf{d.~~}$ y = x +1$\\ \hline
+\end{tabularx}
+\end{center}
+
+\medskip
+
+\textbf{Question 2 :}
+
+On considère la suite $\left(v_n\right)$ définie sur $\N$ par $v_n = \dfrac{3n}{n + 2}$. On cherche à déterminer la limite de $v_n$ lorsque $n$ tend vers $+\infty$.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~}$\displaystyle\lim_{n \to + \infty}v_n = 1$&
+\textbf{b.~~} $\displaystyle\lim_{n \to + \infty}v_n = 3$ &  \textbf{c.~~} $\displaystyle\lim_{n \to + \infty}v_n = \dfrac{3}{2}$ &\textbf{d.~~} On ne peut pas la déterminer\\ \hline
+\end{tabularx}
+\end{center}
+
+\medskip
+
+\textbf{Question 3 :}
+Dans une urne il y a 6 boules noires et 4 boules rouges. On effectue successivement 10 tirages aléatoires avec remise. Quelle est la probabilité (à $10^{-4}$ près) d'avoir 4 boules noires et 6 boules rouges?
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~}\np{0,1662}&\textbf{b.~~} 0,4&\textbf{c.~~} \np{0,1115}&\textbf{d.~~} \np{0,8886}\\ \hline
+\end{tabularx}
+\end{center}
+
+\medskip
+
+\textbf{Question 4 :}
+
+On considère la fonction $f$ définie sur $\R$ par $f(x) = 3\e^x - x$.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{>{\small}X|}}\hline
+\textbf{a.~~}$\displaystyle\lim_{x \to + \infty} f(x) = 3$
+&\textbf{b.~~}$\displaystyle\lim_{x \to + \infty} f(x) = +\infty $&\textbf{c.~~} $\displaystyle\lim_{x \to + \infty} f(x) =  -\infty$
+&\raggedright\textbf{d.~~} On ne peut pas déterminer la limite de la fonction $f$ lorsque $x$ tend vers $+\infty$\tabularnewline
+\hline
+\end{tabularx}
+\end{center}
+
+\medskip
+
+\textbf{Question 5 :}
+
+Un code inconnu est constitué de 8 signes.
+
+Chaque signe peut être une lettre ou un chiffre. Il y a
+donc 36 signes utilisables pour chacune des positions.
+
+Un logiciel de cassage de code teste environ cent millions de codes par seconde. En combien de temps au maximum le logiciel peut-il découvrir le code ?
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{X|}}\hline
+\textbf{a.~~}\raggedright environ 0,3 seconde&\textbf{b.~~}environ 8 heures&\textbf{c.~~}environ 3 heures&
+\raggedright\textbf{d.~~}environ 470 heures\tabularnewline \hline
+\end{tabularx}
+\end{center}
+
+\bigskip
+
+\textbf{\textsc{Exercice 2} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+
+Au 1\up{er} janvier 2020, la centrale solaire de Big Sun possédait \np{10560} panneaux solaires.
+
+On observe, chaque année, que 2\,\% des panneaux se sont détériorés et nécessitent d'être retirés tandis que 250 nouveaux panneaux solaires sont installés.
+
+\bigskip
+
+\textbf{Partie A - Modélisation à l'aide d'une suite}
+
+\medskip
+
+On modélise l'évolution du nombre de panneaux solaires par la suite $\left(u_n\right)$ définie par $u_0 = \np{10560}$ et, pour tout entier naturel $n$,\, $u_{n+1} = 0,98u_n +250$, où $u_n$  est le nombre de panneaux solaires au 1\up{er} janvier de l'année $2020 +n$.
+
+\medskip
+
+\begin{enumerate}
+\item
+	\begin{enumerate}
+		\item  Expliquer en quoi cette modélisation correspond à la situation étudiée.
+		\item  On souhaite savoir au bout de combien d'années le nombre de panneaux solaires sera strictement supérieur à \np{12000}.
+		
+À l'aide de la calculatrice, donner la réponse à ce
+problème.
+		\item  Recopier et compléter le programme en Python ci-dessous de sorte que la valeur
+cherchée à la question précédente soit stockée dans la variable n à l'issue de l'exécution de ce dernier.
+\begin{center}
+\begin{tabular}{|l|}\hline
+u $= \np{10560}$\\
+n$ =0$\\
+while  \ldots \ldots :\\
+\qquad u $= \ldots \ldots$ \\
+\qquad n $= \ldots \ldots$\\ \hline
+\end{tabular}
+\end{center}
+
+	\end{enumerate}
+\item Démontrer par récurrence que, pour tout entier naturel $n$, on a $u_n \leqslant \np{12500}$.
+\item Démontrer que la suite $\left(u_n\right)$ est croissante.
+\item En déduire que la suite $\left(u_n\right)$ converge. Il n'est pas demandé, ici, de calculer sa limite.
+\item On définit la suite $\left(v_n\right)$  par $v_n = u_n - \np{12500}$, pour tout entier naturel $n$.
+	\begin{enumerate}
+		\item Démontrer que la suite $\left(v_n\right)$ est une suite géométrique de raison $0,98$ dont on précisera le premier terme.
+		\item Exprimer, pour tout entier naturel $n$,\, $v_n$ en fonction de $n$.
+		\item En déduire, pour tout entier naturel $n$,\, $u_n$ en fonction de $n$.
+		\item Déterminer la limite de la suite $\left(u_n\right)$.
+		
+Interpréter ce résultat dans le contexte du modèle.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B - Modélisation à l'aide d'une fonction}
+
+\medskip
+
+Une modélisation plus précise a permis d'estimer le nombre de panneaux solaires de la centrale à l'aide de la fonction $f$ définie pour tout $x \in [0~;~ +\infty[$ par
+
+\[f(x) = \np{12500} - 500 \e^{-0,02x+1,4},\]
+
+ où $x$ représente le nombre d'années écoulées depuis le 1\up{er} janvier 2020.
+
+\medskip
+
+\begin{enumerate}
+\item Étudier le sens de variation de la fonction $f$.
+\item Déterminer la limite de la fonction $f$ en $+\infty$.
+\item En utilisant ce modèle, déterminer au bout de combien d'années le nombre de panneaux
+solaires dépassera \np{12000}.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{Exercice 3} \hfill 5 points}
+
+\textbf{Commun à tous les candidats}
+
+\medskip
+
+ABCDEFGH est un cube. I est le centre de la face ADHE et J est un point du segment [CG].
+
+Il existe donc $a \in [0~;~1]$ tel que $\vect{\text{CJ}} =a \vect{\text{CG}}$.
+
+On note $(d)$ la droite passant par I et parallèle à (FJ).
+
+On note K et L les points d'intersection de la droite $(d)$ et des droites (AE) et (DH).
+
+On se place dans le repère $\left(\text{A}~;~\vect{\text{AB}},\,\vect{\text{AD}},\, \vect{\text{AE}}\right)$.
+
+\bigskip
+
+\textbf{Partie A : Dans cette partie} \boldmath $a = \dfrac{2}{3}$ \unboldmath
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(-0.5,0)(9.5,7.5)
+\pspolygon[fillstyle=solid,fillcolor=lightgray](2,3.65)(4.2,4.05)(8.9,5.6)(6.8,5.2)%KLJF
+\psframe(2,0.5)(6.8,5.2)%ABFE
+\psline(6.8,0.5)(8.9,2.4)(8.9,7.2)(6.8,5.2)%BCGF
+\psline(8.9,7.2)(4.2,7.2)(2,5.1)%GHE
+\psline[linestyle=dashed](2,0.5)(4.2,2.4)(4.2,7.2)%ADH
+\psline[linestyle=dashed](8.9,2.4)(4.2,2.4)
+\psdots(2,0.5)(6.8,0.5)(8.9,2.4)(4.2,2.4)%ABCD
+\uput[dl](2,0.5){A} \uput[d](6.8,0.5){B} \uput[r](8.9,2.4){C} \uput[ul](4.2,2.4){D}
+\psdots(2,5.2)(6.8,5.2)(8.9,7.2)(4.2,7.2)(8.9,2.4)(8.9,4)(8.9,5.6)(3.1,3.85)%EFGHPJI
+\uput[l](2,5.2){E} \uput[u](6.8,5.2){F} \uput[ur](8.9,7.2){G} \uput[u](4.2,7.2){H} \uput[r](8.9,4){P}
+\uput[r](8.9,5.6){J}\uput[d](3.1,3.85){I}
+\psline(2,3.65)(6.8,5.2)(8.9,5.6)(4.2,4.05)%KFJL
+\psline(-0.2,3.25)(2,3.65)(4.2,4.05)%KL
+\psdots(2,3.65)(4.2,4.05)%KL
+\uput[ul](2,3.65){K}\uput[dr](4.2,4.05){L}
+\psline[linestyle=dashed](4.2,4.05)(8.9,4.9)
+\psdots[dotstyle=+,dotangle=45,dotscale=1.8](8.9,3.2)(8.9,4.8)(8.9,6.4)
+\end{pspicture}
+\end{center}
+\medskip
+
+\begin{enumerate}
+\item Donner les coordonnées des points F{}, I et J.
+\item Déterminer une représentation paramétrique de la droite $(d)$.
+\item
+	\begin{enumerate}
+		\item Montrer que le point de coordonnées $\left(0~;~ 0~;~\dfrac{2}{3}\right)$ est le point K.
+		\item Déterminer les coordonnées du point L, intersection des droites $(d)$ et (DH).
+
+	\end{enumerate}
+\item
+	\begin{enumerate}
+		\item Démontrer que le quadrilatère FJLK est un parallélogramme.
+		\item Démontrer que le quadrilatère FJLK est un losange.
+		\item Le quadrilatère FJLK est-il un carré ?
+
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B : Cas général}
+
+\medskip
+
+On admet que les coordonnées des points K et L sont : K$\left(0~;~0~;~1- \dfrac{a}{2}\right)$ et L$\left(0~;~1~;~\dfrac{a}{2}\right)$.
+
+On rappelle que $a \in [0~;~1]$.
+
+\medskip
+
+\begin{enumerate}
+\item Déterminer les coordonnées de J en fonction de $a$.
+\item Montrer que le quadrilatère FJLK est un parallélogramme.
+\item Existe-t-il des valeurs de $a$ telles que le quadrilatère FJLK soit un losange ? Justifier.
+\item Existe-t-il des valeurs de $a$ telles que le quadrilatère FJLK soit un carré ? Justifier.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\textsc{EXERCICE au choix du candidat} \hfill 5 points}
+
+\textbf{Le candidat doit traiter un seul des deux exercices A ou B}
+
+\textbf{Il indique sur sa copie l'exercice choisi : exercice A ou exercice B.}
+
+\medskip
+
+\textbf{EXERCICE A - Fonction ln}
+
+\bigskip
+
+\textbf{Partie A :}
+
+\medskip
+
+Dans un pays, une maladie touche la population avec une probabilité de $0,05$.
+
+On possède un test de dépistage de cette maladie.
+
+On considère un échantillon de $n$ personnes ($n \geqslant 20$) prises au hasard dans la population assimilé à un tirage avec remise.
+
+On teste l'échantillon suivant cette méthode : on mélange le sang de ces $n$ individus, on teste le mélange.
+
+Si le test est positif, on effectue une analyse individuelle de chaque personne.
+
+Soit $X_n$ la variable aléatoire qui donne le nombre d'analyses effectuées.
+
+\medskip
+
+\begin{enumerate}
+\item Montrer $X_n$ prend les valeurs 1 et $(n + 1)$.
+\item Prouver que $P\left(X_n = 1\right) = 0,95^n$.
+
+Établir la loi de $X_n$ en recopiant sur la copie et en complétant le tableau suivant:
+
+\begin{center}
+\begin{tabularx}{0.6\linewidth}{|*{3}{>{\centering \arraybackslash}X|}}\hline
+$x_i$& 1 &$n + 1$\\ \hline
+$P\left(X_n = x_i\right)$&&\\ \hline
+\end{tabularx}
+\end{center}
+
+\item Que représente l'espérance de $X_n$ dans le cadre de l'expérience ?
+
+Montrer que $E\left(X_n\right) =n + 1 - n \times  0,95^n$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B :}
+
+\medskip
+
+\begin{enumerate}
+\item On considère la fonction $f$ définie sur $[20~;~ +\infty[$ par $f(x) = \ln (x) + x \ln (0,95)$.
+
+Montrer que $f$ est décroissante sur $[20~;~ +\infty[$.
+\item On rappelle que $\displaystyle\lim_{x \to + \infty} \dfrac{\ln x}{x} = 0$. Montrer que $\displaystyle\lim_{x \to + \infty} f(x) = - \infty$.
+\item Montrer que $f(x) = 0$ admet une unique solution $a$ sur $[20~;~ +\infty[$.
+
+Donner un encadrement à 0,1 près de cette solution.
+\item En déduire le signe de $f$ sur $[20~;~ +\infty[$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie C :}
+
+\medskip
+
+On cherche à comparer deux types de dépistages.
+
+La première méthode est décrite dans la partie A, la seconde, plus classique, consiste à tester tous les individus.
+
+La première méthode permet de diminuer le nombre d'analyses dès que $E\left(X_n\right)  < n$.
+
+En utilisant la partie B, montrer que la première méthode diminue le nombre d'analyses pour des échantillons comportant $87$ personnes maximum.
+
+\bigskip
+
+\textbf{EXERCICE B - Équation différentielle}
+
+\medskip
+
+\textbf{Partie A : Détermination d'une fonction $f$ et résolution d'une équation différentielle}
+
+\medskip
+
+On considère la fonction $f$ définie sur $\R$ par :
+
+\[f(x) = \e^x+ ax + b\e^{-x}\]
+
+où $a$ et $b$ sont des nombres réels que l'on propose de déterminer dans cette partie.
+
+Dans le plan muni d'un repère d'origine O, on a représenté ci-dessous la courbe $\mathcal{C}$, représentant la fonction $f$, et la tangente $(T)$ à la courbe $\mathcal{C}$ au point d'abscisse $0$.
+
+\begin{center}
+\psset{unit=1.25cm}
+\begin{pspicture*}(-2.2,-0.6)(3.2,6.6)
+\psgrid[gridlabels=0pt,subgriddiv=5,gridwidth=0.25pt,subgridwidth=0.1pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-2.2,-0.4)(3.2,6.6)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-2}{2.5}{2.71828 x exp x sub 2 2.71828 x exp div add} \uput[r](2,5){\red $\mathcal{C}$}
+\psplot[linewidth=1.25pt]{-2}{2}{3 2 x mul sub}
+\end{pspicture*}
+\end{center}
+
+\smallskip
+
+\begin{enumerate}
+\item Par lecture graphique, donner les valeurs de $f(0)$ et de $f'(0)$.
+\item En utilisant l'expression de la fonction $f$, exprimer $f(0)$ en fonction de $b$ et en déduire la valeur de $b$.
+\item On admet que la fonction $f$ est dérivable sur $\R$ et on note $f'$ sa fonction dérivée.
+	\begin{enumerate}
+		\item Donner, pour tout réel $x$, l'expression de $f'(x)$.
+		\item Exprimer $f'(0)$ en fonction de $a$.
+		\item En utilisant les questions précédentes, déterminer $a$, puis en déduire l'expression de $f(x)$.
+	\end{enumerate}
+\item On considère l'équation différentielle :
+
+\[(E):\quad  y' +y =2\e^x - x - 1\]
+
+	\begin{enumerate}
+		\item Vérifier que la fonction $g$ définie sur $\R$ par :
+		
+\[g(x) = \e^x - x + 2\e^{-x}.\]
+
+est solution de l'équation $(E)$.
+		\item Résoudre l'équation différentielle $y' + y = 0$.
+		\item En déduire toutes les solutions de l'équation $(E)$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B : Étude de la fonction $g$ sur $[1~;~+\infty[$}
+
+\medskip
+
+\begin{enumerate}
+\item Vérifier que pour tout réel $x$, on a :
+
+\[\e^{2x} - \e^x - 2 = \left(\e^x - 2\right)\left(\e^x + 1\right)\]
+
+\item En déduire une expression factorisée de $g'(x)$, pour tout réel $x$.
+\item On admettra que, pour tout $x \in  [1~;~ +\infty[$,\, $\e^x - 2 > 0$.
+
+ Étudier le sens de variation de la fonction $g$ sur $[1~;~ +\infty[$.
+\end{enumerate}
+\end{document}

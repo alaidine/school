@@ -1,0 +1,412 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{amsmath,amssymb,makeidx}
+\usepackage{fancybox}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage{pifont}
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{diagbox}
+\usepackage{multirow} 
+\usepackage{textcomp} 
+\newcommand{\euro}{\eurologo{}}
+\usepackage{enumitem}
+%Tapuscrit : Denis Vergès
+\usepackage{pstricks,pst-plot,pst-text,pst-tree,pstricks-add}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage[left=3.5cm, right=3.5cm, top=3cm, bottom=3cm,headheight=14pt]{geometry}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\def\Oij{$\left(\text{O},~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O},~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O},~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr}
+%\usepackage[colorlinks=true,pdfstartview=FitV,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+%\usepackage[dvips]{hyperref}
+%\hypersetup{%
+%pdfauthor = {APMEP},
+%pdfsubject = {Brevet},
+%pdftitle = {Métropole septembre 2022},
+%allbordercolors = white,
+%pdfstartview=FitH}
+\usepackage[french]{babel}
+\AtBeginDocument{\DecimalMathComma}
+\usepackage[np]{numprint}
+\begin{document}
+\setlength\parindent{0mm}
+\rhead{}
+\lhead{\small L'année 2022}
+\rfoot{\small Métropole, Antilles-Guyane}
+\lfoot{\small 9 septembre 2022}
+\pagestyle{fancy}
+\thispagestyle{empty}
+\begin{center} {\huge \textbf{\decofourleft~Baccalauréat spécialité Jour 2 \decofourright\\[7pt]
+Métropole Antilles-Guyane 9 septembre 2022}}
+\end{center}
+
+\bigskip
+
+\textbf{Exercice 1 \quad 7 points\hfill Thèmes : probabilités}
+
+\medskip
+
+Dans le magasin d'Hugo, les clients peuvent louer deux types de vélos : vélos de route ou bien vélos tout terrain. 
+
+Chaque type de vélo peut être loué dans sa version électrique ou non.
+
+On choisit un client du magasin au hasard, et on admet que:
+\begin{itemize}
+\item Si le client loue un vélo de route, la probabilité que ce soit un vélo électrique est de 0,4 ;
+\item Si le client loue un vélo tout terrain, la probabilité que ce soit un vélo électrique est de 0,7 ; 
+\item La probabilité que le client loue un vélo électrique est de 0,58.
+\end{itemize}
+
+\medskip
+
+On appelle $\alpha$ la probabilité que le client loue un vélo de route, avec $0 \leqslant \alpha \leqslant 1$. 
+
+On considère les évènements suivants:
+
+\begin{itemize}
+\item[$\bullet~~$] $R$ : \og le client loue un vélo de route \fg{} ;
+\item[$\bullet~~$] $E$ : \og le client loue un vélo électrique \fg{} ;
+\item[$\bullet~~$] $\overline{R}$ et $\overline{E}$ , évènements contraires de $R$ et $E$.
+\end{itemize}
+
+\medskip
+
+\begin{minipage}{0.48\linewidth}
+
+On modélise cette situation aléatoire à l'aide de l'arbre reproduit ci-contre:
+
+Si $F$ désigne un évènement quelconque, on notera $p(F)$ la probabilité de $F$.
+\end{minipage} \hfill
+\begin{minipage}{0.48\linewidth}
+\begin{center}
+\pstree[treemode=R,nodesepA=0pt,nodesepB=2.5pt,treesep = 1cm,levelsep=2.5cm]{\TR{}}
+{\pstree{\TR{$R$~}\taput{$\alpha$}}
+{\TR{$E$}\taput{\ldots}
+\TR{$\overline{E}$}\tbput{\ldots}
+}
+\pstree{\TR{$\overline{R}$~}\tbput{$1 - \alpha$}}
+{\TR{$E$}\taput{\ldots}
+\TR{$\overline{E}$}\tbput{\ldots}
+}}
+\end{center}
+\end{minipage} 
+
+\medskip
+
+\begin{enumerate}
+\item Recopier cet arbre sur la copie et le compléter.
+\item 
+	\begin{enumerate}
+		\item Montrer que $p(E) = 0,7 - 0,3\alpha$.
+		\item En déduire que : $\alpha = 0,4$.
+	\end{enumerate}
+\item On sait que le client a loué un vélo électrique. 
+
+Déterminer la probabilité qu'il ait loué un vélo tout terrain. On donnera le résultat arrondi au centième.
+\item Quelle est la probabilité que le client loue un vélo tout terrain électrique ?
+\item Le prix de la location à la journée d'un vélo de route non électrique est de $25$ euros, celui d'un vélo tout terrain non électrique de $35$~euros. 
+
+Pour chaque type de vélo, le choix de la version électrique augmente le prix de location à la journée de $15$~euros. 
+
+On appelle $X$ la variable aléatoire modélisant le prix de location d'un vélo à la journée. 
+	\begin{enumerate}
+		\item Donner la loi de probabilité de $X$. On présentera les résultats sous forme d'un tableau.
+		\item Calculer l'espérance mathématique de $X$ et interpréter ce résultat.
+	\end{enumerate}	
+\item Lorsqu'on choisit $30$ clients d'Hugo au hasard, on assimile ce choix à un tirage avec remise. 
+
+On note $Y$ la variable aléatoire associant à un échantillon de 30 clients choisis au hasard le nombre de clients qui louent un vélo électrique.
+
+On rappelle que la probabilité de l'événement $E$ est : $p(E) = 0,58$.
+	\begin{enumerate}
+		\item Justifier que $Y$ suit une loi binomiale dont on précisera les paramètres.
+		\item Déterminer la probabilité qu'un échantillon contienne exactement $20$ clients qui louent un vélo électrique. On donnera le résultat arrondi au millième.
+		\item Déterminer la probabilité qu'un échantillon contienne au moins $15$ clients qui louent un vélo électrique. On donnera le résultat arrondi au millième.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Exercice 2 \quad 7 points\hfill Thèmes : suites, fonctions}
+
+\medskip
+
+\emph{Cet exercice est un questionnaire à choix multiples. Pour chacune des questions suivantes, une seule des quatre réponses proposées est exacte.\\
+Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point.\\
+Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie. Aucune justification n'est demandée.}
+
+\medskip
+
+\begin{enumerate}
+\item On considère les suites $\left(a_n\right)$ et $\left(b_n\right)$ définie par $a_0 = 1$ et, pour tout entier naturel $n$,\: $a_{n+1} = 0,5a_n + 1$ et $b_n = a_n - 2$.
+
+On peut affirmer que:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~} $\left(a_n\right)$ est arithmétique ;&\textbf{b.~} $\left(b_n\right)$ est géométrique;\\
+\textbf{c.~} $\left(a_n\right)$ est géométrique;&\textbf{d.~} $\left(b_n\right)$ est arithmétique. 
+\end{tabularx}
+\end{center}
+
+Dans les questions 2. et 3., on considère les suites $\left(u_n\right)$ et $\left(v_n\right)$ définies par :
+
+\[u_0 = 2,\: v_0 = 1 \:\: \text{et, pour tout entier naturel }\:\:n : \left\{\begin{array}{l c l}
+u_{n+1}&=&u_n + 3v_n\\
+v_{n+1}&=&u_n + v_n.
+\end{array}\right.\]
+
+\item On peut affirmer que :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~}$\left\{\begin{array}{l c l}
+u_2& =& 5\\ v_2 &=& 3
+\end{array}\right.$&\textbf{b.~} $u_2^2 - 3v_2^2 = - 2^2$&\textbf{c.~} $\dfrac{u_2}{v_2} = 1,75$&\textbf{d.~} $5u_1 = 3v_1$.\\
+\end{tabularx}
+\end{center}
+
+\item On considère le programme ci-dessous écrit en langage Python :
+
+\begin{center}
+\begin{tabular}{|>{\texttt}l|}\hline
+\texttt{def valeurs() :}\\
+\quad \texttt{u = 2}\\
+\quad \texttt{v = 1}\\
+\quad \texttt{for k in range(1,11)}\\
+\quad \quad \texttt{c = u}\\
+\quad \quad \texttt{u = u + 3*v}\\
+\quad \quad \texttt{v = c + v}\\
+\quad \texttt{return (u, v)}\\ \hline
+\end{tabular}
+\end{center}
+
+Ce programme renvoie :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{a.~} $u_{11}$ et $v_{11}$ ;&
+\textbf{b.~} $u_{10}$ et $v_{11}$ ;&
+\textbf{c.~} les valeurs de $u_n$ et $v_n$ pour $n$ allant de 1 à 10;&
+\textbf{d.~} $u_{0 }$ et $v_{10}$.
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+Pour les questions 4. et 5., on considère une fonction $f$ deux fois dérivable sur l'intervalle
+$[-4~;~2]$. On note $f'$ la fonction dérivée de $f$ et $f''$  la dérivée seconde de $f$.
+
+On donne ci-dessous la courbe représentative $\mathcal{C}'$ de la fonction dérivée $f'$ dans un repère du plan. On donne de plus les points A$(-2~;~0)$, B(1~;~0) et C(0~;~5).
+
+\begin{minipage}{0.52\linewidth}
+\begin{enumerate}[resume]
+\item La fonction $f$ est :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~} concave sur $[-2~;~1]$ ; 	&\textbf{b.~} convexe sur $[-4~;~0]$;\\
+\textbf{c.~}convexe sur $[-2~;~1]$;		&\textbf{d.~} convexe sur [0~;~2].
+\end{tabularx}
+\end{center}
+
+\item On admet que la droite (BC) est la tangente à la courbe $\mathcal{C}'$ au point B.
+On a :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~} $f'(1) < 0$ ;	&\textbf{b.~} $f'(1) = 5$ ;\\
+\textbf{c.~} $f''(1) > 0$;	&\textbf{d.~} $f''(1) = - 5$.
+\end{tabularx}
+\end{center}
+\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}{0.45\linewidth}
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture*}(-4,-3)(2,6)
+\psaxes[linewidth=1.25pt,Dx=10,Dy=10]{->}(0,0)(-4,-3)(2,6)
+\psaxes[linewidth=1.25pt](0,0)(1,1)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{-4}{2}{x 2 add 1 x  sub mul 2.71828 x 0.5 mul exp mul}\uput[dr](-4,-1.5){\blue $\mathcal{C}'$}
+\psline(-4,0.1)(-4,-0.1)
+\uput[dr](-2,0){A} \uput[ur](1,0){B} \uput[l](0,5){C} 
+\psplot[plotpoints=2000,linewidth=1.25pt]{-4}{2}{5 5 x  mul sub}
+\uput[d](-4,0){$-4$}
+\end{pspicture*}
+\end{center}
+
+\end{minipage}
+
+\begin{enumerate}[resume,start=6]
+\item Soit $f$ la fonction définie sur $\R$ par $f(x) = \left(x^2 + 1\right)\text{e}^x$.
+
+La primitive $F$ de $f$ sur $\R$  telle que $F(0) = 1$ est définie par:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~} $F(x) = \left(x^2 - 2x +3\right)\text{e}^x$ ;&\textbf{b.~} $F(x) = \left(x^2 - 2x + 3\right)\text{e}^x - 2;$\\
+\textbf{c.~} $F(x) = \left(\dfrac13 x^3 + x\right)\text{e}^x + 1$ ;&\textbf{d.~} $F(x) = \left(\dfrac13 x^3 + x \right) \text{e}^x$.\\
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Exercice 3 \quad 7 points\hfill Thèmes : fonction logarithme, suites}
+
+\medskip
+
+\textbf{Les parties B et C sont indépendantes}
+
+\medskip
+
+On considère la fonction $f$  définie sur $]0~;~+\infty[$ par 
+
+\[f(x) = x - x \ln x,\]
+
+où ln désigne la fonction logarithme népérien. 
+
+\bigskip
+
+\textbf{Partie A}
+
+\medskip
+
+\begin{enumerate}
+\item Déterminer la limite de $f(x)$ quand $x$ tend vers $0$.
+\item Déterminer la limite de $f(x)$ quand $x$ tend vers $+\infty$.
+\item On admet que la fonction $f$ est dérivable sur $]0~;~+\infty[$ et on note $f'$ sa fonction dérivée.
+	\begin{enumerate}
+		\item Démontrer que, pour tout réel $x > 0$, on a : $f'(x) = - \ln x$.
+		\item En déduire les variations de la fonction $f$ sur $]0~;~+\infty[$ et dresser son tableau de
+variations.
+	\end{enumerate}
+\item Résoudre l'équation $f(x) = x$ sur $]0~;~+\infty[$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B}
+
+\medskip
+
+Dans cette partie, on pourra utiliser avec profit certains résultats de la partie A. 
+
+On considère la suite $\left(u_n\right)$ définie par:
+
+\[\left\{\begin{array}{l c l}
+u_0 &=& 0,5\\
+u_{n+1} &=& u_n - u_n \ln u_n \:\text{ pour tout entier naturel } n,
+\end{array}\right.\]
+
+Ainsi, pour tout entier naturel $n$, on a : $u_{n+1} = f\left(u_n\right)$.
+
+\medskip
+
+\begin{enumerate}
+\item On rappelle que la fonction $f$ est croissante sur l'intervalle [0,5~;~1].
+
+Démontrer par récurrence que, pour tout entier naturel $n$, on a : $0,5 \leqslant  u_n \leqslant u_{n+1} \leqslant 1$.
+\item 
+	\begin{enumerate}
+		\item Montrer que la suite $\left(u_n\right)$ est convergente.
+		\item On note $\ell$ la limite de la suite $\left(u_n\right)$. Déterminer la valeur de $\ell$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie C}
+
+\medskip
+
+Pour un nombre réel $k$ quelconque, on considère la fonction $f_k$ définie sur $]0~;~+\infty[$ par:
+
+\[f_k(x) = kx - x \ln x.\]
+
+\begin{enumerate}
+\item Pour tout nombre réel $k$, montrer que $f_k$ admet un maximum $y_k$ atteint en $x_k = \text{e}^{k- 1}$.
+\item  Vérifier que, pour tout nombre réel $k$, on a : $x_k = y_k$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Exercice 4 \quad 7 points\hfill Thèmes : géométrie dans l'espace }
+
+\medskip
+
+Dans l'espace rapporté à un repère orthonormé \Oijk, on considère:
+
+\begin{itemize}
+\item[$\bullet~~$] la droite $\mathcal{D}$ passant par le point A(2~;~4~;~0) et dont un vecteur directeur est $\vect{u}\begin{pmatrix}1\\2\\0\end{pmatrix}$ ;
+\item[$\bullet~~$] la droite $\mathcal{D}'$ dont une représentation paramétrique est : $\left\{\begin{array}{l c l}
+x&=&3\\
+y&=& 3 + t\\
+z&=&3 + t
+\end{array}\right. ,\: t \in \R$.
+\end{itemize}
+
+\medskip
+
+\begin{enumerate}
+\item 
+
+	\begin{enumerate}
+		\item Donner les coordonnées d'un vecteur directeur $\vect{u'}$ de la droite $\mathcal{D}'$.
+		\item Montrer que les droites $\mathcal{D}$ et $\mathcal{D}'$ ne sont pas parallèles.
+		\item Déterminer une représentation paramétrique de la droite $\mathcal{D}$.
+	\end{enumerate}
+\end{enumerate}
+
+On admet dans la suite de cet exercice qu'il existe une unique droite $\Delta$ perpendiculaire aux droites $\mathcal{D}$ et $\mathcal{D}'$. Cette droite $\Delta$ coupe chacune des droites $\mathcal{D}$ et $\mathcal{D}'$. On appellera M le point d'intersection de $\Delta$ et $\mathcal{D}$, et M$'$ le point d'intersection de $\Delta$ et $\mathcal{D}'$.
+
+On se propose de déterminer la distance MM$'$ appelée \og distance entre les droites $\mathcal{D}$ et $\mathcal{D}'$ \fg.
+\begin{enumerate}[resume]
+\item Montrer que le vecteur $\vect{v}\begin{pmatrix}2\\- 1\\1\end{pmatrix}$ est un vecteur directeur de la droite $\Delta$.
+\item On note $\mathcal{P}$ le plan contenant les droites $\mathcal{D}$ et $\Delta$, c'est-à-dire le plan passant par le point A et de vecteurs directeurs $\vect{u}$ et $\vect{v}$.
+	\begin{enumerate}
+		\item Montrer que le vecteur $\vect{n}\begin{pmatrix}2\\-1\\-5 \end{pmatrix}$ est un vecteur normal au plan $\mathcal{P}$.
+		\item En déduire qu'une équation du plan $\mathcal{P}$ est : $2x - y - 5z = 0$.
+		\item On rappelle que M$'$ est le point d'intersection des droites $\Delta$ et $\mathcal{D}'$.
+		
+Justifier que M$'$ est également le point d'intersection de $\mathcal{D}'$ et du plan $\mathcal{P}$.
+		
+En déduire que les coordonnées du point M$'$ sont (3~;~1~;~1).
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Déterminer une représentation paramétrique de la droite $\Delta$.
+		\item Justifier que le point M a pour coordonnées (1~;~2~;~0).
+		\item Calculer la distance MM$'$.
+	\end{enumerate}
+\item On considère la droite $d$ de représentation paramétrique $\left\{\begin{array}{l c l}
+x &=& 5t\\y &=& 2 + 5t \\z&=&1 + t\end{array}\right.$ avec $t \in \R$.
+	\begin{enumerate}
+		\item Montrer que la droite $d$ est parallèle au plan $\mathcal{P}$.
+		\item On note $\ell$ la distance d'un point N de la droite $d$ au plan $\mathcal{P}$ . 
+		
+Exprimer le volume du  tétraèdre ANMM$'$ en fonction de $\ell$.
+
+On rappelle que le volume d'un tétraèdre est donné par : $V = \dfrac13 \times B \times h$ où $B$ désigne 
+l'aire d'une base et $h$ la hauteur relative à cette base.
+		\item Justifier que, si N$_1$ et N$_2$ sont deux points quelconques de la droite $d$, les tétraèdres AN$_1$MM$'$ et AN$_2$MM$'$ ont le même volume.
+	\end{enumerate}
+\end{enumerate}
+\end{document}
