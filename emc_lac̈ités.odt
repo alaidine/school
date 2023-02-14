@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rpt="http://openoffice.org/2005/report" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2023-02-03T06:42:18.676137101</dc:date><meta:editing-duration>PT32M19S</meta:editing-duration><meta:editing-cycles>6</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="3" meta:word-count="19" meta:character-count="126" meta:non-whitespace-character-count="109"/></office:meta>
+ <office:meta><dc:date>2023-02-14T05:52:13.312727615</dc:date><meta:editing-duration>PT1H2M31S</meta:editing-duration><meta:editing-cycles>18</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="14" meta:word-count="449" meta:character-count="2637" meta:non-whitespace-character-count="2201"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">11642</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">1905</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">18205</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">12199</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">16062</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">14342</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">2501</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">3794</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">11458</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">24241</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">1905</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">20108</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">12197</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">11642</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">17965</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">25982</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -88,7 +88,7 @@
    <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1494306</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1544770</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
@@ -152,7 +152,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="Noto Serif CJK SC" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Noto Sans Devanagari1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -264,11 +264,14 @@
   <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="00138e0e"/>
   </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00150e6e" officeooo:paragraph-rsid="00150e6e"/>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="0016cd22" officeooo:paragraph-rsid="0016cd22"/>
   </style:style>
   <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:rsid="0016cd22" officeooo:paragraph-rsid="0016cd22"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="00179242" officeooo:paragraph-rsid="00179242"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="00138e0e"/>
@@ -285,6 +288,15 @@
   <style:style style:name="T5" style:family="text">
    <style:text-properties officeooo:rsid="00150e6e"/>
   </style:style>
+  <style:style style:name="T6" style:family="text">
+   <style:text-properties officeooo:rsid="00179242"/>
+  </style:style>
+  <style:style style:name="T7" style:family="text">
+   <style:text-properties style:text-position="super 58%"/>
+  </style:style>
+  <style:style style:name="T8" style:family="text">
+   <style:text-properties style:text-position="0% 100%"/>
+  </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="8.5in" fo:page-height="11in" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.278in" style:layout-grid-ruby-height="0.139in" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0in" loext:margin-gutter="0in">
     <style:footnote-sep style:width="0.0071in" style:distance-before-sep="0.0398in" style:distance-after-sep="0.0398in" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
@@ -300,7 +312,7 @@
   <style:master-page style:name="Standard" style:page-layout-name="pm1" draw:style-name="dp1"/>
  </office:master-styles>
  <office:body>
-  <office:text>
+  <office:text text:use-soft-page-breaks="true">
    <text:sequence-decls>
     <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
@@ -308,13 +320,37 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:p text:style-name="P8">La laicité française</text:p>
+   <text:p text:style-name="P7">La laicité française</text:p>
    <text:p text:style-name="Text_20_body"><text:span text:style-name="Strong_20_Emphasis"/></text:p>
    <text:p text:style-name="P1"/>
-   <text:p text:style-name="P8">Étape 1: Identifiez les évolutions chronologiques et les définitions légales du concept de laïcité</text:p>
-   <text:p text:style-name="P8"/>
-   <text:p text:style-name="P8"/>
-   <text:p text:style-name="P8">En 1789 </text:p>
+   <text:p text:style-name="P7">Étape 1: Identifiez les évolutions chronologiques et les définitions légales du concept de laïcité</text:p>
+   <text:p text:style-name="P7"/>
+   <text:p text:style-name="P7">En 1789 <text:span text:style-name="T6">Tout le monde peut avoir les croyances religieuse qu’il veut tant qu’il ne trouble pas l’ordre public mais l’état et toujours lié à l’église. En 1905 Le gouvernement se séparent de l’église.</text:span></text:p>
+   <text:p text:style-name="P9">En 1958 la france devient laïque, et en 2004 tout le monde peut avoir les croyances qu’il veut mais ne doit pas le montrer avec des signes ostentatoire.</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">Étape 2: Pourquoit Jean Baudérot parle-t-il de laïcités au pluriel ?</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">Il parle de laïcités au pluriel parce qu’il ya une laïcités qui combat pour la laïcité en étant contre les religions, il parle d’un autre modèle de la laïcité reconnait la liberté de conscience et n’est pas contre la religion mais seulement dans certaines limites.</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">Étape 3:</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">1. Pourquoi le port du voile dans l’espace public devient-il un sujet politique ?</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">Le voile devient un sujet politique car il est un signe religieux et d’aprés les principes laïcs et la loi de la republics, le port de signes religieux est interdit à l’école.</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">2. Quels acteurs politiques portent ces polémiques ?</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">Les acteurs politiques qui portent ces polémique sont le RN et la conseil régional.</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">Étape 4: Bilan</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">En un paragraphe organisé, expliquez les origines et les fondements de la laïcité à la française, puis les différentes conceptions de la laïcité qui traversent le débat public. Illustrez votre propos par des exemples concrets.</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9">En france la république est officielement laïque depuis 1958 d’aprés l’article 1<text:span text:style-name="T7">er</text:span><text:span text:style-name="T8"> de la constitution, mais <text:s/>on peut voir qu’il y a des fondements de la laïcités dans la loi de séparation des églises et de l’état en 1905 et dans la déclaration des droits de l’homme et des citoyens en 1789. En 2004, Il ya une loi qui dit que les espaces publiques aussi sont laïques. Il ya différents modèles de la laïcités considère que toute espèce de visibilité religieuse est considéré négativement, cette position est adopté à l’extrême guauche et à l’extrême droite. Cette position politique est à la cause de l’incident du voile en octobre 2019 quand un élu régioinal du RN à demander à une femme de retirer son voile qui est un signe d’appartenance religieuse.. Il ya une autre position politique qui reconnaît la liberté de conscience est qui n’a pas de problème avec les signes d’appartenance religieuces mais seulement dans certaines limites culturelle, il y a artiste qui s’appelle zaïtchick qui à montrer qu’il adhérait à cette position dans un dessin ou il veut nous dire qu’il y a des problèmes plus grave en france que le voile et appelle ceux qui sont déranger par le voile les marcheurs ridicules</text:span></text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P9"><text:soft-page-break/></text:p>
   </office:text>
  </office:body>
 </office:document>
